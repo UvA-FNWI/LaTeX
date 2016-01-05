@@ -4,8 +4,8 @@ pygments: true
 permalink: /:categories/:title/
 baseurl: /LaTeX
 
-title: "Latexcursus"
-subtitle: "UvA Bachelor Wiskunde 2014"
+title: "LaTeXcursus"
+subtitle: "UvA Bachelor Wiskunde 2016"
 
 weeks:
   week1: Week 1
