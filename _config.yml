@@ -2,6 +2,7 @@ markdown: maruku
 pygments: true
 
 permalink: /:categories/:title/
+baseurl: /LaTeX
 
 title: "Latexcursus"
 subtitle: "UvA Bachelor Wiskunde 2014"
@@ -11,4 +12,3 @@ weeks:
   week2: Week 2
   week3: Week 3
   week4: Week 4
-  

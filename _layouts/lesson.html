@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    
+
     {% include topnav.html %}
 
     <div class="container">
@@ -18,10 +18,10 @@
 
       <ul class="pager">
         {% if page.previous.url and page.previous.category == page.category%}
-        <li class="previous"><a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></li>
+        <li class="previous"><a href="{{site.baseurl}}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></li>
         {% endif %}
         {% if page.next.url and page.next.category == page.category %}
-        <li class="next"><a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a></li>
+        <li class="next"><a href="{{site.baseurl}}{{ page.next.url }}">{{ page.next.title }} &raquo;</a></li>
         {% else %}
         <li class="next disabled"><a>Einde van deze week!</a></li>
         {% endif %}
@@ -29,6 +29,6 @@
     </div>
 
     {% include footer.html %}
-    
+
   </body>
 </html>

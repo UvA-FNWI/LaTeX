@@ -17,7 +17,7 @@ title: Latexcursus
     <dt class="disabled"><a>{{ t }}. {{ post.title }}</a>
     <dd class="disabled">{{ post.description }}</dd>
     {% else %}
-    <dt><a href="{{ post.url }}">{{ t }}. {{ post.title }}</a></dt>
+    <dt><a href="{{site.baseurl}}{{ post.url }}">{{ t }}. {{ post.title }}</a></dt>
     <dd>{{ post.description }}</dd>
     {% endif %}
   	{% assign t = t | plus: 1 %}
@@ -29,4 +29,3 @@ title: Latexcursus
 
 <h2>Voorwoord</h2>
 <p>De inhoud van deze lessen is voor een groot deel afkomstig van <a href="http://en.wikibooks.org/wiki/LaTeX">Latex Wikibooks</a> en lesmateriaal van Chris Zaal. De broncode van deze site vind je op <a href="https://github.com/jzuiddam/jzuiddam.github.io">github</a>. Deze website werkt het best in moderne browsers zoals Firefox, Safari en Chrome. &mdash; <a href="http://homepages.cwi.nl/~jzuiddam/">Jeroen Zuiddam</a></p>
-
