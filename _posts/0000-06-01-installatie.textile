@@ -1,8 +1,8 @@
 ---
 layout: lesson
-title: Thuis installeren
+title: Zelf LaTeX installeren
 category: week1
-description: LaTeX thuis installeren.
+description: LaTeX installeren.
 ---
 
 
@@ -15,5 +15,3 @@ Installeer "TeX Live":http://www.tug.org/texlive/. Op Linux kun je ook je packag
 h5. MacOS
 
 Installeer "MacTeX":http://www.tug.org/mactex/; dit is de Macversie van TeX Live.
-
-

@@ -35,7 +35,7 @@ In deze cursus leren we jullie werken met twee LaTexeditors: TeXworks en ShareLa
 
 - ShareLaTeX := Een online editor waarin meerdere mensen tegelijk kunnen werken; handig wanneer je op een computer werkt waarop geen LaTeX staat.
 
-p. We gaan er bij de eerste opdracht van uit dat je op een computer werkt met toegang tot TeXworks. Om LaTeX zelf te installeren zie de les "Thuis installeren":{{site.baseurl}}{% post_url 0000-06-01-installatie %}.
+p. We gaan er bij de eerste opdracht van uit dat je op een computer werkt met toegang tot TeXworks. Om LaTeX zelf te installeren zie de les "Zelf LaTeX installeren":{{site.baseurl}}{% post_url 0000-06-01-installatie %}.
 
 
 <div class="panel panel-primary">

@@ -33,7 +33,7 @@ waarbij @options@ een lijst is van opties gescheiden door komma's. We zullen hie
 
 h3. Packages
 
-Packages zijn uitbreidingen van LaTeX die functionaliteit toevoegen. Denk daarbij aan de mogelijkheid om plaatjes in te voegen of de beschikbaarheid van extra wiskundige symbolen. Moderne _TeX-distributies_ (zie "Thuis installeren":{{site.baseurl}}{% post_url 0000-06-01-installatie %}) bevatten een groot aantal packages, die je kunt gebruiken door
+Packages zijn uitbreidingen van LaTeX die functionaliteit toevoegen. Denk daarbij aan de mogelijkheid om plaatjes in te voegen of de beschikbaarheid van extra wiskundige symbolen. Moderne _TeX-distributies_ (zie "Zelf LaTeX installeren":{{site.baseurl}}{% post_url 0000-06-01-installatie %}) bevatten een groot aantal packages, die je kunt gebruiken door
 
 {% highlight latex %}
 \usepackage[options]{packagename}
