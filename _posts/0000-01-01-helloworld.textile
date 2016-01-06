@@ -35,7 +35,7 @@ In deze cursus leren we jullie werken met twee LaTexeditors: TeXworks en ShareLa
 
 - ShareLaTeX := Een online editor waarin meerdere mensen tegelijk kunnen werken; handig wanneer je op een computer werkt waarop geen LaTeX staat.
 
-p. We gaan er bij de eerste opdracht van uit dat je op een computer werkt met toegang tot TeXworks. Om LaTeX zelf te installeren zie de les "Thuis installeren":{% post_url 0000-06-01-installatie %}.
+p. We gaan er bij de eerste opdracht van uit dat je op een computer werkt met toegang tot TeXworks. Om LaTeX zelf te installeren zie de les "Thuis installeren":{{site.baseurl}}{% post_url 0000-06-01-installatie %}.
 
 
 <div class="panel panel-primary">
@@ -72,7 +72,7 @@ Hello world!
 <div class="panel-body">
 
 # Maak een "ShareLaTeX-account":https://www.sharelatex.com?r=e462e191&rm=d&rs=b.
-# Klik in ShareLaTeX op @New Project@ en kies @Blank Project@. Geef je project een naam. 
+# Klik in ShareLaTeX op @New Project@ en kies @Blank Project@. Geef je project een naam.
 # Je ziet links LaTeX-code. Klik rechts op @Recompile@. Je ziet vervolgens rechts de uitvoer van de LaTeX-code.
 # Klik rechts op @Logs@ om de logs te bekijken.
 # Klik in het zijmenu links op @Share@. Daar kun je je document met andere delen om er samen aan te werken. (Met een gratis account kun je met één persoon delen.)
@@ -104,4 +104,3 @@ We moedigen jullie aan om naast deze website ook andere bronnen te gebruiken als
 
 </div>
 </div>
-

@@ -9,7 +9,7 @@ De toets van volgende week bestaat uit twee onderdelen:
 # Zet een gegeven tekst met LaTeX.
 # Bedenk zelf het bewijs van een gegeven stelling en schrijf die met LaTeX op.
 
-Je mag gebruik maken van internet tijdens de toets, maar niet samenwerken. We letten er op of je netjes wiskunde kan opschrijven met LaTeX. Zie de "Schrijfgids":{% post_url 0005-01-01-schrijfgids %} voor de regels die we hanteren. Op "Blackboard":http://blackboard.uva.nl vind je een voorbeeldtoets, onder Toetsen.
+Je mag gebruik maken van internet tijdens de toets, maar niet samenwerken. We letten er op of je netjes wiskunde kan opschrijven met LaTeX. Zie de "Schrijfgids":{{site.baseurl}}{% post_url 0005-01-01-schrijfgids %} voor de regels die we hanteren. Op "Blackboard":http://blackboard.uva.nl vind je een voorbeeldtoets, onder Toetsen.
 
 <div class="panel panel-primary">
 <div class="panel-heading">

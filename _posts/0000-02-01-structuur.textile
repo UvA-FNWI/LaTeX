@@ -33,7 +33,7 @@ waarbij @options@ een lijst is van opties gescheiden door komma's. We zullen hie
 
 h3. Packages
 
-Packages zijn uitbreidingen van LaTeX die functionaliteit toevoegen. Denk daarbij aan de mogelijkheid om plaatjes in te voegen of de beschikbaarheid van extra wiskundige symbolen. Moderne _TeX-distributies_ (zie "Thuis installeren":{% post_url 0000-06-01-installatie %}) bevatten een groot aantal packages, die je kunt gebruiken door
+Packages zijn uitbreidingen van LaTeX die functionaliteit toevoegen. Denk daarbij aan de mogelijkheid om plaatjes in te voegen of de beschikbaarheid van extra wiskundige symbolen. Moderne _TeX-distributies_ (zie "Thuis installeren":{{site.baseurl}}{% post_url 0000-06-01-installatie %}) bevatten een groot aantal packages, die je kunt gebruiken door
 
 {% highlight latex %}
 \usepackage[options]{packagename}
@@ -45,7 +45,7 @@ in de preamble te zetten, met @packagename@ de naam van het package en @options@
 \usepackage[dutch]{babel}
 {% endhighlight %}
 
-Het @babel@-package met de optie @dutch@ zorgt er onder andere voor dat LaTeX standaardwoorden als _Hoofdstuk_ en _Inhoudsopgave_ in het Nederlands zet en de Nederlandse woordafbrekingsregels gebruikt. Gebruik de juiste taaloptie als je in een andere taal schrijft. 
+Het @babel@-package met de optie @dutch@ zorgt er onder andere voor dat LaTeX standaardwoorden als _Hoofdstuk_ en _Inhoudsopgave_ in het Nederlands zet en de Nederlandse woordafbrekingsregels gebruikt. Gebruik de juiste taaloptie als je in een andere taal schrijft.
 
 h3. Topmatter
 
@@ -120,7 +120,7 @@ De @document@-omgeving is een voorbeeld van een omgeving. Een *omgeving* wordt g
 \end{naam}
 {% endhighlight %}
 
-In een omgeving staat weer LaTeX-code. Een omgeving definieert automatisch een groep. 
+In een omgeving staat weer LaTeX-code. Een omgeving definieert automatisch een groep.
 
 <div class="panel panel-primary">
 <div class="panel-heading">
@@ -165,7 +165,7 @@ Het getal \favogetalarg{zes} is mijn favoriet.
 </div>
 <div class="panel-body">
 
-* Wat is de globale structuur van een LaTeX-bestand? 
+* Wat is de globale structuur van een LaTeX-bestand?
 * Wat doen: @\documentclass@, @\usepackage@, @\title@, @\author@, @\and@, @\date@, @\maketitle@?
 * Wat doet het @babel@-package?
 * Waarom scheiden we opmaak en inhoud?
@@ -173,4 +173,3 @@ Het getal \favogetalarg{zes} is mijn favoriet.
 * Hoe maak je een commando?
 
 </div></div>
-

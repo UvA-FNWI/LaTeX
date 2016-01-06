@@ -2,7 +2,7 @@
 layout: lesson
 title: Huiswerk
 category: week1
-description: Een huiswerkopgave LaTexen en LaTeX thuis installeren.
+description: Een huiswerkopgave LaTeX'en en LaTeX thuis installeren.
 ---
 
 <div class="panel panel-primary">
@@ -11,7 +11,7 @@ description: Een huiswerkopgave LaTexen en LaTeX thuis installeren.
 </div>
 <div class="panel-body">
 
-# Installeer een "LaTeXdistributie":{% post_url 0000-06-01-installatie %} op je eigen computer.
+# Installeer een "LaTeXdistributie":{{site.baseurl}}{% post_url 0000-06-01-installatie %} op je eigen computer.
 # Test je installatie door in TeXWorks een voorbeeld te compileren.
 
 </div>
@@ -24,22 +24,25 @@ description: Een huiswerkopgave LaTexen en LaTeX thuis installeren.
 <h3 class="panel-title">Opdracht 2</h3>
 </div>
 <div class="panel-body">
-Zelf twee opgaven van Hoofdstuk 5, Stochastiek 1 in LaTeX zetten, dat is de bedoeling van deze opdracht. Als je geen Stochastiek 1 volgt, werk dan twee opgaven van Basiswiskunde uit.
+Zelf de <a href="stochastiek.pdf">eerste drie opgaven van Stochastiek 1, set 5</a> in LaTeX zetten, dat is de bedoeling van deze opdracht. Als je geen Stochastiek 1 volgt, overleg dan met je docent.
 
 # Gebruik de volgende modelcode.
 
 {% highlight tex %}
 
-\documentclass[a4paper,12pt]{article} 
+\documentclass[a4paper,12pt]{article}
 \usepackage{mathtools, amssymb, amsthm}
 \usepackage[dutch]{babel}
 
-\theoremstyle{definition}                            
-\newtheorem{opgave}{Opgave}        
-\theoremstyle{remark}                                       
+\theoremstyle{definition}
+\newtheorem{opgave}{Opgave}
+\theoremstyle{remark}
 \newenvironment{oplossing}{\begin{proof}[Oplossing]}{\end{proof}}
 \newenvironment{uitwerking}{\begin{proof}[Uitwerking]}{\end{proof}}
 \newenvironment{bewijs}{\begin{proof}[Bewijs]}{\end{proof}}
+
+\title{Opgaven Stochastiek 1, Hoofdstuk 5}
+\author{O.\ P.\ Losser, 1234567}
 
 %% eigen gedefinieerde commando's
 \DeclareMathOperator{\ggd}{ggd}
@@ -48,15 +51,12 @@ Zelf twee opgaven van Hoofdstuk 5, Stochastiek 1 in LaTeX zetten, dat is de bedo
 \begin{document}
 
 %% Kopregel
-\subsection*{Opgaven Stochastiek 1, Hoofdstuk 5}
-\subsubsection*{O. P. Losser, 1234567\\ \today}
+\maketitle
 
 %% Opgave
-% Stel de teller in als je niet bij opgave 1 wil beginnen. 
+% Stel de teller in als je niet bij opgave 1 wil beginnen.
 % De teller telt automatisch door. Je gebruikt setcounter dus alleen als nummers worden overgeslagen.
 % \setcounter{opgave}{0}
-
-\setcounter{opgave}{2}
 
 \begin{opgave}
 Hier de tekst van de opgave.
@@ -64,7 +64,7 @@ Hier de tekst van de opgave.
 
 %% oplossing
 \begin{oplossing}
-Hier de tekst van de uitwerking. 
+Hier de tekst van de uitwerking.
 \end{oplossing}
 
 \begin{opgave}
@@ -73,18 +73,26 @@ Hier de tekst van de volgende opgave.
 
 %% oplossing
 \begin{oplossing}
-Hier de tekst van de uitwerking. 
+Hier de tekst van de uitwerking.
+\end{oplossing}
+\begin{opgave}
+Hier de tekst van de volgende opgave.
+\end{opgave}
+
+%% oplossing
+\begin{oplossing}
+Hier de tekst van de uitwerking.
 \end{oplossing}
 
 \setcounter{opgave}{6}
 
 \begin{opgave}
-Hier de tekst van de opgave.
+Voorbeeld van een opgave met een andere nummering
 \end{opgave}
 
 %% oplossing
 \begin{oplossing}
-Hier de tekst van de uitwerking. 
+Hier de tekst van de uitwerking.
 \end{oplossing}
 
 \end{document}
@@ -92,7 +100,7 @@ Hier de tekst van de uitwerking.
 {% endhighlight %}
 
 
-#2 Zet de uitwerking van twee huiswerkopgaven (naar keuze) van H5 van Stochastiek 1 in LaTeX. Maak deze opdracht zelfstandig — van alleen maar meekijken leer je niks.
+#2 Zet de uitwerking van <a href="stochastiek.pdf">de eerste drie opgaven van huiswerkset 5 van Stochastiek 1</a> in LaTeX. Maak deze opdracht zelfstandig — van alleen maar meekijken leer je niks.
 # Submit je werk op Blackboard: zowel tex-bestand, log-bestand als pdf-bestand submitten. Je log-bestand mag geen LaTeX-errors meer vermelden. Deadline: zondagavond 12-1, 24:00 uur. Niet veel later sluit deze assigment en kun je niet meer inleveren. Niet ingeleverd? Dan geen feedback.
 
 Belangrijk om te onthouden.
