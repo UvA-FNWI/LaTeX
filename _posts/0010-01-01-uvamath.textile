@@ -2,38 +2,37 @@
 layout: lesson
 title: Document class uvamath
 category: week3
-description: De uvamath document class.
+description: The uvamath document class.
 ---
 
-Voor het project gebruiken we de @uvamath@ document class. In deze les leren we hoe we die class gebruiken.
+For the project we use the @uvamath@ document class. In this lesson we will introduce this class.
 
+*1. Download the "uvamath class":https://github.com/jzuiddam/uvamath/archive/master.zip. Unzip the file.*
+The folder contains three files:
 
-*1. Download de "uvamath class":https://github.com/jzuiddam/uvamath/archive/master.zip. Pak het zip-bestand uit.*
-De map waarin je het zip-bestand hebt uitgepakt, bevat drie bestanden:
-
-* @uvalogo.png@ -- het UvA-logo
-* @uvamath.cls@ -- de uvamath document class
-* @verslag.tex@ -- modelbestand voor je verslag
+* @uvalogo.png@ -- the UvA logo
+* @uvamath.cls@ -- the uvamath document class
+* @verslag.tex@ -- the template for your report
 
 *2. Open @verslag.tex@.*
-Hierin schrijf je het verslag.
+You write your report in this file.
 
-*3. Vul de gegevens in.*
-Het bestand @verslag.tex@ begint met het laden van de uvamath class en een aantal noodzakelijke packages.
+*3. Fill in some details.*
+The file @verslag.tex@ starts with loading the uvamath class and some necessary packages.
 
 {% highlight latex %}
 
-% Voor Engelse tekst, gebruik de optie english achter documentclass.
+% For English text, put the option "english" after documentclass.
 \documentclass{uvamath}
 \usepackage[dutch]{babel}
 
 \usepackage{graphicx}
 \usepackage[pdfborder={0 0 0}]{hyperref}
-\usepackage{lipsum} % alleen voor voorbeeldteksten
+\usepackage{lipsum} % only used for sample texts
 
 {% endhighlight %}
 
-De uvamath class is standaard ingesteld op Nederlands. Voor Engelse teksten gebruik je de optie @english@ bij zowel @\documentclass@ als @babel@:
+The default language of the uva math class is Dutch. For English text you can use the option @english@ for both @\documentclass@ and @babel@:
 
 {% highlight latex %}
 
@@ -42,7 +41,7 @@ De uvamath class is standaard ingesteld op Nederlands. Voor Engelse teksten gebr
 
 {% endhighlight %}
 
-Vervolgens geven we de titel, auteurs, etc. op. 
+Subsequently we insert the title, authors, etc. 
 
 {% highlight latex %}
 
@@ -51,7 +50,7 @@ Vervolgens geven we de titel, auteurs, etc. op.
 %\author[ingrid@science.uva.nl, 6123102]{Ingrid de Vries}
 %\author[ingrid@science.uva.nl, 6123102]{Ingrid de Vries}
 
-\what{Projectverslag jaar 2} % voorbeeld
+\what{Projectverslag jaar 2} % example
 \supervisors{prof.\ dr.\ Carl Friedrich Gauss}
 \secondgrader{dr.\ Karl Weierstrass}
 
@@ -59,9 +58,9 @@ Vervolgens geven we de titel, auteurs, etc. op.
 
 {% endhighlight %}
 
-Je kunt meerdere auteurs toevoegen door het commando @\author@ te herhalen. Als optioneel argument achter @\author@ geef je je emailadres en studentnummer. Vul voor @bestandsnaam@ de bestandsnaam van een plaatje in. Zorg ervoor dat het plaatje in dezelfde map staat als je tex-bestand. Met @scale@ kun je het plaatje schalen.
+You can add more authors using @\author@. As an optional argument you pass your email address and student number. Replace @bestandsnaam@ by the name of a picture. Make sure this picture is in the same folder as your @.tex@ file. You can resize the picture using @scale@.
 
-Nu zetten we de frontmatter, een samenvatting en de inhoudsopgave.
+We will now create frontmatter, a summary and a table of contents.
 
 {% highlight latex %}
 
@@ -69,34 +68,34 @@ Nu zetten we de frontmatter, een samenvatting en de inhoudsopgave.
 \maketitle
 
 \begin{abstract}
-\lipsum[2-3] %voorbeeldtekst
+\lipsum[2-3] % sample text
 \end{abstract}
 
 \tableofcontents
 
 {% endhighlight %}
 
-Zoals je ziet staat de samenvatting in de @abstract@-omgeving.
+Observe that the summary appears in the @abstract@ environment.
 
-In de rest van het bestand schrijf je de inhoud van het document. Maak hoofdstukken met @\chapter@ en start het appendixdeel met @\appendix@.
+In the rest of the file you write the content of the document. Chapters can be made with @\chapter@ and the appendix with @\appendix@.
 
 {% highlight latex %}
 
-\chapter{Inleiding}
+\chapter{Introduction}
 \lipsum
 
-\chapter{Theorie}
+\chapter{Theories}
 \lipsum[2] 
 
-\chapter{Resultaten}
+\chapter{Results}
 \lipsum[2]
 
-\chapter{Conclusie}
+\chapter{Conclusion}
 \lipsum[1]
 
 \appendix
 
-\chapter{Experimenten}
+\chapter{Experiments}
 \lipsum[2]
 
 \end{document}

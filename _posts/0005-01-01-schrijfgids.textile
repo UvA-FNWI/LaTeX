@@ -1,8 +1,8 @@
 ---
 layout: lesson
-title: Schrijfgids
+title: Nederlandse schrijfgids (Dutch writing guide)
 category: week2
-description: Stijlregels voor wiskunde en LaTeX.
+description: Nederlandse stijlregels voor wiskunde en LaTeX.
 ---
 
 <div class="hide">
@@ -19,7 +19,6 @@ description: Stijlregels voor wiskunde en LaTeX.
 \]
 </notextile>
 </div>
-
 
 In deze les behandelen we vuistregels bij het schrijven van wiskunde. De eerste paragraaf gaat over het opschrijven van wiskunde in het algemeen. De vuistregels hiervoor zijn onafhankelijk van LaTeX. De tweede paragraaf gaat over goed LaTeXen.
 

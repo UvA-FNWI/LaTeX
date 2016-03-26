@@ -1,8 +1,8 @@
 ---
 layout: lesson
-title: Huiswerk
+title: Homework
 category: week1
-description: Een huiswerkopgave LaTeX'en en LaTeX thuis installeren.
+description: LaTeXing a homework exercise.
 ---
 
 <div class="panel panel-primary">
@@ -11,13 +11,13 @@ description: Een huiswerkopgave LaTeX'en en LaTeX thuis installeren.
 </div>
 <div class="panel-body">
 
-# Installeer een "LaTeXdistributie":{{site.baseurl}}{% post_url 0000-06-01-installatie %} op je eigen computer.
+# Installeer een "LaTeXdistributie":{{site.baseurl}}{% post_url 0000-01-01-installinglatex %} op je eigen computer.
 # Test je installatie door in TeXWorks een voorbeeld te compileren.
 
 </div>
 </div>
 
-
+The homework assignment is in Dutch, since the final exam will be in Dutch too. If you're not a native speaker please contact your teacher.
 
 <div class="panel panel-primary">
 <div class="panel-heading">

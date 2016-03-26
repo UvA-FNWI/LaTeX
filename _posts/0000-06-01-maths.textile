@@ -1,117 +1,112 @@
 ---
 layout: lesson
-title: Wiskunde schrijven
+title: Writing mathematical texts
 category: week1
-description: Wiskundeomgeving, tekens, machten en indices, operatoren, breuken, wortels, puntjes, matrices, haakjes, horizontale witruimte, opmaak, lijst van symbolen.
+description: Math environment, characters, powers and indices, operators, fractions, roots, dots, matrices, brackets, horizontal whitespace, layout, list of symbols.
 ---
-
-Een belangrijke reden voor ons om LaTeX te gebruiken is dat het goed is in het zetten van wiskunde. Simpele wiskunde kan zonder packages gezet worden. Wij gebruiken @mathtools@, een uitbreiding van @amsmath@, omdat we ook ingewikkelde wiskunde willen zetten:
+An important reason for using LaTeX is that it is fairly easy to typeset mathematical expressions. For basic mathematics, no packages are needed. We will use @mathtools@, an extension of @amsmath@, since we will typeset more complex expressions:
 
 {% highlight latex %}
 \usepackage{mathtools}
 {% endhighlight %}
 
-In deze les behandelen we veelgebruikte commando's voor het zetten van wiskunde. Zie de "Short Math Guide for LaTeX":ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf en de documentatie van "amsmath":http://www.ctan.org/pkg/amsmath en "mathtools":http://www.ctan.org/pkg/mathtools voor een compleet overzicht.
+This lesson we will discuss some of the most used commands for typesetting mathematics. For more details you can look at this "Short Math Guide for LaTeX":ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf and the documentation of "amsmath":http://www.ctan.org/pkg/amsmath or "mathtools":http://www.ctan.org/pkg/mathtools.
 
-h2. Wiskundige omgevingen
+h2. Mathematical environments
 
-Wiskunde die in een tekstregel staat zoals $1+1=2$ noemen we *inline* wiskunde. Wiskunde gecentreerd op een eigen regel zoals
+Mathematics within text like $1+1=2$ is called *inline* mathematics. A line that consists of a single mathematical expression like
 \[
 1+1=2
 \]
-heet een *display*. _Inline_ wiskunde zet je tussen @$@'s.
+is called a *display*. Inline mathematics can be typeset between @$@s.
 
 <div class="example">
-We weten dat $1+1=2$.
+We know that $1+1=2$.
 </div>
 
 {% highlight latex %}
-We weten dat $1+1=2$.
+We know that $1+1=2$.
 {% endhighlight %}
 
-Wiskunde in een display zet je tussen @\[@ en @\]@.
+Mathematics can be typeset in a display by putting it between @\[@ and @\]@.
 
 
 <div class="example">
-Bekijk de kromme gegeven door de vergelijking
+Examine the curve given by
 \[
-y = x + 2.
+y = x^2 + 2.
 \]
-
-Is deze kromme interessant?
+Does it attain a minimum?
 </div>
 
 {% highlight latex %}
-Bekijk de kromme gegeven door de vergelijking
+Examine the curve given by
 \[
-y = x + 2.
+y = x^2 + 2.
 \]
-Is deze kromme interessant?
+Does it attain a minimum?
 {% endhighlight %}
 
-_Vergeet niet dat een lege regel een nieuwe alinea maakt;_ daarom staan er in bovenstaand voorbeeld geen lege regels voor of na de _display_.
+Recall that an empty line creates a new paragraph. Therefore there are no empty lines before or after the display in this example.
 
-Om de _displays_ automatisch te *nummeren* gebruik je de @equation@-omgeving. We zullen later zien hoe we naar de nummers kunnen verwijzen.
+To *number* displays automatically one uses the @equation@ environment. We will see later how to reference displays.
 
 <div class="example">
-Omdat $a$ en $b$ beide oneven zijn, geldt
+Since both $a$ and $b$ are odd we have
 \begin{equation}
 a + b = 2x
 \end{equation}
-en
+and
 \begin{equation}
 a-b = 2y
 \end{equation}
-voor zekere $x$ en $y$.
+for some $x$ and $y$.
 </div>
 
 {% highlight latex %}
-Omdat $a$ en $b$ beide oneven zijn, geldt
+Since both $a$ and $b$ are odd we have
 \begin{equation}
 a + b = 2x
 \end{equation}
-en
+and
 \begin{equation}
 a-b = 2y
 \end{equation}
-voor zekere $x$ en $y$.
+for some $x$ and $y$.
 {% endhighlight %}
 
-LaTeX werkt in een andere modus in een wiskundige omgeving: *math mode*. Belangrijke verschillen met _text mode_ zijn de volgende.
-* Spaties en line breaks worden genegeerd; witruimte wordt bepaald door de gebruikte operatoren of door speciale commando's.
-* Lege regels zijn niet toegestaan.
-* Een letter wordt beschouwd als de naam van een variabele en wordt ook zo gezet. Als je normale tekst wilt zetten in _math mode_ dan gebruik je een speciaal commando.
+ LaTeX switches to *math mode* in every mathematical environment. The most important differences compared to _text mode_ are:
+* Spaces and line breaks will be ignored; whitespace will be determined by the operators used or by special commands.
+* Blank lines are not permitted.
+* A single letter will be considered the name of a variable and will be typeset accordingly. If you wish to use normal text in _math mode_ you have to use a special command.
 
-In de rest van deze les gaan we ervan uit dat we in _math mode_ werken.
+In the rest of this lesson we will assume that you are working in _math mode_.
 
-h2. Tekens
+h2. Characters
 
-De symbolen
+The symbols
 
 {% highlight latex %}
 + - = ! / ( ) [ ] < > | ' :
 {% endhighlight %}
 
-kun je direct maken in _math mode_. Voor andere symbolen en accenten zijn er commando's. In de rest van deze les zullen we veel symbolen tegenkomen. Als je een symbool nodig hebt waarvan je het commando niet weet dan kun je "detexify":http://detexify.kirelabs.org/ het symbool voor je laten zoeken. Er zijn ook "overzichten":http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols van veelgebruikte symbolen.
+can be inserted directly in _math mode_. For other symbols and accents there exist commands. We will encounter many symbols in this lesson. If you don't know the code for a symbol you can use "detexify":http://detexify.kirelabs.org/. There also exist "overviews":http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols of LaTeX symbols.
 
-Veelgebruikte accenten zijn de volgende.
+The following accents are used frequently:
 
 table(table).
-|_.commando                         |_.uitvoer                        |
+|_.command                         |_.output                        |
 | @a'@, @a''@, @a'''@                   | $a'$, $a''$, $a'''$                 |
 | @\hat{a}@, @\widehat{aa}@                 | $\hat{a}$, $\widehat{aa}$               |
 | @\bar{a}@, @\underline{a}@, @\overline{aa}@         | $\bar{a}$, $\underline{a}$, $\overline{aa}$       |
-| @\grave{a}@, @\acute{a}@, @\breve{a}@, @\check{a}@    | $\grave{a}$, $\acute{a}$, $\breve{a}$, $\check{a}$  |
 | @\dot{a}@, @\ddot{a}@, @\dddot{a}@            | $\dot{a}$, $\ddot{a}$, $\dddot{a}$          |
 | @\not=@                         | $\not=$                       |
 | @\vec{a}@, @\overrightarrow{aa}@, @\overleftarrow{aa}@  | $\vec{a}$, $\overrightarrow{aa}$, $\overleftarrow{aa}$|
 | @\tilde{a}@, @\widetilde{aa}@               | $\tilde{a}$, $\widetilde{aa}$             |
 
+h2. Powers and indices
 
-
-h2. Machten en indices
-
-Machten en indices maak je met het dakje @^@ en het lage streepje @_@. Bijvoorbeeld
+Powers and indices can be inserted using the hat @^@ and the underscore @_@. For example
 
 <div class="example">
 \[
@@ -123,26 +118,26 @@ a^2\quad a_i\quad a_i^2
 a^2  a_i  a_i^2
 {% endhighlight %}
 
-De @_@ en @^@ binden aan de eerstvolgende _groep_. Herinner je dat we groepen maken met @{@ en @}@. Dus
+The @_@ and @^@ bind themselves to the next _group_. Recall that groups can be made with @{@ and @}@. Hence
 
 <div class="example">
 \[
-a^{n+1}\quad  a_{i/2}
+a^{n+1}\quad a^n+1\quad a_{i/2}
 \]
 </div>
 
 {% highlight latex %}
-a^{n+1}  a_{i/2}
+a^{n+1}  a^n+1  a_{i/2}
 {% endhighlight %}
 
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h3 class="panel-title">Opdracht 1</h3>
+<h3 class="panel-title">Exercise 1</h3>
 </div>
 <div class="panel-body">
 
-Zet de machten
+Typeset the powers
 
 <div class="example">
 
@@ -156,16 +151,16 @@ Zet de machten
 
 
 
-h2. Operatoren
+h2. Operators
 
-Een *operator* is een functie geschreven als een woord, bijvoorbeeld $\sin$ en $\log$. LaTeX heeft standaard een aantal operatoren gedefinieerd, zie het overzicht. We maken zelf een operator met @\DeclareMathOperator@ in de preamble.
+An *operator* is a function written as a word, like $\sin$ and $\log$. LaTeX has many predefined operators, but sometimes it is necessary to define one yourself. We create operators using @\DeclareMathOperator@ in the preamble.
 
 <div class="example">
 \[
 \DeclareMathOperator{\tr}{tr}
 \DeclareMathOperator{\ord}{ord}
 \DeclareMathOperator{\Poisson}{Poisson}
-\tr A,\quad \ord{}_a\,\, f = 2,\quad \Poisson(\lambda)
+\tr A,\quad \ord_p{a} = 2,\quad \Poisson(\lambda)
 \]
 </div>
 
@@ -178,17 +173,15 @@ Een *operator* is een functie geschreven als een woord, bijvoorbeeld $\sin$ en $
 
 \begin{document}
 \[
-\tr A, \ord_a f = 2, \Poisson(\lambda)
+\tr A, \ord_p a = 2, \Poisson(\lambda)
 \]
 \end{document}
 {% endhighlight %}
 
 
+h2. Common expressions
 
-
-h2. Veelgebruikte constructies
-
-Een *breuk* maak je met @\frac{teller}{noemer}@. Een *binomiaalcoëfficiënt* maak je met @\binom{n}{k}@. Je kunt breuken in breuken gebruiken.
+A *fraction* can be created using @\frac{2}{3}@. A *binomial coefficient* is made with @\binom{n}{k}@. It is possible to create fractions inside fractions.
 
 <div class="example">
 \[
@@ -200,13 +193,11 @@ Een *breuk* maak je met @\frac{teller}{noemer}@. Een *binomiaalcoëfficiënt* ma
 \frac{\frac{1}{x}+\frac{1}{y}}{y-z}
 {% endhighlight %}
 
-We kunnen @\tfrac@ en @\tbinom@ gebruiken voor kleine breuken en binomialen, bijvoorbeeld _inline_.
+We can use @\tfrac@ and @\tbinom@ for small fractions and binomial coefficients. It is up to the user to decide when to use @\tfrac@.
 
+*Roots* can be inserted as @\sqrt{2}@ or @\sqrt[n]{2}@ for $\sqrt[n]{2}$.
 
-*Wortels* maak je als @\sqrt{2}@ of @\sqrt[n]{2}@ voor $\sqrt[n]{2}$.
-
-
-Een *som* en *integraal* maak je met @\sum@ en @\int@ waarbij je de limieten aangeeft met @^@ en @_@, bijvoorbeeld
+A *sum* or *integral* is given by @\sum@ or @\int@, use @^@ and @_@ to specify the boundaries. For example
 
 <div class="example">
 \[
@@ -219,18 +210,15 @@ Een *som* en *integraal* maak je met @\sum@ en @\int@ waarbij je de limieten aan
 \int_0^\infty e^{-x}\, dx
 {% endhighlight %}
 
-Er zijn meer operatoren die op deze manier limieten zetten, zoals @\prod@ $\prod$ en @\bigcup@ $\bigcup$, zie het overzicht. 
+There are more operators that use @^@ and @_@ for specifying boundaries, for example @\prod@ $\prod$ and @\bigcup@ $\bigcup$. A more detailed list is shown at the end of this page.
 
-
-Met @\ldots@ $\ldots$ en @\cdots@ $\cdots$ maak je *puntjes*. Welke puntjes je moet gebruiken hangt af van de context. Zo schrijven we bijvoorbeeld @1,2\ldots,n@ $1,2,\ldots,n$ en @1\cdot 2 \cdots n@ $1\cdot 2\cdots n$. In het algemeen proberen we de puntjes zo te kiezen dat ze op gelijke hoogte liggen met de omringende operatoren. Het commando @\dots@ probeert dit automatisch te doen.
-
-
+With @\ldots@ $\ldots$ and @\cdots@ $\cdots$ one makes dots. The context determines which dots to use. For example, we write @1,2,\ldots,n@ $1,2,\ldots,n$ and @1\cdot 2 \cdots n@ $1\cdot 2\cdots n$. In general we try to choose the dots in such a way that they are at the same height as the surrounding operators. The command @\dots@ tries to accomplish this.
 
 
 
-h2. Haakjes
+h2. Brackets
 
-*Haakjes* en andere *delimiters* zet je zo:
+*Brackets* and other *delimiters* are typeset in the following way:
 
 <div class="example">
 \[
@@ -248,7 +236,20 @@ h2. Haakjes
 \ulcorner i \urcorner
 {% endhighlight %}
 
-Bovenstaande _delimiters_ kun je schalen met @\bigl@, @\bigr@; @\Bigl@, @\Bigr@; @\biggl@, @\biggr@; @\Biggl@, @\Biggr@.
+You can scale these _delimiters_ automatically using @\left@, @\right@ en @\middle@.
+
+
+<div class="example">
+\[
+\left| \sum_{n=1}^\infty a_n \right| \leq  \sum_{n=1}^\infty \left| a_n \right|
+\]
+</div>
+
+{% highlight latex %}
+\left| \sum_{n=1}^\infty a_n \right| \leq  \sum_{n=1}^\infty \left| a_n \right|
+{% endhighlight %}
+
+You can scale them manually using @\bigl@, @\bigr@; @\Bigl@, @\Bigr@; @\biggl@, @\biggr@; @\Biggl@, @\Biggr@. You should only do this if necessary.
 
 <div class="example">
 \[
@@ -264,15 +265,14 @@ Bovenstaande _delimiters_ kun je schalen met @\bigl@, @\bigr@; @\Bigl@, @\Bigr@;
 P\biggl(A=2 \biggm| \frac{A^2}{B}>4\biggr)
 {% endhighlight %}
 
-Je kunt ook automatisch schalen met @\left@, @\right@ en @\middle@ op de voordehandliggende plaatsen. Dit geeft vaak te grote haakjes dus let goed op!
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h3 class="panel-title">Opdracht 2</h3>
+<h3 class="panel-title">Exercise 2</h3>
 </div>
 <div class="panel-body">
 
-Zet de regel
+Typeset the display
 
 <div class="example">
 
@@ -282,15 +282,15 @@ Zet de regel
 
 </div>
 
-Experimenteer met de grootte van de haakjes om de juiste grootte te vinden.
+Experiment with the size of the brackets to find the right size.
 
 </div></div>
 
 
 
-h2. Horizontale witruimte
+h2. Horizontal whitespace
 
-Soms is het nodig horizontale witruime te maken. Het commando @\quad@ geeft een witruimte even groot als de huidige fontgrootte, dus 10pt bij een 10pt font. Een @\qquad@ geeft twee keer zoveel witruimte. Deze commando's werken ook in _text mode_. In _math mode_ zijn er de volgende extra commando's
+Sometimes it is necessary to create some horizontal whitespace. The command @\quad@ inserts whitespace the size of the font type, so 10pt for a 10pt font. A @\qquad@ inserts twice as much whitespace. These commands also work in _text mode_. In _math mode_ we have the following specific commands:
 
 table(table table-condensed).
 |_.commando |_.lengte |
@@ -310,26 +310,25 @@ table(table table-condensed).
 \int y\, dx
 {% endhighlight %}
 
-h2. Opmaak
+h2. Layout
 
-Met de volgende commando's kunnen we andere fonts kiezen. Voor de laatste twee heb je het package @amssymb@ nodig.
+With the following commands we can choose different fonts. For the last two the package @amssymb@ is required.
 
 table(table table-condensed).
-|_.commando 	|_. voorbeeld		 	|_.						|_. gebruik |
+|_.command 	|_. example		 	|_.						|_. usage |
 | @\mathrm@		| $\mathrm{ABCDEF}$		| $\mathrm{abcdef}$ 	|  |
 | @\mathit@		| $\mathit{ABCDEF}$		| $\mathit{abcdef}$ 	|  |
-| @\mathbf@		| $\mathbf{ABCDEF}$		| $\mathbf{abcdef}$ 	| verzamelingen, vectoren |
+| @\mathbf@		| $\mathbf{ABCDEF}$		| $\mathbf{abcdef}$ 	| sets, vectors |
 | @\mathsf@		| $\mathsf{ABCDEF}$		| $\mathsf{abcdef}$ 	| |
 | @\mathtt@		| $\mathtt{ABCDEF}$		| $\mathtt{abcdef}$ 	| |
-| @\mathcal@	| $\mathcal{ABCDEF}$	| $\mathcal{abcde}$  	| categorieën, big-oh notatie |
-| @\mathfrak@	| $\mathfrak{ABCDEF}$	| $\mathfrak{abcdef}$ 	| Lie-algebra's, idealen |
-| @\mathbb@		| $\mathbb{ABCDEF}$		|  						| verzamelingen |
+| @\mathcal@	| $\mathcal{ABCDEF}$	| $\mathcal{abcde}$  	| categories, big-oh notation |
+| @\mathfrak@	| $\mathfrak{ABCDEF}$	| $\mathfrak{abcdef}$ 	| Lie-algebras, ideals |
+| @\mathbb@		| $\mathbb{ABCDEF}$		|  						| sets |
 
-Het liefst gebruiken we bovenstaande commando's niet direct in de code, maar in een commando, opdat we inhoud en opmaak zoveel mogelijk scheiden. Bijvoorbeeld
-
+We prefer not to use these commands directly in the code, but in a new command to seperate the content and layout. For example:
 
 <div class="example">
-We werken over het lichaam van complexe getallen $\mathbb{C}$.
+The complex numbers $\mathbb{C}$.
 </div>
 
 {% highlight latex %}
@@ -342,22 +341,19 @@ We werken over het lichaam van complexe getallen $\mathbb{C}$.
 \newcommand{\CC}{\field{C}}
 
 \begin{document}
-We werken over het lichaam van complexe getallen $\CC$.
+The complex numbers $\CC$.
 \end{document}
 {% endhighlight %}
 
 
-
-
-
-h2. Lijst van symbolen
+h2. List of symbols
 
 <!-- ['\\exists', '\\nexists', '\\forall', '\\neg', '\\subset\, '\\supset', '\\in', '\\notin', '\\ni', '\\vee', '\\wedge']  -->
 <!-- ['\\rightarrow', '\\leftarrow', '\\mapsto', '\\implies', '\\Rightarrow', '\\leftrightarrow', '\\iff', '\\Leftrightarrow', '\\top', '\\bot', '\\emptyset''] -->
 
 
 
-h5. Verzamelingen, logica, functies
+h5. Sets, logic, functions
 
 | @\exists@ | $\exists$ 	| &emsp;&emsp;&emsp;&emsp; | @\rightarrow@ | $\rightarrow$ |
 | @\nexists@ | $\nexists$ 	| &emsp;&emsp;&emsp;&emsp; | @\leftarrow@ | $\leftarrow$ |
@@ -413,7 +409,7 @@ h5. Verzamelingen, logica, functies
 '\\asymp',
 '\\sqsupset'] -->
 
-h5. Binaire relaties
+h5. Binary relations
 
 | @<@ | $ < $ 						|&emsp;&emsp;&emsp;&emsp;| @>@ | $ > $ |
 | @=@ | $=$ 						|&emsp;&emsp;&emsp;&emsp;| @:@ | $:$ |
@@ -468,7 +464,7 @@ h5. Binaire relaties
 '\\varsigma',
 '\\varphi'] -->
 
-h5. Griekse kleine letters
+h5. Greek letters (lowercase)
 
 | @\alpha@ | $\alpha$ 			|&emsp;&emsp;&emsp;&emsp;| @\iota@ | $\iota$ 		|&emsp;&emsp;&emsp;&emsp; | @\sigma@ | $\sigma$ 	|
 | @\beta@ | $\beta$ 			|&emsp;&emsp;&emsp;&emsp;| @\kappa@ | $\kappa$ 		|&emsp;&emsp;&emsp;&emsp; | @\tau@ | $\tau$ 		|
@@ -482,7 +478,7 @@ h5. Griekse kleine letters
 | @\varepsilon@ | $\varepsilon$ |&emsp;&emsp;&emsp;&emsp;| @\varpi@ | $\varpi$ 		|&emsp;&emsp;&emsp;&emsp;| @\varsigma@ | $\varsigma$|
 | @\vartheta@ | $\vartheta$ 	|&emsp;&emsp;&emsp;&emsp;| @\varrho@ | $\varrho$ 	|&emsp;&emsp;&emsp;&emsp;| @\varphi@ | $\varphi$ 	|
 
-h5. Griekse hoofdletters
+h5. Greek letters (uppercase)
 
 <!--['\\Gamma',
 '\\Delta',
@@ -533,7 +529,7 @@ h5. Griekse hoofdletters
 '\\tan',
 '\\tanh']-->
 
-h5. Operatoren zonder 'limieten'
+h5. Operators without 'limits'
 
 | @\arccos@ | $\arccos$ |&emsp;&emsp;&emsp;&emsp;| @\cot@ | $\cot$ 		|&emsp;&emsp;&emsp;&emsp;| @\hom@ | $\hom$ 	|&emsp;&emsp;&emsp;&emsp;| @\sin@ | $\sin$ |
 | @\arcsin@ | $\arcsin$ |&emsp;&emsp;&emsp;&emsp;| @\coth@ | $\coth$	|&emsp;&emsp;&emsp;&emsp;| @\ker@ | $\ker$ 	|&emsp;&emsp;&emsp;&emsp;| @\sinh@ | $\sinh$ |
@@ -562,7 +558,7 @@ h5. Operatoren zonder 'limieten'
 '\\varlimsup',
 '\\varprojlim']-->
 
-h5. Operatoren met 'limieten'
+h5. Operators with 'limits'
 
 | @\det@ | $\det$ 				|&emsp;&emsp;&emsp;&emsp;| @\limsup@ | $\limsup$ |
 | @\gcd@ | $\gcd$ 				|&emsp;&emsp;&emsp;&emsp;| @\max@ | $\max$ |
@@ -640,7 +636,7 @@ h5. Operatoren met 'limieten'
 '\\boxplus',
 '\\vartriangle']-->
 
-h5. Binaire operatoren
+h5. Binary operators
 
 | @+@ | $+$ 									|&emsp;&emsp;&emsp;&emsp;| @-@ | $-$ |
 | @\pm@ | $\pm$ 								|&emsp;&emsp;&emsp;&emsp;| @\mp@ | $\mp$ |
@@ -691,7 +687,7 @@ h5. Binaire operatoren
 '\\beth',
 '\\gimel']-->
 
-h5. Grote operatoren
+h5. Large operators
 
 | @\sum@ | $\sum$           |&emsp;&emsp;&emsp;&emsp; | @\prod@     |$\prod$      |&emsp;&emsp;&emsp;&emsp; | @\coprod@   | $\coprod$   |
 | @\bigoplus@ | $\bigoplus$ |                         | @\bigotimes@|$\bigotimes$ |                         | @\bigodot@  | $\bigodot$  |
@@ -700,7 +696,7 @@ h5. Grote operatoren
 | @\int@ | $\int$           |                         | @\oint@     |$\oint$      |                         | @\iint@     | $\iint$     |
 | @\iiint@ | $\iiint$       |                         | @\iiiint@   |$\iiiint$    |                         | @\idotsint@ | $\idotsint$ |
 
-h5. Overig
+h5. Miscellaneous
 
 | @\partial@ | $\partial$ |
 | @\eth@ | $\eth$ |
@@ -724,10 +720,11 @@ h5. Overig
 
 
 ---
+The next two exercises are about typesetting theorems in Dutch and hence are entirely in Dutch.
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h3 class="panel-title">Opdracht 3</h3>
+<h3 class="panel-title">Exercise 3</h3>
 </div>
 <div class="panel-body">
 # Maak een nieuw LaTeX-bestand met de volgende inhoud.
@@ -785,7 +782,7 @@ h5. Overig
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h3 class="panel-title">Opdracht 4</h3>
+<h3 class="panel-title">Exercise 4</h3>
 </div>
 <div class="panel-body">
 
@@ -819,14 +816,13 @@ h5. Overig
 
 <div class="panel panel-success">
 <div class="panel-heading">
-<h3 class="panel-title">Onthouden</h3>
+<h3 class="panel-title">Remember</h3>
 </div>
 <div class="panel-body">
-
-* Hoe krijg ik een wiskundeomgeving? Welke regels gelden in _math mode_?
-* Hoe maak ik speciale tekens? Wat is "detexify":http://detexify.kirelabs.org?
-* Wat doen @$@, @\[@ @\]@, @_@, @^@, @\alpha@, @\sin@, @\log@, @\frac@, @\binom@, @\sqrt[n]@, @\sum@, @\int@, @()@, @[]@, @\{ \}@, @| |@, @\big@, @\Big@, @\bigg@, @\Bigg@?
-* Hoe maak ik een eigen operator?
-* Hoe maak ik horizontale witruimte?
+* What is a math environment? What rules apply in math mode?
+* How to insert special characters? What is "Detexify":http://detexify.kirelabs.org?
+* What do @$@, @\[@ @\]@, @_@, @^@, @\alpha@, @\sin@, @\log@, @\frac@, @\binom@, @\sqrt[n]@, @\sum@, @\int@, @()@, @[]@, @\{ \}@, @| |@, @\big@, @\Big@, @\bigg@ and @\Bigg@ do?
+* How to create your own operator?
+* How to insert horizontal whitespace?
 
 </div></div>

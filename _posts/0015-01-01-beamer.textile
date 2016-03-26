@@ -2,12 +2,12 @@
 layout: lesson
 title: LaTeX Beamer
 category: week4
-description: Presentaties met LaTeX Beamer
+description: Presentations with LaTeX Beamer.
 ---
 
-h2. Structuur van een presentatie
+h2. Structure of a presentation
 
-In LaTeX kun je presentaties maken met de document class @beamer@. Een lege beamerpresentatie ziet er zo uit.
+In LaTeX it is possible to make presentations using the document class @beamer@. An empty presentation looks as follows:
 
 {% highlight latex %}
 
@@ -23,7 +23,7 @@ In LaTeX kun je presentaties maken met de document class @beamer@. Een lege beam
 
 {% endhighlight %}
 
-Om slides te maken gebruik je de @frame@-omgeving met als argument de title van je slide. Schrijf bijvoorbeeld (in de @document@-omgeving)
+To make slides you can use the @frame@ environment with the title of your slide as the single argument. For example one could write (inside the @document@ environment):
 
 {% highlight latex %}
 
@@ -31,38 +31,38 @@ Om slides te maken gebruik je de @frame@-omgeving met als argument de title van 
 \titlepage
 \end{frame}
 
-\begin{frame}{Artikel}
-Hier kun je tekst schrijven.
+\begin{frame}{Article}
+Some text about the article.
 \end{frame}
 
 \begin{frame}{Mathematica}
-En nog meer tekst.
+A helpful tool for mathematicians.
 \end{frame}
 
 {% endhighlight %}
 
-Dit geeft een titelslide en twee slides met een kopje en wat tekst.
+This gives a title slide and two slides with a header and some text.
 
-Om de informatie in je presentatie te ordenen gebruik je de @block@, @columns@, @enumerate@ en @itemize@-omgevingen. De @block@-omgeving is een speciale @beamer@-omgeving die je als volgt gebruikt.
+To order the information in your presentation you can use the @block@, @columns@, @enumerate@ and @itemize@ environments. The @block@ environment is a @beamer@ specific environment which can be used in the following way:
 
 {% highlight latex %}
 
-\begin{frame}{Artikel}
+\begin{frame}{Article}
 
-\begin{block}{Definitie}
-Dit is een definitie.
+\begin{block}{Example}
+This is an example of a block.
 \end{block}
 
-\begin{block}{Stelling van Euclides}
-Dit is een stelling.
+\begin{block}{Euclid's theorem}
+This is a theorem.
 \end{block}
 
 \end{frame}
 {% endhighlight %}
 
-Als je geen kopje boven je @block@ wilt geef je een lege groep @{}@ achter @\begin{block}@.
+The block's header can be removed by adding an empty group @{}@ after @\begin{block}@.
 
-Met de @columns@-omgeving kun je elementen naast elkaar zetten. Je maakt zo bijvoorbeeld twee kolommen met breedte 3cm.
+With the @column@ environment it is possible to place objects next to each other. We will show how to make two columns 3cm wide.
 
 {% highlight latex %}
 
@@ -71,11 +71,11 @@ Met de @columns@-omgeving kun je elementen naast elkaar zetten. Je maakt zo bijv
 \begin{columns}
 
   \begin{column}{3cm}
-  asdf
+  Text 1.
   \end{column}
 
   \begin{column}{3cm}
-  asdf
+  Text 2.
   \end{column}
 
 \end{columns}
@@ -84,33 +84,31 @@ Met de @columns@-omgeving kun je elementen naast elkaar zetten. Je maakt zo bijv
 
 {% endhighlight %}
 
-
-Als je de elementen van je slide een voor een wilt laten verschijnen gebruik je het commando @\pause@. Dit commando kun je bijna overal in de code plaatsen. Bijvoorbeeld tussen twee @block@-omgevingen
+If you want the elements of your slide to appear one by one you can use @\pause@. This command can be placed almost anywhere in the code. For example between two @block@ environments:
 
 {% highlight latex %}
 
-\begin{frame}{Artikel}
+\begin{frame}{Article}
 
-\begin{block}{Definitie}
-Dit is een definitie.
+\begin{block}{Definition}
+This is a definition.
 \end{block}
 
 \pause
 
-\begin{block}{Stelling van Euclides}
-Dit is een stelling.
+\begin{block}{Euclid's theorem}
+This is a theorem.
 \end{block}
 
 \end{frame}
 
 {% endhighlight %}
 
-
-of in een @enumerate@
+or in an @enumerate@
 
 {% highlight latex %}
 
-\begin{frame}{Titel}
+\begin{frame}{Title}
 
 \begin{enumerate}
 \item Element
@@ -125,9 +123,9 @@ of in een @enumerate@
 {% endhighlight %}
 
 
-h2. Opmaak
+h2. Layout
 
-In bovenstaand voorbeeld gebruikten we het thema @Copenhagen@. Er zijn meer thema's. Zie bijvoorbeeld de "Beamer Theme Matrix":http://www.hartwork.org/beamer-theme-matrix/. Probeer bijvoorbeeld in de preamble
+Previously we used the beamer theme @Copenhagen@. More themes can be found in the "Beamer Theme Matrix":http://www.hartwork.org/beamer-theme-matrix/. Try adding the following lines in the preamble.
 
 {% highlight latex %}
 
@@ -136,30 +134,32 @@ In bovenstaand voorbeeld gebruikten we het thema @Copenhagen@. Er zijn meer them
 
 {% endhighlight %}
 
-h2. Voorbeeldpresentatie
+A beamer template in the style of the University of Amsterdam can be found "here":http://bliggy.net/UvABeamer.html.
 
-Zie blackboard voor een voorbeeldbestand met een mogelijke indeling voor je presentatie.
+h2. Sample presentation
 
-h2. Stijltips voor een korte presentatie
+On Blackboard a sample @.tex@ document can be found which you can use for your presentation.
 
-h4. Isoleer de hoofdzaak, en vertel die in een vroeg stadium.
+h2. Tips for a short presentation
 
-Probeer je medestudenten één ding mee te geven; als dat lukt, is je presentatie al geslaagd. Als je wilt dat het publiek iets onthoud, vertel het dan vroeg in de presentatie.
+h4. Isolate the main subject and make sure to cover it early in your presentation.
 
-h4. Gebruik weinig tekst en veel plaatjes.
+Try to deliver one message to your fellow students; if you succeed doing just that, your presentation is already a success. If you want your audience to remember something, tell it early on in your presentation.
 
-Een presentatie is in beginsel een verhaal dat de spreker mondeling vertelt aan het publiek. De @beamer@ slides dienen alleen ter ondersteuning. Schrijf daarom niet alles wat je vertelt in je slides, maar alleen steekwoorden, kernzinnen en belangrijke formules. Probeer tekst te vervangen door plaatjes als dat kan.
+h4. Use pictures instead of text
 
-h4. Gebruik weinig abstracte definities en veel voorbeelden.
+A presentation is a story that the presenter tells the audience. The @beamer@ slides only serve to support that story. Don't write down everything that you want to tell, filter the content. Try to replace text by pictures where possible.
 
-Abstracte definities kunnen voor je publiek moeilijk te begrijpen zijn. Omring je definities daarom altijd met voorbeelden. Soms werkt het zelfs goed om een voorbeeld te geven voordat je de definitie geeft.
+h4. Examples instead of abstract definitions
 
-h4. Let op de tijd.
+Abstract definitions can be hard for the audience to grasp immediately. Illustrate definitions using examples. Sometimes it is convenient to give an example before stating the formal definition.
 
-Voor deze presentatie krijg je 5 minuten. Hou hier rekening mee bij het maken van je presentatie en oefen je presentatie om te zien of het de juiste lengte heeft. Stem het aantal slides af op de lengte van de presentatie.
+h4. Watch the time
+
+You only get 5 minutes for this presentation. Keep this in mind when creating the presentation and make sure to practise it to ensure its length is good. Also keep the length in mind when choosing the number of frames.
 
 ---
-h3. Referenties
+h3. References
 # Landsman. "_Hoe geef ik een wiskundige voordracht?_":http://www.nieuwarchief.nl/serie5/pdf/naw5-2001-02-4-351.pdf
 
 

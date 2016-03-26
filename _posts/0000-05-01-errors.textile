@@ -1,35 +1,27 @@
 ---
 layout: lesson
-title: Foutmeldingen en waarschuwingen
+title: Errors en warnings.
 category: week1
-description: Errors en warnings.
+description: Error fixing 101.
 ---
 
 {{toc}}
 
-Als LaTeX code tegenkomt die het niet begrijpt dan geeft het een foutmelding. Het kan ook waarschuwingen geven.
+If LaTeX runs into code it doesn't understand it will stop typesetting and will give information about the error. It can also output warnings.
 
-h2. Foutmeldingen
+h2. Errors
 
-Standaard in TeXworks als LaTeX een fout tegenkomt dan laat het een foutmelding zien in de @console@ en wacht. Een foutmelding heeft de vorm
+If TeXworks encounters an error it will show a message in the @console@ and wait. Such a message looks like
 
 {% highlight text %}
 ! Undefined control sequence.
 l.6 \authr
 {% endhighlight %}
 
-De foutmelding begint met een uitroepteken en een beschrijving van de fout (@Undefined control sequence@), met daaronder het regelnummer (@6@) en het commando waar de fout optrad (@\authr@). Let op: _de plaats waar de fout optreed is vaak niet de plaats waar de fout in de code zit_. Als je bijvoorbeeld een @}@ vergeet dan komt LaTeX daar vaak pas aan het einde van de alinea achter. Na een foutmelding kun je in TeXworks op de rode knop drukken en het probleem oplossen of je voert een van de volgende termen in.
+It starts with an exclamation mark and a description of the error (@Undefined control sequence@), followed by the line number (@6@) and the command where the error occured (@\authr@). Watch out: the line number that is displayed doesn't have to be the location where the error in your code was made. For example, if you forget a @}@ then LaTeX will probably find out at the end of a paragraph. 
+When an error is encountered you can stop typesetting and fix it. Alternatively, there are ways to surpress errors, but we recommend that you always fix your errors. If you don't do this, it is possible that the errors stack up and the output is not as desired.
 
-table(table table-condensed).
-|_.invoer		|_.betekenis |
-|@x@			| stop  |
-|@h@			| geef meer informatie  |
-|@i correctie@	| voeg de gegeven correctie in op de plek van het probleem en ga door; de correctie wordt niet opgeslagen |
-|@r@			| ga door en stop niet meer bij fouten  |
-|@q@			| ga door, stop nier meer bij fouten en laat geen foutmeldingen zien |
-
-
-We bekijken nu een aantal veelvoorkomende fouten.
+We will now discuss some errors that occur very often.
 
 h4. Too many }'s
 
@@ -38,7 +30,7 @@ h4. Too many }'s
 l.6 \date December 2004}
 {% endhighlight %}
 
-Er is een @}@ waar geen @{@ bij hoort. In dit geval komt dit doordat de @{@ na @\date@ is vergeten.
+There is a @}@ without a matching @{@. In this case we forgot @{@ after @\date@.
 
 h4. Undefined control sequence
 
@@ -48,7 +40,7 @@ l.6 \dtae
 {December 2004}
 {% endhighlight %}
 
-Er is een onbekend commando gebruikt, in dit geval @\dtae@ wat @\date@ moet zijn.
+An unknown command was used, here @\dtae@, which should have been @\date@.
 
 h4. Missing $ inserted
 
@@ -59,7 +51,7 @@ h4. Missing $ inserted
 l.6 \alpha
 {% endhighlight %}
 
-Er is een math commando gebruikt in tekstmodus, in dit geval @\alpha@.
+A math command was used in text mode, in this case @\alpha@.
 
 h4. Runaway argument
 
@@ -72,7 +64,7 @@ Runaway argument?
 l.8
 {% endhighlight %}
 
-In dit voorbeeld is de @}@ van het @\date@-commando vergeten
+In this example we forgot the @}@ belonging to the @\date@ command.
 
 h4. Missing package
 
@@ -83,7 +75,8 @@ or enter new name. (Default extension: sty)
 Enter file name:
 {% endhighlight %}
 
-In dit voorbeeld is de naam @babel@ verkeerd geschreven. Het kan ook voorkomen dat de naam wel juist geschreven is maar dat het package niet geïnstalleerd is. Je kunt een package installeren met de TeX Live Utility of het @.sty@-bestand downloaden van "CTAN":http://www.ctan.org en in de map van je LaTeX-bestand zetten.
+Here we misspelled @babel@. It could also happen that the name is correct but the package is not installed yet. Packages can be installed with the TeX Live Utility if you're using TeX Live. 
+You can also put the @.sty@ file of the package (download it from "CTAN":http://www.ctan.org) in the folder of your @.tex@ file.
 
 h4. \begin{itemize} ended by \end{document}.
 
@@ -92,7 +85,7 @@ h4. \begin{itemize} ended by \end{document}.
 l.127 \end{document}
 {% endhighlight %}
 
-Er is een @\begin{itemize}@ aangetroffen zonder @\end{itemize}@. Dit is een typisch voorbeeld van een fout die pas heel laat herkend wordt.
+LaTeX found a @\begin{itemize}@ without an @\end{itemize}@. This is a typical example of a mistake which is discovered very late (the mistake somewhere around line 20 is discovered at line 127).
 
 h4. Package babel Error: You haven't loaded the language dutch yet.
 
@@ -106,18 +99,19 @@ Type  H <return>  for immediate help.
 l.3 \select@language{dutch}
 {% endhighlight %}
 
-Dit probleem treedt op wanneer je van taal wisselt met het @babel@-package. De oplossing is om het @.aux@-bestand te wissen. Doe dit in TeXworks met @File -> Remove Aux Files@. (Krijg je een foutmelding over rechten/permissions als je dit doet? Zorg ervoor dat je in een van je eigen mappen werkt, dus niet een temp map. Verplaats zonodig je tex-bestand.)
+This happens when one changes the language in the @babel@ package. The solution is to delete the @.aux@ file. In TeXworks this can be done by @File -> Remove Aux Files@. 
+(If you get an error about permissions when doing this, you have to make sure to work in one of your own folders and not in a temporary folder. Moving your @.tex@ file will solve your problem.)
 
 
-h2. Waarschuwingen
+h2. Warnings
 
-LaTeX geeft soms waarschuwingen. Als je bijvoorbeerbeeld @\maketitle@ gebruikt maar geen auteur hebt opgegeven dan krijg je de melding
+Sometimes LaTeX gives warnings. For example if you use @\maketitle@ but never inserted an author it will display:
 
 {% highlight text %}
 LaTeX Warning: No \author given.
 {% endhighlight %}
 
-LaTeX zal niet stoppen na een waarschuwing. Om in TeXworks de waarschuwingen te zien, ga je naar @Window -> Show Console Output@.
+LaTeX won't stop typesetting after a warning. To see a list of warnings in TeXworks go to @Window -> Show Console Output@.
 
 h4. Overfull hbox
 
@@ -126,33 +120,33 @@ Overfull \hbox (10.00104pt too wide) in paragraph at lines 6--7
 []\OT1/cmr/m/n/10
 {% endhighlight %}
 
-Deze waarschuwing geeft aan dat er een woord is dat niet goed op de regel past. Dit komt bijvoorbeeld doordat LaTeX niet weet hoe het een woord moet afbreken of doordat er een lange regel in _math mode_ in de zin staat. Je kunt dit oplossen door afbrekingspunten toe te voegen of de tekst te herschrijven. Desnoods kun je een @\\@ invoegen, maar dit moet je pas doen als de tekst helemaal af is. Het tegenovergestelde van _overfull_ is _underfull_.
+This warning indicates that a word does not fit on a line correctly. This happens when LaTeX doesn't know how to break a word or because there is a long line in math mode in a sentence. It can be solved by adding @\-@ to words, as discussed previously. If nothing works you can add @\\@ to break a line manually but this only should be done when the entire text is finished. 
+The converse of an _overfull_ box is an _underfull_ box.
 
-h2. Fouten oplossen
+h2. Solving errors
 
-Tot slot geven we een aantal algemene tips voor het oplossen van fouten.
+We conclude with a few general tips on how to solve errors. 
 
-h4. Vind het probleem door code tijdelijk in een commentaarregel te zetten
+h4. Find the problem by commenting out text temporarily
 
-Meestal weet je niet precies waar de fout wordt veroorzaakt in je code. Om hier achter te komen kun je delen van je code veranderen naar commentaar door er @%@en voor te zetten. In TeXworks doe je dat door de code te selecteren en dan op @Format -> Comment@ te klikken.
+Often you don't know what exactly causes the error. To discover the cause it can be useful to turn off parts of your code using @%@. In TeXworks you can also click @Format -> Comment@. If the code runs afterwards, the mistake has to be in the part which you commented out.
 
-h4. Verwijder de hulpbestanden
+h4. Delete auxillary files
 
-Soms wordt een fout veroorzaakt door de hulpbestanden. Als je een onverklaarbare fout tegenkomt, kan het dus helpen deze te verwijderen. Klik in TeXworks op @File -> Remove Aux Files@.
+Sometimes an error is caused by auxillary files. If you cannot explain an error, try deleting these files. In TeXworks this can be done with @File -> Remove Aux Files@.
 
-h4. Compileer regelmatig
+h4. Typeset regularly
 
-Als je zelf aan een LaTeX-bestand werkt, is het een goede gewoonte om steeds nadat je een of twee nieuwe zinnen getikt hebt, je document te LaTeX-en totdat alle fouten verwijderd zijn. Als je dat niet doet, stapelen de fouten zich op en eindig je met een onafzienbare kluwen incorrecte code die bijna niet meer te debuggen valt.
+It is considered a good habit to typeset your document after typing a few new sentences. If you typeset after 100 lines it can be hard to trace back your errors. Once you get more familiar with writing @.tex@ documents you can reduce this, e.g. typeset only once a paragraph is finished.
 
 ---
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-<h3 class="panel-title">Opdracht</h3>
+<h3 class="panel-title">Exercise</h3>
 </div>
 <div class="panel-body">
-Repareer alle fouten in onderstaande LaTeX-code. Laat je werk controleren door een van de docenten.
-
+Fix all mistakes in the Dutch article below. Let one of your teachers check your solution.
 {% highlight text %}
 
 \documentclass[a4paper]{article}
@@ -187,12 +181,11 @@ Dit proces kan eindeloos worden voortgezet: het getal $N_k$ heeft ten minste $k$
 
 <div class="panel panel-success">
 <div class="panel-heading">
-<h3 class="panel-title">Onthouden</h3>
+<h3 class="panel-title">Remember</h3>
 </div>
 <div class="panel-body">
-
-* Wat zijn de onderdelen van een foutmelding? 
-* Wat doe je met een foutmelding? 
-* Waar vind je waarschuwingen?
+* What does an error consist of?
+* What to do with an error?
+* Where can you find warnings?
 
 </div></div>

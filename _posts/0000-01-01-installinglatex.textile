@@ -1,0 +1,16 @@
+---
+layout: lesson
+title: Installing LaTeX
+category: week1
+description: TeX Live or MacTeX.
+---
+
+LaTeX is installed by installing a *distribution*. A distribution is a collection of packages and programs. We recommend the following distributions:
+
+h4. Windows and Linux
+
+"TeX Live":http://www.tug.org/texlive/. On Linux you can also use a package manager; e.g. in Ubuntu you can use the command @sudo apt-get install texlive@. TeX Live also contains TeXworks, the editor we will use throughout this course.
+
+h4. MacOS
+
+"MacTeX":http://www.tug.org/mactex/. This is the Mac version of TeX Live.
