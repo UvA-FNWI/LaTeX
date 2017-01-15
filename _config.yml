@@ -1,7 +1,5 @@
-markdown: kramdown
-kramdown: 
-  parse_block_html: true
-pygments: false
+markdown: maruku
+pygments: true
 
 permalink: /:categories/:title/
 baseurl: /LaTeX
@@ -14,5 +12,3 @@ weeks:
   week2: Week 2
   week3: Week 3
   week4: Week 4
-
-

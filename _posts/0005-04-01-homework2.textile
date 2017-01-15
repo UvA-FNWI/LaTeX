@@ -1,0 +1,23 @@
+---
+layout: lesson
+title: Sample exam and homework
+category: week2
+description: The final exam from 2016.
+---
+
+The exam next week consists of two parts:
+# Typeset a given text using LaTeX.
+# Solve a math problem and write both the problem and your solution down in LaTeX.
+
+Please note the final exam _is in Dutch_. You are allowed to use the internet during the test, but you cannot communicate with your fellow students.
+In the second exercise we will see if you are able to write down your own proof correctly, see the "Schrijfgids":{{site.baseurl}}{% post_url 0005-01-01-schrijfgids %} for guidelines. On "Blackboard":http://blackboard.uva.nl you can find the exam of 2016.
+
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">Exercise</h3>
+</div>
+<div class="panel-body">
+
+Make last years exam. This is just for practice, we will not mark your exercises. The solution is also available on "Blackboard":http://blackboard.uva.nl. If you have any questions about it you can email your instructors. 
+
+</div></div>

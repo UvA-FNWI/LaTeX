@@ -1,0 +1,165 @@
+---
+layout: lesson
+title: LaTeX Beamer
+category: week4
+description: Presentations with LaTeX Beamer.
+---
+
+h2. Structure of a presentation
+
+In LaTeX it is possible to make presentations using the document class @beamer@. An empty presentation looks as follows:
+
+{% highlight latex %}
+
+\documentclass{beamer}
+\usetheme{Copenhagen}
+
+\author{Bert}
+\title{A tale of two primes}
+
+\begin{document}
+
+\end{document}
+
+{% endhighlight %}
+
+To make slides you can use the @frame@ environment with the title of your slide as the single argument. For example one could write (inside the @document@ environment):
+
+{% highlight latex %}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Article}
+Some text about the article.
+\end{frame}
+
+\begin{frame}{Mathematica}
+A helpful tool for mathematicians.
+\end{frame}
+
+{% endhighlight %}
+
+This gives a title slide and two slides with a header and some text.
+
+To order the information in your presentation you can use the @block@, @columns@, @enumerate@ and @itemize@ environments. The @block@ environment is a @beamer@ specific environment which can be used in the following way:
+
+{% highlight latex %}
+
+\begin{frame}{Article}
+
+\begin{block}{Example}
+This is an example of a block.
+\end{block}
+
+\begin{block}{Euclid's theorem}
+This is a theorem.
+\end{block}
+
+\end{frame}
+{% endhighlight %}
+
+The block's header can be removed by adding an empty group @{}@ after @\begin{block}@.
+
+With the @column@ environment it is possible to place objects next to each other. We will show how to make two columns 3cm wide.
+
+{% highlight latex %}
+
+\begin{frame}{Mathematica}
+
+\begin{columns}
+
+  \begin{column}{3cm}
+  Text 1.
+  \end{column}
+
+  \begin{column}{3cm}
+  Text 2.
+  \end{column}
+
+\end{columns}
+
+\end{frame}
+
+{% endhighlight %}
+
+If you want the elements of your slide to appear one by one you can use @\pause@. This command can be placed almost anywhere in the code. For example between two @block@ environments:
+
+{% highlight latex %}
+
+\begin{frame}{Article}
+
+\begin{block}{Definition}
+This is a definition.
+\end{block}
+
+\pause
+
+\begin{block}{Euclid's theorem}
+This is a theorem.
+\end{block}
+
+\end{frame}
+
+{% endhighlight %}
+
+or in an @enumerate@
+
+{% highlight latex %}
+
+\begin{frame}{Title}
+
+\begin{enumerate}
+\item Element
+\pause
+\item Element
+\pause
+\item Element
+\end{enumerate}
+
+\end{frame}
+
+{% endhighlight %}
+
+
+h2. Layout
+
+Previously we used the beamer theme @Copenhagen@. More themes can be found in the "Beamer Theme Matrix":http://www.hartwork.org/beamer-theme-matrix/. Try adding the following lines in the preamble.
+
+{% highlight latex %}
+
+\usetheme{Warsaw}
+\usecolortheme{beaver}
+
+{% endhighlight %}
+
+A beamer template in the style of the University of Amsterdam can be found "here":http://bliggy.net/UvABeamer.html.
+
+h2. Sample presentation
+
+On Blackboard a sample @.tex@ document can be found which you can use for your presentation.
+
+h2. Tips for a short presentation
+
+h4. Isolate the main subject and make sure to cover it early in your presentation.
+
+Try to deliver one message to your fellow students; if you succeed doing just that, your presentation is already a success. If you want your audience to remember something, tell it early on in your presentation.
+
+h4. Use pictures instead of text
+
+A presentation is a story that the presenter tells the audience. The @beamer@ slides only serve to support that story. Don't write down everything that you want to tell, filter the content. Try to replace text by pictures where possible.
+
+h4. Examples instead of abstract definitions
+
+Abstract definitions can be hard for the audience to grasp immediately. Illustrate definitions using examples. Sometimes it is convenient to give an example before stating the formal definition.
+
+h4. Watch the time
+
+You only get 5 minutes for this presentation. Keep this in mind when creating the presentation and make sure to practise it to ensure its length is good. Also keep the length in mind when choosing the number of frames.
+
+---
+h3. References
+# Landsman. "_Hoe geef ik een wiskundige voordracht?_":http://www.nieuwarchief.nl/serie5/pdf/naw5-2001-02-4-351.pdf
+
+
