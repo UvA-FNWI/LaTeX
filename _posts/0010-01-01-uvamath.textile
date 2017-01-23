@@ -7,7 +7,7 @@ description: The uvamath document class.
 
 For the project we use the @uvamath@ document class. In this lesson we will introduce this class.
 
-*1. Download the "uvamath class":https://github.com/jzuiddam/uvamath/archive/master.zip. Unzip the file.*
+*1. Download the <a href="Projectverslag.zip">uvamath class</a>:. Unzip the file.*
 The folder contains three files:
 
 * @uvalogo.png@ -- the UvA logo
