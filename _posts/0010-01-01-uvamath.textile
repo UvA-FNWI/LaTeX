@@ -15,7 +15,7 @@ The folder contains several files:
 * @uvamath.cls@ -- the uvamath document class
 * @vbComputeralgebra-LaTeX.tex@ -- the template for this class' report
 
-*2. Open (first rename) @vvbComputeralgebra-LaTeX.tex@.*
+*2. Open (maybe rename) @vbComputeralgebra-LaTeX.tex@.*
 You write your report in this file.
 
 *3. Fill in some details.*
