@@ -88,7 +88,7 @@ In the rest of the file you write the content of the document. Chapters can be m
 \chapter{Introduction}
 \lipsum
 
-\chapter{Experiments}
+\chapter{Approach}
 \lipsum[2] 
 
 \chapter{Results}
@@ -96,6 +96,12 @@ In the rest of the file you write the content of the document. Chapters can be m
 
 \chapter{Conclusion}
 \lipsum[1]
+
+\addcontentsline{toc}{chapter}{Bibliografie}
+\begin{thebibliography}{}
+\bibitem{some_label}
+The article you are working from.
+\end{thebibliography}
 
 \appendix
 
