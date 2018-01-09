@@ -7,16 +7,16 @@ description: Nederlandse stijlregels voor wiskunde en LaTeX.
 
 <div class="hide">
 
-\\\[
-    \\newcommand{\\field}\[1\]{\\mathbb{\#1}}
-    \\newcommand{\\Z}{\\field Z}
-    \\newcommand{\\N}{\\field N}
-    \\newcommand{\\R}{\\field R}
-    \\newcommand{\\ideal}\[1\]{\\mathfrak{\#1}}
-    \\newcommand{\\ggd}{\\mathrm{ggd}}
-    \\DeclareMathOperator{\\Tr}{Tr}
-    \\DeclareMathOperator{\\ord}{ord}
-\\\]
+\[
+    \newcommand{\field}[1]{\mathbb{\#1}}
+    \newcommand{\Z}{\field Z}
+    \newcommand{\N}{\field N}
+    \newcommand{\R}{\field R}
+    \newcommand{\ideal}[1]{\mathfrak{\#1}}
+    \newcommand{\ggd}{\mathrm{ggd}}
+    \DeclareMathOperator{\Tr}{Tr}
+    \DeclareMathOperator{\ord}{ord}
+\]
 
 </div>
 In deze les behandelen we vuistregels bij het schrijven van wiskunde. De
@@ -41,7 +41,7 @@ Je dient een zin niet te beginnen met een formule. Je zet er woorden
 voor:
 
 <div class="example">
-Er geldt \$a=1\$. We zien dat \$f(1) = \\pi\$.
+Er geldt \$a=1\$. We zien dat \$f(1) = \pi\$.
 
 </div>
 Voor symbolen geldt hetzelfde:
@@ -54,24 +54,30 @@ Een zin eindigt altijd met een punt, ook als de zin op een formule
 eindigt:
 
 <div class="example">
-Neem een geheel getal \$n \\not= 0\$ en definieer\
-\\\[\
-(\\Z/n\\Z)\^\* = \\{a \\in \\Z/n\\Z : \\gcd(a, n) = 1\\}.\
-\\\]
+Neem een geheel getal \$n \not= 0\$ en definieer
+
+\[
+
+(\Z/n\Z)\^\* = \{a \in \Z/n\Z : \gcd(a, n) = 1\}.
+
+\]
 
 </div>
 Als een zin na een formule doorgaat, schrijf dan een passend leesteken,
 bijvoorbeeld een komma:
 
 <div class="example">
-Het teken definieert voor \$n \\geq 2\$ een surjectief homomorfisme\
-\\\[\
-\\varepsilon : S\_n \\to \\{+1, -1\\},\
-\\\]
+Het teken definieert voor \$n \geq 2\$ een surjectief homomorfisme
 
-met andere woorden, \$\\varepsilon(\\sigma \\tau) =
-\\varepsilon(\\sigma)\\varepsilon(\\tau)\$ voor alle \$\\sigma,\\tau
-\\in S\_n\$.
+\[
+
+\varepsilon : S\_n \to \{+1, -1\},
+
+\]
+
+met andere woorden, \$\varepsilon(\sigma \tau) =
+\varepsilon(\sigma)\varepsilon(\tau)\$ voor alle \$\sigma,\tau
+\in S\_n\$.
 
 </div>
 ### A.2. Verdeel de tekst in alinea's en paragrafen
@@ -90,7 +96,7 @@ Paragrafen kun je van elkaar scheiden met kopjes.
 
 In eerste instantie zal er misschien spreektaal uit je toetsenbord
 komen, maar pas dat aan in een volgende redactieslag. Bijvoorbeeld, je
-zegt 'in de \$\\R\^2\$', maar je schrijft 'in \$\\R\^2\$'.
+zegt 'in de \$\R\^2\$', maar je schrijft 'in \$\R\^2\$'.
 
 #### Schrijf telwoorden uit tot en met twintig.
 
@@ -149,7 +155,7 @@ Kies geschikte symbolen voor je variabelen. Het is bijvoorbeeld
 gebruikelijk om gehele getallen met \$n\$ of \$m\$ aan te duiden en
 functies met \$f\$ of \$g\$. Het is vooral belangrijk dat de naamgeving
 consistent is. Pas ook op met symbolen die op elkaar lijken, zoals \$1\$
-en \$l\$ (in dit geval kun je \$l\$ door \$\\ell\$ (`\ell`) vervangen).
+en \$l\$ (in dit geval kun je \$l\$ door \$\ell\$ (`\ell`) vervangen).
 
 Geef objecten alleen een naam als dat nodig is. In het volgende
 voorbeeld is de variabele \$N\$ overbodig:
@@ -165,20 +171,20 @@ Wiskundestudenten zijn vaak geneigd alles in formules uit te drukken en
 gewonemensentaal te vermijden. Vergelijk:
 
 <div class="example">
-De grootste gemene deler van \$a\$ en \$b\$, geschreven \$\\ggd(a, b)\$,
+De grootste gemene deler van \$a\$ en \$b\$, geschreven \$\ggd(a, b)\$,
 is het grootste gehele getal dat zowel \$a\$ als \$b\$ deelt.
 
 </div>
 <div class="example">
-We definieren: \$\\ggd(a,b) = {\\max{ \\{d \\in \\N\_{&gt;0} : d | a
-\\wedge d | b \\}} }\$.
+We definieren: \$\ggd(a,b) = {\max{ \{d \in \N\_{&gt;0} : d | a
+\wedge d | b \}} }\$.
 
 </div>
 De tweede definitie is weliswaar korter, maar is het beter leesbaar dan
 de eerste? Vermijd fomules als ze niet nodig zijn. "A good attitude to
 the preparation of written mathematical exposition is to pretend that it
 is spoken. Pretend that you are explaining the subject to a friend on a
-long walk in the woods, with no paper available." \[Halmos\]
+long walk in the woods, with no paper available." [Halmos]
 
 ### A.6. Nummer formules wanneer nodig
 
@@ -195,12 +201,15 @@ de uitleg van de tekst naar het onderschrift.
 
 ### A.8. Gebruik displays als dat nodig is
 
-Een wiskundige expressie in de tekstregel zoals \$\\zeta(s) =
-\\sum\_{n=1}\^\\infty n\^{-s}\$ valt minder op dan dezelfde expressie op
-een eigen regel:\
-\\\[\
-\\zeta(s) = \\sum\_{n=1}\^\\infty n\^{-s}.\
-\\\]
+Een wiskundige expressie in de tekstregel zoals \$\zeta(s) =
+\sum\_{n=1}\^\infty n\^{-s}\$ valt minder op dan dezelfde expressie op
+een eigen regel:
+
+\[
+
+\zeta(s) = \sum\_{n=1}\^\infty n\^{-s}.
+
+\]
 
 We noemen een tekstvak met een expressie op een eigen regel een
 *display*. Een expressie in de tekstregel noemen we een *inline*
@@ -224,7 +233,7 @@ bovenstaande opsomming).
 
 Een expressie die te groot is voor een tekstregel kun je soms anders
 schrijven, zodat geen display nodig is. Je kunt bijvoorbeeld de
-expressie \$\\frac{f+2}{f+1}\$ vervangen door \$(f+2)/(f+1)\$.
+expressie \$\frac{f+2}{f+1}\$ vervangen door \$(f+2)/(f+1)\$.
 
 ### A.9. Geef definities en stellingen de juiste opmaak.
 
@@ -244,7 +253,7 @@ gezet:
 
 <div class="example">
 **Stelling A.3.** *Het getal \$n\^5 - n\$ is deelbaar door 10 voor alle
-\$n\\in\\N\$.*
+\$n\in\N\$.*
 
 </div>
 Belangrijk is dat je niet handmatig de opmaak instelt, maar het
@@ -279,16 +288,22 @@ Opmaakcommando's zijn bijvoorbeeld
 
 Gebruik in de tekst alleen structuurcommando's. Schrijf dus:
 
-{% highlight latex %}\
-Een \\emph{even} getal is een getal dat geheel deelbaar is\
-door 2.\
+{% highlight latex %}
+
+Een \emph{even} getal is een getal dat geheel deelbaar is
+
+door 2.
+
 {% endhighlight %}
 
 niet:
 
-{% highlight latex %}\
-Een \\textit{even} getal is een getal dat geheel deelbaar is\
-door 2.\
+{% highlight latex %}
+
+Een \textit{even} getal is een getal dat geheel deelbaar is
+
+door 2.
+
 {% endhighlight %}
 
 De opmaak van de elementen van de structuur regel je in de preamble.
@@ -302,56 +317,78 @@ zoals de uitvoer eruit ziet. We geven een aantal voorbeelden.
 
 Zet de commando's voor een display op aparte regels:
 
-{% highlight latex %}\
-We vinden\
-\\\[\
-x = 10.\
-\\\]\
+{% highlight latex %}
+
+We vinden
+
+\[
+
+x = 10.
+
+\]
+
 {% endhighlight %}
 
 Zet `\begin` en `\end`-commando's van omgevingen op aparte regels:
 
-{% highlight latex %}\
-\\begin{equation}\
-\\label{eq:pyth}\
-a\^2 + b\^2 = c\^2\
-\\end{equation}\
+{% highlight latex %}
+
+\begin{equation}
+
+\label{eq:pyth}
+
+a\^2 + b\^2 = c\^2
+
+\end{equation}
+
 {% endhighlight %}
 
 In een `align`-omgeving, tabel of matrix zet je de ampersands onder
 elkaar:
 
-{% highlight latex %}\
-\\begin{align\*}\
-x &= 1 + 1 + 8 \\\\\
-&= 2 + 8 \\\\\
-&= 10\
-\\end{align\*}\
+{% highlight latex %}
+
+\begin{align\*}
+
+x &= 1 + 1 + 8 \\
+
+&= 2 + 8 \\
+
+&= 10
+
+\end{align\*}
+
 {% endhighlight %}
 
 Gebruik lege regels tussen tekstelementen:
 
-{% highlight latex %}\
-\\section{Inleiding}
+{% highlight latex %}
+
+\section{Inleiding}
 
 Dit is een inleiding. In een inleiding vertel je kort waar de tekst over
 gaat.
 
-\\section{Stelling}
+\section{Stelling}
 
 Hier geven we een stelling.
 
-\\begin{stelling}\
-Er zijn oneindig veel priemgetallen.\
-\\end{stelling}
+\begin{stelling}
 
-\\begin{proof}\
-Stel er zijn eindig veel priemgetallen.\
-\\end{proof}
+Er zijn oneindig veel priemgetallen.
 
-\\section{Conclusie}
+\end{stelling}
 
-Hier staat een conclusie.\
+\begin{proof}
+
+Stel er zijn eindig veel priemgetallen.
+
+\end{proof}
+
+\section{Conclusie}
+
+Hier staat een conclusie.
+
 {% endhighlight %}
 
 Het gedeelte van de code voor `\begin{document}` heet de *preamble*.
@@ -368,38 +405,55 @@ terwijl de alinea doorloopt. Het resultaat is een onterechte inspringing
 (onder).
 
 <div class="example" >
-We beschouwen het symmetrische polynoom\
-\\\[\
-(X\_1 - X\_2)\^2.\
-\\\]
+We beschouwen het symmetrische polynoom
+
+\[
+
+(X\_1 - X\_2)\^2.
+
+\]
 
 Dit is ten duidelijkste een symmetrisch polynoom.
 
 </div>
-{% highlight latex %}\
-We beschouwen het symmetrische polynoom\
-\\\[\
-(X\_1 - X\_2)\^2.\
-\\\]\
-Dit is ten duidelijkste een symmetrisch polynoom.\
+{% highlight latex %}
+
+We beschouwen het symmetrische polynoom
+
+\[
+
+(X\_1 - X\_2)\^2.
+
+\]
+
+Dit is ten duidelijkste een symmetrisch polynoom.
+
 {% endhighlight %}
 
 <div class="example">
-We beschouwen het symmetrische polynoom\
-\\\[\
-(X\_1 - X\_2)\^2.\
-\\\]
+We beschouwen het symmetrische polynoom
+
+\[
+
+(X\_1 - X\_2)\^2.
+
+\]
 
         Dit is ten duidelijkste een symmetrisch polynoom.
 
 </div>
-{% highlight latex %}\
-We beschouwen het symmetrische polynoom\
-\\\[\
-(X\_1 - X\_2)\^2.\
-\\\]
+{% highlight latex %}
 
-Dit is ten duidelijkste een symmetrisch polynoom.\
+We beschouwen het symmetrische polynoom
+
+\[
+
+(X\_1 - X\_2)\^2.
+
+\]
+
+Dit is ten duidelijkste een symmetrisch polynoom.
+
 {% endhighlight %}
 
 ### B.4. Gebruik Babel
@@ -415,28 +469,36 @@ De tilde `~` geeft een *non breaking space*. Gebruik de tilde in plaats
 van een spatie, als op die spatie niet mag worden afgebroken. Voorkom
 bijvoorbeeld dat een symbool op het begin van een regel wordt gezet:
 
-{% highlight latex %}\
-het getal\~\$n\$, de functie\~\$f\$, de Hilbertruimte\~\$H\$.\
+{% highlight latex %}
+
+het getal\~\$n\$, de functie\~\$f\$, de Hilbertruimte\~\$H\$.
+
 {% endhighlight %}
 
 Gebruik de tilde ook om rijtjes korte symbolen netjes af te breken:
 
-{% highlight latex %}\
-de variabelen \$x\$,\~\$y\$ en\~\$z\$.\
+{% highlight latex %}
+
+de variabelen \$x\$,\~\$y\$ en\~\$z\$.
+
 {% endhighlight %}
 
 Om een woord eenmalig op een voorkeursplek af te breken, gebruik je
 `\-`, bijvoorbeeld:
 
-{% highlight latex %}\
-voorkeurs\\-behandeling\
+{% highlight latex %}
+
+voorkeurs\-behandeling
+
 {% endhighlight %}
 
 LaTeX zal dan alleen op de plek van de `\-` proberen af te breken en op
 de andere plekken niet. Als je dat wel wilt, moet je tikken:
 
-{% highlight latex %}\
-voor\\-keurs\\-be\\-han\\-de\\-ling\
+{% highlight latex %}
+
+voor\-keurs\-be\-han\-de\-ling
+
 {% endhighlight %}
 
 In een formule die tussen enkele dollartekens staat, kun je met
@@ -469,12 +531,15 @@ het patroon punt-spatie ziet.
 
 ### B.7. Gebruik `\DeclareMathOperator` voor nieuwe operatoren.
 
-Voor het zetten van operatoren als \$\\Tr\$ of \$\\ord\$ maak je zelf
+Voor het zetten van operatoren als \$\Tr\$ of \$\ord\$ maak je zelf
 een operator met
 
-{% highlight latex %}\
-\\DeclareMathOperator{\\Tr}{Tr}\
-\\DeclareMathOperator{\\ord}{ord}\
+{% highlight latex %}
+
+\DeclareMathOperator{\Tr}{Tr}
+
+\DeclareMathOperator{\ord}{ord}
+
 {% endhighlight %}
 
 Zo scheid je opmaak van inhoud en krijg je de juiste witruimte rondom de
@@ -496,83 +561,106 @@ Opdracht
     bepaald door de structuur. Laat je werk controleren door een van
     de docenten.
 
-{% highlight latex %}\
-\\documentclass{scrartcl}\
-\\usepackage\[dutch\]{babel}\
-\\usepackage{mathtools, amssymb, amsthm}
+{% highlight latex %}
 
-\\theoremstyle{plain}\
-\\newtheorem{stelling}{Stelling}
+\documentclass{scrartcl}
 
-\\begin{document}
+\usepackage[dutch]{babel}
 
-\\begin{stelling}\
-Er zijn oneindig veel priemgetallen.\
-\\end{stelling}
+\usepackage{mathtools, amssymb, amsthm}
 
-\\begin{proof}\
-\${P}\$ = de verzameling van alle priemgetallen.\
-Stel nu: \${P}\$ is eindig, zeg \${P}= \\{ p\_{1},\\dots ,p\_{r}\\}\$.\
-Neem het getal \$N = p\_{1}p\_{2}\\cdots p\_{r}+1\$. \$N\\notin{P}
-\\implies N\$ is geen priemgetal. Laat \$p &gt; 1\$ de kleinste
-priemdeler van \$N\$ zijn.\
-\\footnote{Hoofdstelling van de rekenkunde: ieder geheel getal
+\theoremstyle{plain}
+
+\newtheorem{stelling}{Stelling}
+
+\begin{document}
+
+\begin{stelling}
+
+Er zijn oneindig veel priemgetallen.
+
+\end{stelling}
+
+\begin{proof}
+
+\${P}\$ = de verzameling van alle priemgetallen.
+
+Stel nu: \${P}\$ is eindig, zeg \${P}= \{ p\_{1},\dots ,p\_{r}\}\$.
+
+Neem het getal \$N = p\_{1}p\_{2}\cdots p\_{r}+1\$. \$N\notin{P}
+\implies N\$ is geen priemgetal. Laat \$p &gt; 1\$ de kleinste
+priemdeler van \$N\$ zijn.
+
+\footnote{Hoofdstelling van de rekenkunde: ieder geheel getal
 \$n&gt;1\$ kan worden geschreven als product van priemgetallen.}
 
-\$p &lt; N \\implies p\\in{P}\$. \$p\$ deelt zowel \$p\_{1}p\_{2}\\cdots
+\$p &lt; N \implies p\in{P}\$. \$p\$ deelt zowel \$p\_{1}p\_{2}\cdots
 p\_{r}\$ als \$N\$ en daarom ook het verschil
-\$N\~-\~p\_{1}p\_{2}\\cdots p\_{r}=1\$.\
-Dit kan alleen als \$p=1\$. \$\\bot\$\~{Tegenspraak}.
+\$N\~-\~p\_{1}p\_{2}\cdots p\_{r}=1\$.
 
-Conclusie: \${P}\$ is niet eindig.\
-\\end{proof}
+Dit kan alleen als \$p=1\$. \$\bot\$\~{Tegenspraak}.
 
-\\begin{stelling}\
-Het getal \$\\sqrt2\$ is niet rationaal.\
-\\end{stelling}
+Conclusie: \${P}\$ is niet eindig.
 
-\\begin{proof}\
-\$\\sqrt2\$ rationaal. Dan geldt \$\\sqrt2=\\frac{m}{n}\$ met \$m,n \\in
-\\mathbb{Z}\$ en \$n\\not=0\$ en \$ggd(m,n)=1\$.
+\end{proof}
 
-\\bigskip
+\begin{stelling}
 
-\$\\sqrt2 = \\frac{m}{n}\$
+Het getal \$\sqrt2\$ is niet rationaal.
 
-\\bigskip
+\end{stelling}
 
-\$2 = (\\frac{m}{n})\^2 = \\frac{m\^2}{n\^2}\$
+\begin{proof}
 
-\\bigskip
+\$\sqrt2\$ rationaal. Dan geldt \$\sqrt2=\frac{m}{n}\$ met \$m,n \in
+\mathbb{Z}\$ en \$n\not=0\$ en \$ggd(m,n)=1\$.
+
+\bigskip
+
+\$\sqrt2 = \frac{m}{n}\$
+
+\bigskip
+
+\$2 = (\frac{m}{n})\^2 = \frac{m\^2}{n\^2}\$
+
+\bigskip
 
 \$2n\^{2} = m\^2\$
 
-\\bigskip\
-\$m\^2\$ is even, dus \$m\$ is even, oftewel: \$m=2k, k \\in
-\\mathbb{Z}\$.
+\bigskip
 
-\\bigskip\
+\$m\^2\$ is even, dus \$m\$ is even, oftewel: \$m=2k, k \in
+\mathbb{Z}\$.
+
+\bigskip
+
 Substitutie van \$m=2k\$ geeft:
 
-\\bigskip\
+\bigskip
+
 \$2n\^2 =(2k)\^2 = 4k\^2\$
 
-\\bigskip\
+\bigskip
+
 \$n\^2=2k\^2\$
 
-\\bigskip\
+\bigskip
+
 \$n\^2\$ is even, dus \$n\$ is even.
 
-\\bigskip\
-Dus: \$m\$ is even en \$n\$ is even: \$ggd(m,n)\\geq2\$. Tegenspraak!
+\bigskip
 
-\\bigskip\
-Dus \$\\sqrt2\$ is niet rationaal
+Dus: \$m\$ is even en \$n\$ is even: \$ggd(m,n)\geq2\$. Tegenspraak!
 
-\\bigskip\
-\\end{proof}
+\bigskip
 
-\\end{document}
+Dus \$\sqrt2\$ is niet rationaal
+
+\bigskip
+
+\end{proof}
+
+\end{document}
 
 {% endhighlight %}
 
@@ -606,7 +694,8 @@ Onthouden
 
 \#\# Gebruik displays als dat nodig is.
 
-\#\# Geef definities en stellingen de juiste opmaak.\
+\#\# Geef definities en stellingen de juiste opmaak.
+
 \#2 LaTeX:
 
 \#\# Gebruik en maak structuurcommando's
