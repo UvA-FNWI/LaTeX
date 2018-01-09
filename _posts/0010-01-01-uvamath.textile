@@ -2,7 +2,7 @@
 layout: lesson
 title: Document class uvamath
 category: week3
-description: The uvamath document class.
+description: The uvamath document class
 ---
 
 For the project we use the @uvamath@ document class. The class was made by former math student Jeroen Zuiddam (now CWI). It was adapted by Jolien Oomens, Tim Henke and Tijn de Vos. In this lesson we will introduce this document class.
