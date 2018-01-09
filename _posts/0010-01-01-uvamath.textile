@@ -15,7 +15,8 @@ The folder contains several files:
 * @uvamath.cls@ -- the uvamath document class
 * @vbComputeralgebra-LaTeX.tex@ -- the template for this class' report
 
-*2. Open (maybe rename) @vbComputeralgebra-LaTeX.tex@.*
+*2. Rename @vbComputeralgebra-LaTeX.tex@ to a suitable name.*
+Open the file. 
 You write your report in this file.
 
 *3. Fill in some details.*
@@ -33,7 +34,8 @@ The file @vbComputeralgebra-LaTeX.tex@ starts with loading the uvamath class and
 
 {% endhighlight %}
 
-The default language of the uva math class is Dutch. For English text you can use the option @english@ for both @\documentclass@ and @babel@:
+The default language of the uva math class is Dutch. 
+For English text you can use the option @english@ for both @\documentclass@ and @babel@:
 
 {% highlight latex %}
 
@@ -51,7 +53,6 @@ Subsequently we insert the title, authors, etc.
 %\author[ingrid@science.uva.nl, 6123102]{Ingrid de Vries}
 %\author[ingrid@science.uva.nl, 6123102]{Ingrid de Vries}
 
-\what{Projectverslag jaar 2} % example
 \supervisors{prof.\ dr.\ Carl Friedrich Gauss}
 \secondgrader{dr.\ Karl Weierstrass}
 
@@ -100,5 +101,7 @@ In the rest of the file you write the content of the document. Chapters can be m
 \lipsum[2]
 
 \end{document}
+
+Now you are done. Start the project and write the report using this documentclass and this example file. 
 
 {% endhighlight %}
