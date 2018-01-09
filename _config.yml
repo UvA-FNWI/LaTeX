@@ -1,5 +1,6 @@
 markdown: maruku
 pygments: false
+highligher: rouge
 
 permalink: /:categories/:title/
 baseurl: /LaTeX
