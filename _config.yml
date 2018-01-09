@@ -1,5 +1,5 @@
 markdown: maruku
-pygments: true
+pygments: false
 
 permalink: /:categories/:title/
 baseurl: /LaTeX
