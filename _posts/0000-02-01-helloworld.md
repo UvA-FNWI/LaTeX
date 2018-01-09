@@ -64,10 +64,9 @@ Exercise 1
     'helloworld.tex'. The extension of a TeX file always is '.tex'.
 
 	<pre><code class='tex'>\documentclass[a4paper]{article}
-	\begin{document}
-	Hello world!
-	\end{document}
-	</code></pre>
+\begin{document}
+Hello world!
+\end{document}</code></pre>
 
 3. Select 'pdfLaTeX' in the menu to the right of the green button and
 press the green button afterwards. We call this *typesetting*. LaTeX
