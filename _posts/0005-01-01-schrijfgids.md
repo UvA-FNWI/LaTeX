@@ -58,7 +58,7 @@ Neem een geheel getal \$n \not= 0\$ en definieer
 
 \[
 
-(\Z/n\Z)\^\* = \{a \in \Z/n\Z : \gcd(a, n) = 1\}.
+(\Z/n\Z)^\* = \{a \in \Z/n\Z : \gcd(a, n) = 1\}.
 
 \]
 
@@ -96,7 +96,7 @@ Paragrafen kun je van elkaar scheiden met kopjes.
 
 In eerste instantie zal er misschien spreektaal uit je toetsenbord
 komen, maar pas dat aan in een volgende redactieslag. Bijvoorbeeld, je
-zegt 'in de \$\R\^2\$', maar je schrijft 'in \$\R\^2\$'.
+zegt 'in de \$\R^2\$', maar je schrijft 'in \$\R^2\$'.
 
 #### Schrijf telwoorden uit tot en met twintig.
 
@@ -202,12 +202,12 @@ de uitleg van de tekst naar het onderschrift.
 ### A.8. Gebruik displays als dat nodig is
 
 Een wiskundige expressie in de tekstregel zoals \$\zeta(s) =
-\sum\_{n=1}\^\infty n\^{-s}\$ valt minder op dan dezelfde expressie op
+\sum\_{n=1}^\infty n^{-s}\$ valt minder op dan dezelfde expressie op
 een eigen regel:
 
 \[
 
-\zeta(s) = \sum\_{n=1}\^\infty n\^{-s}.
+\zeta(s) = \sum\_{n=1}^\infty n^{-s}.
 
 \]
 
@@ -252,7 +252,7 @@ Stellingen, proposities, lemma's, etc. worden traditioneel cursief
 gezet:
 
 <div class="example">
-**Stelling A.3.** *Het getal \$n\^5 - n\$ is deelbaar door 10 voor alle
+**Stelling A.3.** *Het getal \$n^5 - n\$ is deelbaar door 10 voor alle
 \$n\in\N\$.*
 
 </div>
@@ -337,7 +337,7 @@ Zet `\begin` en `\end`-commando's van omgevingen op aparte regels:
 
 \label{eq:pyth}
 
-a\^2 + b\^2 = c\^2
+a^2 + b^2 = c^2
 
 \end{equation}
 
@@ -409,7 +409,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)\^2.
+(X\_1 - X\_2)^2.
 
 \]
 
@@ -422,7 +422,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)\^2.
+(X\_1 - X\_2)^2.
 
 \]
 
@@ -435,7 +435,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)\^2.
+(X\_1 - X\_2)^2.
 
 \]
 
@@ -448,7 +448,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)\^2.
+(X\_1 - X\_2)^2.
 
 \]
 
@@ -621,15 +621,15 @@ Het getal \$\sqrt2\$ is niet rationaal.
 
 \bigskip
 
-\$2 = (\frac{m}{n})\^2 = \frac{m\^2}{n\^2}\$
+\$2 = (\frac{m}{n})^2 = \frac{m^2}{n^2}\$
 
 \bigskip
 
-\$2n\^{2} = m\^2\$
+\$2n^{2} = m^2\$
 
 \bigskip
 
-\$m\^2\$ is even, dus \$m\$ is even, oftewel: \$m=2k, k \in
+\$m^2\$ is even, dus \$m\$ is even, oftewel: \$m=2k, k \in
 \mathbb{Z}\$.
 
 \bigskip
@@ -638,15 +638,15 @@ Substitutie van \$m=2k\$ geeft:
 
 \bigskip
 
-\$2n\^2 =(2k)\^2 = 4k\^2\$
+\$2n^2 =(2k)^2 = 4k^2\$
 
 \bigskip
 
-\$n\^2=2k\^2\$
+\$n^2=2k^2\$
 
 \bigskip
 
-\$n\^2\$ is even, dus \$n\$ is even.
+\$n^2\$ is even, dus \$n\$ is even.
 
 \bigskip
 
