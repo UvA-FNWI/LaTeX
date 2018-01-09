@@ -107,6 +107,7 @@ The article you are working from.
 
 \end{document}
 
-Now you are done. Start the project and write the report using this documentclass and this example file. 
+Now you are done. 
+Start the project and write the report using the document class and this example file. 
 
 {% endhighlight %}
