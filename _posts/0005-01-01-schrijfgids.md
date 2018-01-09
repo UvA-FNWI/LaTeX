@@ -404,7 +404,7 @@ Een veelgemaakte fout is het schrijven van een witregel na een display
 terwijl de alinea doorloopt. Het resultaat is een onterechte inspringing
 (onder).
 
-<div class="example" >
+<div class="example" markdown="0" >
 We beschouwen het symmetrische polynoom
 
 \[
@@ -430,7 +430,7 @@ Dit is ten duidelijkste een symmetrisch polynoom.
 
 {% endhighlight %}
 
-<div class="example">
+<div class="example" markdown="0">
 We beschouwen het symmetrische polynoom
 
 \[
