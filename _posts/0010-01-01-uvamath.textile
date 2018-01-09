@@ -10,7 +10,7 @@ The class was made by former math student Jeroen Zuiddam (now CWI).
 It was adapted by Jolien Oomens, Tim Henke and Tijn de Vos. 
 In this lesson we will introduce this document class.
 
-*1. Download the <a href="https://github.com/UvA-FNWI/uvamath">uvamath class</a>:.* 
+*1. Download the <a href="https://github.com/UvA-FNWI/uvamath">uvamath class</a>.* 
 Download all files in one zip and unzip locally on your computer. 
 The folder contains several files:
 
