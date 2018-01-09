@@ -71,13 +71,13 @@ Het teken definieert voor \$n \geq 2\$ een surjectief homomorfisme
 
 \[
 
-\varepsilon : S\_n \to \{+1, -1\},
+\varepsilon : S_n \to \{+1, -1\},
 
 \]
 
 met andere woorden, \$\varepsilon(\sigma \tau) =
 \varepsilon(\sigma)\varepsilon(\tau)\$ voor alle \$\sigma,\tau
-\in S\_n\$.
+\in S_n\$.
 
 </div>
 ### A.2. Verdeel de tekst in alinea's en paragrafen
@@ -176,7 +176,7 @@ is het grootste gehele getal dat zowel \$a\$ als \$b\$ deelt.
 
 </div>
 <div class="example">
-We definieren: \$\ggd(a,b) = {\max{ \{d \in \N\_{&gt;0} : d | a
+We definieren: \$\ggd(a,b) = {\max{ \{d \in \N_{&gt;0} : d | a
 \wedge d | b \}} }\$.
 
 </div>
@@ -202,12 +202,12 @@ de uitleg van de tekst naar het onderschrift.
 ### A.8. Gebruik displays als dat nodig is
 
 Een wiskundige expressie in de tekstregel zoals \$\zeta(s) =
-\sum\_{n=1}^\infty n^{-s}\$ valt minder op dan dezelfde expressie op
+\sum_{n=1}^\infty n^{-s}\$ valt minder op dan dezelfde expressie op
 een eigen regel:
 
 \[
 
-\zeta(s) = \sum\_{n=1}^\infty n^{-s}.
+\zeta(s) = \sum_{n=1}^\infty n^{-s}.
 
 \]
 
@@ -409,7 +409,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)^2.
+(X_1 - X_2)^2.
 
 \]
 
@@ -422,7 +422,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)^2.
+(X_1 - X_2)^2.
 
 \]
 
@@ -435,7 +435,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)^2.
+(X_1 - X_2)^2.
 
 \]
 
@@ -448,7 +448,7 @@ We beschouwen het symmetrische polynoom
 
 \[
 
-(X\_1 - X\_2)^2.
+(X_1 - X_2)^2.
 
 \]
 
@@ -585,18 +585,18 @@ Er zijn oneindig veel priemgetallen.
 
 \${P}\$ = de verzameling van alle priemgetallen.
 
-Stel nu: \${P}\$ is eindig, zeg \${P}= \{ p\_{1},\dots ,p\_{r}\}\$.
+Stel nu: \${P}\$ is eindig, zeg \${P}= \{ p_{1},\dots ,p_{r}\}\$.
 
-Neem het getal \$N = p\_{1}p\_{2}\cdots p\_{r}+1\$. \$N\notin{P}
+Neem het getal \$N = p_{1}p_{2}\cdots p_{r}+1\$. \$N\notin{P}
 \implies N\$ is geen priemgetal. Laat \$p &gt; 1\$ de kleinste
 priemdeler van \$N\$ zijn.
 
 \footnote{Hoofdstelling van de rekenkunde: ieder geheel getal
 \$n&gt;1\$ kan worden geschreven als product van priemgetallen.}
 
-\$p &lt; N \implies p\in{P}\$. \$p\$ deelt zowel \$p\_{1}p\_{2}\cdots
-p\_{r}\$ als \$N\$ en daarom ook het verschil
-\$N\~-\~p\_{1}p\_{2}\cdots p\_{r}=1\$.
+\$p &lt; N \implies p\in{P}\$. \$p\$ deelt zowel \$p_{1}p_{2}\cdots
+p_{r}\$ als \$N\$ en daarom ook het verschil
+\$N\~-\~p_{1}p_{2}\cdots p_{r}=1\$.
 
 Dit kan alleen als \$p=1\$. \$\bot\$\~{Tegenspraak}.
 
