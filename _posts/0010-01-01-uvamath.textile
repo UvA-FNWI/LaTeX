@@ -13,14 +13,14 @@ The folder contains several files:
 
 * @uvalogo.png@ -- the UvA logo
 * @uvamath.cls@ -- the uvamath document class
-* @vbComputeralgebra-LaTeX.tex@ -- the template for this class' report
+* @demo-complatex.tex@ -- the template for this class' report
 
-*2. Rename @vbComputeralgebra-LaTeX.tex@ to a suitable name.*
-Open the file. 
-You write your report in this file.
+*2. Rename (or copy) @demo-complatex.tex@ to a tex-file with a suitable name.*
+Use for instance your first names. 
+Open the file. You write your report in this file.
 
 *3. Fill in some details.*
-The file @vbComputeralgebra-LaTeX.tex@ starts with loading the uvamath class and some necessary packages.
+The file @demo-complatex.tex@ starts with loading the uvamath class and some necessary packages.
 
 {% highlight latex %}
 
@@ -50,8 +50,7 @@ Subsequently we insert the title, authors, etc.
 
 \title{Lossless Image Coding}
 \author[henk@science.uva.nl, 6127901]{Henk de Vries}
-%\author[ingrid@science.uva.nl, 6123102]{Ingrid de Vries}
-%\author[ingrid@science.uva.nl, 6123102]{Ingrid de Vries}
+\author[ingrid@science.uva.nl, 6123102]{Ingrid de Vries}
 
 \supervisors{prof.\ dr.\ Carl Friedrich Gauss}
 \secondgrader{dr.\ Karl Weierstrass}
