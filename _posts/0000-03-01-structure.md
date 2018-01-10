@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: Structure
-category: week1
+category: week2
 description: Structure of a LaTeX file, document classes, packages, topmatter, groups, commands and environments.
 ---
 This lesson is about the structure of a LaTeX file.
