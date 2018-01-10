@@ -20,4 +20,4 @@ LaTeX is installed by installing a **distribution**. A distribution is a collect
 
 ### TexWorks
 
-After installing you need to find **TexWorks**, which is a LaTeX-editor which we will use to edit latex-files and to process them. 
+After installing you need to find **TexWorks** (it is part of the TeXLive installation). This is a LaTeX-editor which we will use to edit latex-files and to process them. 
