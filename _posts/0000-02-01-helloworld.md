@@ -48,6 +48,7 @@ ShareLaTeX
 :   An online editor where you can collaborate with others. It is
     convenient to use this on computers where LaTeX isn't installed. 
     Nowadays lots of students use ShareLaTeX, but to learn LaTeX we start using TeXworks. 
+    Afterwards students are free to use ShareLaTeX. 
 
 In the first exercise we will assume that you use TeXworks. To install
 this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}).
@@ -84,21 +85,16 @@ turns your code into a PDF document which you will see in a new window.
 <div class="panel panel-primary">
 <div class="panel-heading">
 <h3 class="panel-title">
-Exercise 2 (optional)
-
-</h3>
+Exercise 2</h3>
 </div>
 <div class="panel-body">
-1.  Create a [ShareLaTeX-account](https://www.sharelatex.com).
-2.  Click on 'New Project' and choose 'Blank Project'. Name your project.
-3.  On the left side you see your LaTeX code. Click on 'Recompile' to see the output.
-
--   Watch out: ShareLaTeX ignores many errors and tries to create a pdf, even when there are mistakes in the LaTeX-code. You can see the errors and warning in 'Logs'
-
+1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex).
+2.  Open this file in TeXworks.
+3.  Typeset the document. 
 </div>
 </div>
-From now on you can use any editor you prefer. However, on the final
-exam TeXworks must be used.
+From now on we start using TeXworks. In the final
+exam TeXworks must be used. 
 
 Resources
 ---------
