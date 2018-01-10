@@ -53,7 +53,7 @@ Het getal \$n\$ is belangrijk. De functie \$f\$ is reëel.
 Een zin eindigt altijd met een punt, ook als de zin op een formule
 eindigt:
 
-<div class="example">
+<div class="example" markdown="0">
 Neem een geheel getal \$n \not= 0\$ en definieer
 
 \[
@@ -66,7 +66,7 @@ Neem een geheel getal \$n \not= 0\$ en definieer
 Als een zin na een formule doorgaat, schrijf dan een passend leesteken,
 bijvoorbeeld een komma:
 
-<div class="example">
+<div class="example" markdown="0">
 Het teken definieert voor \$n \geq 2\$ een surjectief homomorfisme
 
 \[
@@ -96,7 +96,7 @@ Paragrafen kun je van elkaar scheiden met kopjes.
 
 In eerste instantie zal er misschien spreektaal uit je toetsenbord
 komen, maar pas dat aan in een volgende redactieslag. Bijvoorbeeld, je
-zegt 'in de \$\R^2\$', maar je schrijft 'in \$\R^2\$'.
+zegt 'in de \$\mathbb{R}^2\$', maar je schrijft 'in \$\mathbb{R}^2\$'.
 
 #### Schrijf telwoorden uit tot en met twintig.
 
@@ -175,8 +175,8 @@ De grootste gemene deler van \$a\$ en \$b\$, geschreven \$\ggd(a, b)\$,
 is het grootste gehele getal dat zowel \$a\$ als \$b\$ deelt.
 
 </div>
-<div class="example">
-We definieren: \$\ggd(a,b) = {\max{ \{d \in \N_{&gt;0} : d | a
+<div class="example" markdown="0">
+We definiëren: \$\ggd(a,b) = {\max{ \{d \in \N_{&gt;0} : d | a
 \wedge d | b \}} }\$.
 
 </div>
@@ -205,11 +205,9 @@ Een wiskundige expressie in de tekstregel zoals \$\zeta(s) =
 \sum_{n=1}^\infty n^{-s}\$ valt minder op dan dezelfde expressie op
 een eigen regel:
 
-\[
-
+\\[
 \zeta(s) = \sum_{n=1}^\infty n^{-s}.
-
-\]
+\\]
 
 We noemen een tekstvak met een expressie op een eigen regel een
 *display*. Een expressie in de tekstregel noemen we een *inline*
@@ -290,9 +288,7 @@ Gebruik in de tekst alleen structuurcommando's. Schrijf dus:
 
 {% highlight latex %}
 
-Een \emph{even} getal is een getal dat geheel deelbaar is
-
-door 2.
+Een \emph{even} getal is een getal dat geheel deelbaar is door 2.
 
 {% endhighlight %}
 
@@ -300,9 +296,7 @@ niet:
 
 {% highlight latex %}
 
-Een \textit{even} getal is een getal dat geheel deelbaar is
-
-door 2.
+Een \textit{even} getal is een getal dat geheel deelbaar is door 2.
 
 {% endhighlight %}
 
@@ -320,11 +314,8 @@ Zet de commando's voor een display op aparte regels:
 {% highlight latex %}
 
 We vinden
-
 \[
-
 x = 10.
-
 \]
 
 {% endhighlight %}
@@ -334,11 +325,8 @@ Zet `\begin` en `\end`-commando's van omgevingen op aparte regels:
 {% highlight latex %}
 
 \begin{equation}
-
 \label{eq:pyth}
-
 a^2 + b^2 = c^2
-
 \end{equation}
 
 {% endhighlight %}
@@ -347,16 +335,11 @@ In een `align`-omgeving, tabel of matrix zet je de ampersands onder
 elkaar:
 
 {% highlight latex %}
-
-\begin{align\*}
-
+\begin{align*}
 x &= 1 + 1 + 8 \\
-
-&= 2 + 8 \\
-
-&= 10
-
-\end{align\*}
+  &= 2 + 8 \\
+  &= 10
+\end{align*}
 
 {% endhighlight %}
 
@@ -365,28 +348,21 @@ Gebruik lege regels tussen tekstelementen:
 {% highlight latex %}
 
 \section{Inleiding}
-
 Dit is een inleiding. In een inleiding vertel je kort waar de tekst over
 gaat.
 
 \section{Stelling}
-
 Hier geven we een stelling.
 
 \begin{stelling}
-
 Er zijn oneindig veel priemgetallen.
-
 \end{stelling}
 
 \begin{proof}
-
 Stel er zijn eindig veel priemgetallen.
-
 \end{proof}
 
 \section{Conclusie}
-
 Hier staat een conclusie.
 
 {% endhighlight %}
@@ -406,26 +382,18 @@ terwijl de alinea doorloopt. Het resultaat is een onterechte inspringing
 
 <div class="example" markdown="0" >
 We beschouwen het symmetrische polynoom
-
 \[
-
 (X_1 - X_2)^2.
-
 \]
-
 Dit is ten duidelijkste een symmetrisch polynoom.
 
 </div>
 {% highlight latex %}
 
 We beschouwen het symmetrische polynoom
-
 \[
-
 (X_1 - X_2)^2.
-
 \]
-
 Dit is ten duidelijkste een symmetrisch polynoom.
 
 {% endhighlight %}
@@ -445,11 +413,8 @@ We beschouwen het symmetrische polynoom
 {% highlight latex %}
 
 We beschouwen het symmetrische polynoom
-
 \[
-
 (X_1 - X_2)^2.
-
 \]
 
 Dit is ten duidelijkste een symmetrisch polynoom.
@@ -471,7 +436,7 @@ bijvoorbeeld dat een symbool op het begin van een regel wordt gezet:
 
 {% highlight latex %}
 
-het getal\~\$n\$, de functie\~\$f\$, de Hilbertruimte\~\$H\$.
+het getal~$n$, de functie~$f$, de Hilbertruimte~$H$.
 
 {% endhighlight %}
 
@@ -479,7 +444,7 @@ Gebruik de tilde ook om rijtjes korte symbolen netjes af te breken:
 
 {% highlight latex %}
 
-de variabelen \$x\$,\~\$y\$ en\~\$z\$.
+de variabelen $x$,~$y$ en~$z$.
 
 {% endhighlight %}
 
@@ -537,7 +502,6 @@ een operator met
 {% highlight latex %}
 
 \DeclareMathOperator{\Tr}{Tr}
-
 \DeclareMathOperator{\ord}{ord}
 
 {% endhighlight %}
@@ -564,102 +528,57 @@ Opdracht
 {% highlight latex %}
 
 \documentclass{scrartcl}
-
 \usepackage[dutch]{babel}
-
 \usepackage{mathtools, amssymb, amsthm}
-
 \theoremstyle{plain}
-
 \newtheorem{stelling}{Stelling}
-
 \begin{document}
-
 \begin{stelling}
-
 Er zijn oneindig veel priemgetallen.
-
 \end{stelling}
-
 \begin{proof}
-
 \${P}\$ = de verzameling van alle priemgetallen.
-
 Stel nu: \${P}\$ is eindig, zeg \${P}= \{ p_{1},\dots ,p_{r}\}\$.
-
 Neem het getal \$N = p_{1}p_{2}\cdots p_{r}+1\$. \$N\notin{P}
 \implies N\$ is geen priemgetal. Laat \$p &gt; 1\$ de kleinste
 priemdeler van \$N\$ zijn.
-
 \footnote{Hoofdstelling van de rekenkunde: ieder geheel getal
 \$n&gt;1\$ kan worden geschreven als product van priemgetallen.}
-
 \$p &lt; N \implies p\in{P}\$. \$p\$ deelt zowel \$p_{1}p_{2}\cdots
 p_{r}\$ als \$N\$ en daarom ook het verschil
 \$N\~-\~p_{1}p_{2}\cdots p_{r}=1\$.
-
 Dit kan alleen als \$p=1\$. \$\bot\$\~{Tegenspraak}.
-
 Conclusie: \${P}\$ is niet eindig.
-
 \end{proof}
-
 \begin{stelling}
-
 Het getal \$\sqrt2\$ is niet rationaal.
-
 \end{stelling}
-
 \begin{proof}
-
 \$\sqrt2\$ rationaal. Dan geldt \$\sqrt2=\frac{m}{n}\$ met \$m,n \in
 \mathbb{Z}\$ en \$n\not=0\$ en \$ggd(m,n)=1\$.
-
 \bigskip
-
 \$\sqrt2 = \frac{m}{n}\$
-
 \bigskip
-
 \$2 = (\frac{m}{n})^2 = \frac{m^2}{n^2}\$
-
 \bigskip
-
 \$2n^{2} = m^2\$
-
 \bigskip
-
 \$m^2\$ is even, dus \$m\$ is even, oftewel: \$m=2k, k \in
 \mathbb{Z}\$.
-
 \bigskip
-
 Substitutie van \$m=2k\$ geeft:
-
 \bigskip
-
 \$2n^2 =(2k)^2 = 4k^2\$
-
 \bigskip
-
 \$n^2=2k^2\$
-
 \bigskip
-
 \$n^2\$ is even, dus \$n\$ is even.
-
 \bigskip
-
 Dus: \$m\$ is even en \$n\$ is even: \$ggd(m,n)\geq2\$. Tegenspraak!
-
 \bigskip
-
 Dus \$\sqrt2\$ is niet rationaal
-
 \bigskip
-
 \end{proof}
-
 \end{document}
 
 {% endhighlight %}
@@ -674,43 +593,25 @@ Onthouden
 </h3>
 </div>
 <div class="panel-body">
-\# Wiskunde schrijven:
-
-\#\# Schrijf zinnen met een hoofdletter en een punt.
-
-\#\# Verdeel de tekst in alinea's en paragrafen.
-
-\#\# Schrijf goed Nederlands.
-
-\#\# Schrijf in- en uitleidingen.
-
-\#\# Wees zorgvuldig met naamgeving.
-
-\#\# Vind een balans tussen woorden en symbolen.
-
-\#\# Nummer formules alleen als dat nodig is.
-
-\#\# Geef figuren en tabellen een onderschrift.
-
-\#\# Gebruik displays als dat nodig is.
-
-\#\# Geef definities en stellingen de juiste opmaak.
-
-\#2 LaTeX:
-
-\#\# Gebruik en maak structuurcommando's
-
-\#\# Houd je code netjes.
-
-\#\# Typ geen lege regel als dat niet moet.
-
-\#\# Gebruik Babel.
-
-\#\# Breek juist af.
-
-\#\# Voorkom een onjuiste spatie na een punt.
-
-\#\# Gebruik `\DeclareMathOperator` voor nieuwe operatoren.
+* Wiskunde schrijven:
+    - Schrijf zinnen met een hoofdletter en een punt.
+    - Verdeel de tekst in alinea's en paragrafen.
+    - Schrijf goed Nederlands.
+    - Schrijf in- en uitleidingen.
+    - Wees zorgvuldig met naamgeving.
+    - Vind een balans tussen woorden en symbolen.
+    - Nummer formules alleen als dat nodig is.
+    - Geef figuren en tabellen een onderschrift.
+    - Gebruik displays als dat nodig is.
+    - Geef definities en stellingen de juiste opmaak.
+* LaTeX:
+    - Gebruik en maak structuurcommando's
+    - Houd je code netjes.
+    - Typ geen lege regel als dat niet moet.
+    - Gebruik Babel.
+    - Breek juist af.
+    - Voorkom een onjuiste spatie na een punt.
+    - Gebruik `\DeclareMathOperator` voor nieuwe operatoren.
 
 </div>
 </div>
