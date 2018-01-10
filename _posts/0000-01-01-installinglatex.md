@@ -18,3 +18,6 @@ LaTeX is installed by installing a **distribution**. A distribution is a collect
   [TeX Live]: http://www.tug.org/texlive/
   [MacTeX]: http://www.tug.org/mactex/
 
+### TexWorks
+
+After installing you need to find **TexWorks**, which is a LaTeX-editor which we will use to edit latex-files and to process them. 
