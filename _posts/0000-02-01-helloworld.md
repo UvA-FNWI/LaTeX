@@ -46,7 +46,8 @@ TeXworks
 
 ShareLaTeX
 :   An online editor where you can collaborate with others. It is
-    convenient to use this on computers where LaTeX isn't installed.
+    convenient to use this on computers where LaTeX isn't installed. 
+    Nowadays lots of students use ShareLaTeX, but to learn LaTeX we start using TeXworks. 
 
 In the first exercise we will assume that you use TeXworks. To install
 this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}).
