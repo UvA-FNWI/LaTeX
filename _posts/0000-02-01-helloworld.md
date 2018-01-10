@@ -88,13 +88,37 @@ turns your code into a PDF document which you will see in a new window.
 Exercise 2</h3>
 </div>
 <div class="panel-body">
+1.  One your computer create a folder `LaTeX` (a subfolder of the computeralgebra/latex-folder)
+2.  Place the example file created above in this folder.
+3.  Do the same with all the LaTeX-files you will use in this course. 
+
+</div>
+</div><div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">
+Exercise 3</h3>
+</div>
+<div class="panel-body">
 1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex).
 2.  Open this file in TeXworks.
 3.  Typeset the document. 
+4.  Compare the input with the output. 
+
+</div>
+</div><div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title">
+Exercise 4</h3>
+</div>
+<div class="panel-body">
+1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/sample2e.tex).
+2.  Open this file in TeXworks.
+3.  Typeset the document. 
+4.  Compare the input with the output. 
+
 </div>
 </div>
-From now on we start using TeXworks. In the final
-exam TeXworks must be used. 
+From now on we start using TeXworks. In the final exam TeXworks will be used. 
 
 Resources
 ---------
@@ -104,13 +128,10 @@ if you can't figure something out yourself. The following websites
 provide useful information:
 
 [LaTeX Wikibooks](https://en.wikibooks.org/wiki/LaTeX)
-:   An up-to-date collection of articles about LaTeX.
+:   An up-to-date collection of articles about LaTeX. The standard resource for this course. 
 
 [TeX - LaTeX Stack Exchange](http://tex.stackexchange.com)
-:   A question and answer site with many active users.
-
-[Detexify](http://detexify.kirelabs.org/classify.html)
-:   A symbol recogniser: draw a symbol and it returns the LaTeX command.
+:   A question and answer site with many active users. For the students who want to know more. 
 
 <div class="panel panel-success">
 <div class="panel-heading">
