@@ -49,7 +49,7 @@ ShareLaTeX
     convenient to use this on computers where LaTeX isn't installed.
 
 In the first exercise we will assume that you use TeXworks. To install
-this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}.
+this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}).
 
 <div class="panel panel-primary">
 <div class="panel-heading">
