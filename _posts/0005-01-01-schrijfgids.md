@@ -496,7 +496,7 @@ het patroon punt-spatie ziet.
 
 ### B.7. Gebruik `\DeclareMathOperator` voor nieuwe operatoren.
 
-Voor het zetten van operatoren als \$\Tr\$ of \$\ord\$ maak je zelf
+Voor het zetten van operatoren als \$\operatorname{Tr}\$ of \$\operatorname{ord}\$ maak je zelf
 een operator met
 
 {% highlight latex %}
@@ -537,46 +537,46 @@ Opdracht
 Er zijn oneindig veel priemgetallen.
 \end{stelling}
 \begin{proof}
-\${P}\$ = de verzameling van alle priemgetallen.
-Stel nu: \${P}\$ is eindig, zeg \${P}= \{ p_{1},\dots ,p_{r}\}\$.
-Neem het getal \$N = p_{1}p_{2}\cdots p_{r}+1\$. \$N\notin{P}
-\implies N\$ is geen priemgetal. Laat \$p &gt; 1\$ de kleinste
-priemdeler van \$N\$ zijn.
+${P}$ = de verzameling van alle priemgetallen.
+Stel nu: ${P}$ is eindig, zeg ${P}= \{ p_{1},\dots ,p_{r}\}$.
+Neem het getal $N = p_{1}p_{2}\cdots p_{r}+1$. $N\notin{P}
+\implies N$ is geen priemgetal. Laat $p &gt; 1$ de kleinste
+priemdeler van $N$ zijn.
 \footnote{Hoofdstelling van de rekenkunde: ieder geheel getal
-\$n&gt;1\$ kan worden geschreven als product van priemgetallen.}
-\$p &lt; N \implies p\in{P}\$. \$p\$ deelt zowel \$p_{1}p_{2}\cdots
-p_{r}\$ als \$N\$ en daarom ook het verschil
-\$N\~-\~p_{1}p_{2}\cdots p_{r}=1\$.
-Dit kan alleen als \$p=1\$. \$\bot\$\~{Tegenspraak}.
-Conclusie: \${P}\$ is niet eindig.
+$n&gt;1$ kan worden geschreven als product van priemgetallen.}
+$p &lt; N \implies p\in{P}$. $p$ deelt zowel $p_{1}p_{2}\cdots
+p_{r}$ als $N$ en daarom ook het verschil
+$N\~-\~p_{1}p_{2}\cdots p_{r}=1$.
+Dit kan alleen als $p=1$. $\bot$\~{Tegenspraak}.
+Conclusie: ${P}$ is niet eindig.
 \end{proof}
 \begin{stelling}
-Het getal \$\sqrt2\$ is niet rationaal.
+Het getal $\sqrt2$ is niet rationaal.
 \end{stelling}
 \begin{proof}
-\$\sqrt2\$ rationaal. Dan geldt \$\sqrt2=\frac{m}{n}\$ met \$m,n \in
-\mathbb{Z}\$ en \$n\not=0\$ en \$ggd(m,n)=1\$.
+$\sqrt2$ rationaal. Dan geldt $\sqrt2=\frac{m}{n}$ met $m,n \in
+\mathbb{Z}$ en $n\not=0$ en $ggd(m,n)=1$.
 \bigskip
-\$\sqrt2 = \frac{m}{n}\$
+$\sqrt2 = \frac{m}{n}$
 \bigskip
-\$2 = (\frac{m}{n})^2 = \frac{m^2}{n^2}\$
+$2 = (\frac{m}{n})^2 = \frac{m^2}{n^2}$
 \bigskip
-\$2n^{2} = m^2\$
+$2n^{2} = m^2$
 \bigskip
-\$m^2\$ is even, dus \$m\$ is even, oftewel: \$m=2k, k \in
-\mathbb{Z}\$.
+$m^2$ is even, dus $m$ is even, oftewel: $m=2k, k \in
+\mathbb{Z}$.
 \bigskip
-Substitutie van \$m=2k\$ geeft:
+Substitutie van $m=2k$ geeft:
 \bigskip
-\$2n^2 =(2k)^2 = 4k^2\$
+$2n^2 =(2k)^2 = 4k^2$
 \bigskip
-\$n^2=2k^2\$
+$n^2=2k^2$
 \bigskip
-\$n^2\$ is even, dus \$n\$ is even.
+$n^2$ is even, dus $n$ is even.
 \bigskip
-Dus: \$m\$ is even en \$n\$ is even: \$ggd(m,n)\geq2\$. Tegenspraak!
+Dus: $m$ is even en $n$ is even: $ggd(m,n)\geq2$. Tegenspraak!
 \bigskip
-Dus \$\sqrt2\$ is niet rationaal
+Dus $\sqrt2$ is niet rationaal
 \bigskip
 \end{proof}
 \end{document}
