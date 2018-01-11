@@ -88,7 +88,7 @@ turns your code into a PDF document which you will see in a new window.
 Exercise 2</h3>
 </div>
 <div class="panel-body">
-1.  One your computer create a folder `LaTeX` (a subfolder of the computeralgebra/latex-folder)
+1.  On your computer create a folder `LaTeX` (a subfolder of the computeralgebra/latex-folder)
 2.  Place the example file created above in this folder.
 3.  Do the same with all the LaTeX-files you will use in this course. 
 
