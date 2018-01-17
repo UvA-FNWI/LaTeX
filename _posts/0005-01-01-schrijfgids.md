@@ -23,6 +23,7 @@ In deze les behandelen we vuistregels bij het schrijven van wiskunde. De
 eerste paragraaf gaat over het opschrijven van wiskunde in het algemeen.
 De vuistregels hiervoor zijn onafhankelijk van LaTeX. De tweede
 paragraaf gaat over goed LaTeXen.
+Ziehier een <a href="schrijfgids2013.pdf">pdf-versie van de schrijfgids</a>. 
 
 A. Wiskunde opschrijven
 -----------------------
