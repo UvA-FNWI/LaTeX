@@ -16,7 +16,12 @@ MathJax.Hub.Config(
       TeX:
       {
         extensions: ['AMSmath.js', 'AMSsymbols.js'],
-        equationNumbers: { autoNumber: "AMS" }
+        equationNumbers: { autoNumber: "AMS" },
+        Macros: {
+            Z: "\\mathbb{Z}",
+            N: "\\mathbb{N}",
+            ggd: "\\operatorname{ggd}"
+        }
       },
       'HTML-CSS': { scale: 88 }
 });

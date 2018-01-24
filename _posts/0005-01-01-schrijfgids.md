@@ -174,10 +174,8 @@ De grootste gemene deler van \$a\$ en \$b\$, geschreven \$\ggd(a, b)\$,
 is het grootste gehele getal dat zowel \$a\$ als \$b\$ deelt.
 
 </div>
-<div class="example">
-We definiëren: \$\ggd(a,b) = {\max{ \{d \in \N_{&gt;0} : d | a
-\wedge d | b \}} }\$.
-
+<div class="example" markdown="0">
+We definiëren: $\ggd(a,b) = {\max{ \{d \in \N_{>0} : d | a \wedge d | b \}} }$.
 </div>
 De tweede definitie is weliswaar korter, maar is het beter leesbaar dan
 de eerste? Vermijd fomules als ze niet nodig zijn. "A good attitude to
