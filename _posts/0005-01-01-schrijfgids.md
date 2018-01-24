@@ -55,12 +55,10 @@ Een zin eindigt altijd met een punt, ook als de zin op een formule
 eindigt:
 
 <div class="example" markdown="0">
-Neem een geheel getal \$n \not= 0\$ en definieer
+Neem een geheel getal $n \not= 0$ en definieer
 
 \[
-
-(\Z/n\Z)^\* = \{a \in \Z/n\Z : \gcd(a, n) = 1\}.
-
+(\Z/n\Z)^* = \{a \in \Z/n\Z : \gcd(a, n) = 1\}.
 \]
 
 </div>
@@ -68,7 +66,7 @@ Als een zin na een formule doorgaat, schrijf dan een passend leesteken,
 bijvoorbeeld een komma:
 
 <div class="example" markdown="0">
-Het teken definieert voor \$n \geq 2\$ een surjectief homomorfisme
+Het teken definieert voor $n \geq 2$ een surjectief homomorfisme
 
 \[
 
@@ -76,9 +74,9 @@ Het teken definieert voor \$n \geq 2\$ een surjectief homomorfisme
 
 \]
 
-met andere woorden, \$\varepsilon(\sigma \tau) =
-\varepsilon(\sigma)\varepsilon(\tau)\$ voor alle \$\sigma,\tau
-\in S_n\$.
+met andere woorden, $\varepsilon(\sigma \tau) =
+\varepsilon(\sigma)\varepsilon(\tau)$ voor alle $\sigma,\tau
+\in S_n$.
 
 </div>
 ### A.2. Verdeel de tekst in alinea's en paragrafen
@@ -176,7 +174,7 @@ De grootste gemene deler van \$a\$ en \$b\$, geschreven \$\ggd(a, b)\$,
 is het grootste gehele getal dat zowel \$a\$ als \$b\$ deelt.
 
 </div>
-<div class="example" markdown="0">
+<div class="example">
 We definiëren: \$\ggd(a,b) = {\max{ \{d \in \N_{&gt;0} : d | a
 \wedge d | b \}} }\$.
 
