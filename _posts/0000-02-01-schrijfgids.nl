@@ -283,19 +283,15 @@ Opmaakcommando's zijn bijvoorbeeld
 
 Gebruik in de tekst alleen structuurcommando's. Schrijf dus:
 
-{% highlight latex %}
-
+```latex
 Een \emph{even} getal is een getal dat geheel deelbaar is door 2.
-
-{% endhighlight %}
+```
 
 niet:
 
-{% highlight latex %}
-
+```latex
 Een \textit{even} getal is een getal dat geheel deelbaar is door 2.
-
-{% endhighlight %}
+```
 
 De opmaak van de elementen van de structuur regel je in de preamble.
 Maak structuurcommando's bij met `\newcommand` als dat nodig is.
@@ -308,42 +304,36 @@ zoals de uitvoer eruit ziet. We geven een aantal voorbeelden.
 
 Zet de commando's voor een display op aparte regels:
 
-{% highlight latex %}
-
+```latex
 We vinden
 \[
 x = 10.
 \]
-
-{% endhighlight %}
+```
 
 Zet `\begin` en `\end`-commando's van omgevingen op aparte regels:
 
-{% highlight latex %}
-
+```latex
 \begin{equation}
 \label{eq:pyth}
 a^2 + b^2 = c^2
 \end{equation}
-
-{% endhighlight %}
+```
 
 In een `align`-omgeving, tabel of matrix zet je de ampersands onder
 elkaar:
 
-{% highlight latex %}
+```latex
 \begin{align*}
 x &= 1 + 1 + 8 \\
   &= 2 + 8 \\
   &= 10
 \end{align*}
-
-{% endhighlight %}
+```
 
 Gebruik lege regels tussen tekstelementen:
 
-{% highlight latex %}
-
+```latex
 \section{Inleiding}
 Dit is een inleiding. In een inleiding vertel je kort waar de tekst over
 gaat.
@@ -361,8 +351,7 @@ Stel er zijn eindig veel priemgetallen.
 
 \section{Conclusie}
 Hier staat een conclusie.
-
-{% endhighlight %}
+```
 
 Het gedeelte van de code voor `\begin{document}` heet de *preamble*.
 Nieuwe commando's definieer je in de preamble. Ingewikkelde commando's
@@ -385,15 +374,13 @@ We beschouwen het symmetrische polynoom
 Dit is ten duidelijkste een symmetrisch polynoom.
 
 </div>
-{% highlight latex %}
-
+```latex
 We beschouwen het symmetrische polynoom
 \[
 (X_1 - X_2)^2.
 \]
 Dit is ten duidelijkste een symmetrisch polynoom.
-
-{% endhighlight %}
+```
 
 <div class="example" markdown="0">
 We beschouwen het symmetrische polynoom
@@ -407,16 +394,14 @@ We beschouwen het symmetrische polynoom
         Dit is ten duidelijkste een symmetrisch polynoom.
 
 </div>
-{% highlight latex %}
-
+```latex
 We beschouwen het symmetrische polynoom
 \[
 (X_1 - X_2)^2.
 \]
 
 Dit is ten duidelijkste een symmetrisch polynoom.
-
-{% endhighlight %}
+```
 
 ### B.4. Gebruik Babel
 
@@ -431,37 +416,29 @@ De tilde `~` geeft een *non breaking space*. Gebruik de tilde in plaats
 van een spatie, als op die spatie niet mag worden afgebroken. Voorkom
 bijvoorbeeld dat een symbool op het begin van een regel wordt gezet:
 
-{% highlight latex %}
-
+```latex
 het getal~$n$, de functie~$f$, de Hilbertruimte~$H$.
-
-{% endhighlight %}
+```
 
 Gebruik de tilde ook om rijtjes korte symbolen netjes af te breken:
 
-{% highlight latex %}
-
+```latex
 de variabelen $x$,~$y$ en~$z$.
-
-{% endhighlight %}
+```
 
 Om een woord eenmalig op een voorkeursplek af te breken, gebruik je
 `\-`, bijvoorbeeld:
 
-{% highlight latex %}
-
+```latex
 voorkeurs\-behandeling
-
-{% endhighlight %}
+```
 
 LaTeX zal dan alleen op de plek van de `\-` proberen af te breken en op
 de andere plekken niet. Als je dat wel wilt, moet je tikken:
 
-{% highlight latex %}
-
+```latex
 voor\-keurs\-be\-han\-de\-ling
-
-{% endhighlight %}
+```
 
 In een formule die tussen enkele dollartekens staat, kun je met
 accolades een afbreekvoorkeur aangeven: `${a^2+b^2}=c^2$`. De accolades
@@ -496,12 +473,10 @@ het patroon punt-spatie ziet.
 Voor het zetten van operatoren als \$\operatorname{Tr}\$ of \$\operatorname{ord}\$ maak je zelf
 een operator met
 
-{% highlight latex %}
-
+```latex
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\ord}{ord}
-
-{% endhighlight %}
+```
 
 Zo scheid je opmaak van inhoud en krijg je de juiste witruimte rondom de
 operator.
