@@ -11,10 +11,11 @@ A LaTeX document
 
 Every LaTeX document has the following structure:
 
-<pre><code class='tex'>\documentclass[a4paper]{article}
+```latex
+\documentclass[a4paper]{article}
 \begin{document}
 \end{document}
-</code></pre>
+```
 
 In this, `article` can be replaced by a different *document class*. The
 part before `\begin{document}` is called the **preamble**.
@@ -27,8 +28,9 @@ between `\begin{document}` and `\end{document}`.
 A **document class** is a collection of settings corresponding to a
 specific type of document. The document class is set with
 
-<pre><code class='tex'>\documentclass[options]{class}
-</code></pre>
+```latex
+\documentclass[options]{class}
+```
 
 where `options` is a list of options seperated by commas. Later, we will
 look further into this.
@@ -41,15 +43,17 @@ mathematical symbols. Modern *TeX distributions* (see [Installing
 LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}))
 contain many packages, which can be used by putting
 
-<pre><code class='tex'>\usepackage[options]{packagename}
-</code></pre>
+```latex
+\usepackage[options]{packagename}
+```
 
 in the preamble, with `packagename` the name of the package and
 `options` a list of options. A package which is indispensible in Dutch
 documents is
 
-<pre><code class='tex'>\usepackage[dutch]{babel}
-</code></pre>
+```latex
+\usepackage[dutch]{babel}
+```
 
 The `babel` package with the option `dutch` will make sure that LaTeX
 replaces standard titles such as *Chapter* and *Table of contents* by
@@ -67,16 +71,18 @@ called *top matter*. With the command `\maketitle` LaTeX will typeset
 the topmatter following the style of the document class. An example of
 top matter is
 
-<pre><code class='tex'>\title{A new proof of an old theorem}
+```latex
+\title{A new proof of an old theorem}
 \author{Jane Doe}
 \maketitle
-</code></pre>
+```
 A date can be inserted with `\date{January 1st, 2017}`. If you don't use
 `\date`, LaTeX will typeset the current date. More than one author can
 be typeset with `\and`:
 
-<pre><code class='tex'>\author{Jane Doe \and John Doe}
-</code></pre>
+```latex
+\author{Jane Doe \and John Doe}
+```
 
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title"> Exercise 1 </h3>
@@ -126,16 +132,18 @@ more arguments, which are written between `{` and `}` after the command.
 An argument can be optional, which is indicated by `[` and `]` after the
 command. The general syntax is:
 
-<pre><code class='tex'>\commandname[option1,option2,...]{argument1}{argument2}...
-</code></pre>
+```latex
+\commandname[option1,option2,...]{argument1}{argument2}...
+```
 
 ### Environments
 
 An **environment** such as `document` is created by two commands:
 
-<pre><code class='tex'>\begin{name}
+```latex
+\begin{name}
 \end{name}
-</code></pre>
+```
 
 Inside an environment one can write LaTeX code. An environment defines a
 group automatically.
@@ -148,26 +156,30 @@ In this assignment we will define our own command.
 1.  Create a new LaTeX file using the mathtools package and put the
     following in the preamble:
 
-	<pre><code class='tex'>\newcommand{\R}{\mathbb{R}}
-	</code></pre>
+	```latex
+    \newcommand{\R}{\mathbb{R}}
+    ```
 
 2.  Test your new command:
 
-	<pre><code class='tex'>The real line $\R{}$.
-	</code></pre>
+	```latex
+    The real line $\R{}$.
+    ```
 
 3.  What happens if you remove the empty group `{}`?
 
 4.  We will now create a command with an argument. Put the following in
     the preamble:
 
-	<pre><code class='tex'>\newcommand{\Bb}[1]{\mathbb{#1}}
-	</code></pre>
+	```latex
+    \newcommand{\Bb}[1]{\mathbb{#1}}
+	```
 
 5.  Test it using this code:
 
-	<pre><code class='tex'>The rationals $\Bb{Q}$.
-	</code></pre>
+	```latex
+    The rationals $\Bb{Q}$.
+	```
 
 6.  With `[1]` we indicate that the command expects a single argument.
 	We use this argument with `#1`. Try to make a command with two

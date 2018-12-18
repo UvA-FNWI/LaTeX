@@ -60,10 +60,12 @@ this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installingla
 2.  Paste the following code in an empty document and save it as
     'helloworld.tex'. The extension of a TeX file always is '.tex'.
 
-	<pre><code class='tex'>\documentclass[a4paper]{article}
-\begin{document}
-Hello world!
-\end{document}</code></pre>
+    ```latex
+	\documentclass[a4paper]{article}
+    \begin{document}
+    Hello world!
+    \end{document}
+    ```
 
 3. Select 'pdfLaTeX' in the menu to the right of the green button and
 press the green button afterwards. We call this *typesetting*. LaTeX
@@ -74,7 +76,6 @@ turns your code into a PDF document which you will see in a new window.
 -   Useful: To jump from the code to the output in TeXworks you can
     right-click and choose 'Jump to PDF'. In the same way it is possible
     to switch from the pdf to the code.
-
 </div></div>
 
 <div class="panel panel-primary">
@@ -83,7 +84,6 @@ turns your code into a PDF document which you will see in a new window.
 1.  On your computer create a folder `LaTeX` (a subfolder of the computeralgebra/latex-folder)
 2.  Place the example file created above in this folder.
 3.  Do the same with all the LaTeX-files you will use in this course.
-
 </div></div>
 
 <div class="panel panel-primary">
@@ -93,18 +93,8 @@ turns your code into a PDF document which you will see in a new window.
 2.  Open this file in TeXworks.
 3.  Typeset the document.
 4.  Compare the input with the output.
-
 </div></div>
 
-<div class="panel panel-primary">
-<h3 class="panel-heading panel-title">Exercise 4</h3>
-<div class="panel-body">
-1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/sample2e.tex).
-2.  Open this file in TeXworks.
-3.  Typeset the document.
-4.  Compare the input with the output.
-
-</div></div>
 From now on we start using TeXworks. In the final exam TeXworks will be used.
 
 Resources
