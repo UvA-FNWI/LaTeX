@@ -23,7 +23,7 @@ In deze les behandelen we vuistregels bij het schrijven van wiskunde. De
 eerste paragraaf gaat over het opschrijven van wiskunde in het algemeen.
 De vuistregels hiervoor zijn onafhankelijk van LaTeX. De tweede
 paragraaf gaat over goed LaTeXen.
-Ziehier een <a href="schrijfgids2013.pdf">pdf-versie van de schrijfgids</a>. 
+Ziehier een <a href="schrijfgids2013.pdf">pdf-versie van de schrijfgids</a>.
 
 A. Wiskunde opschrijven
 -----------------------
@@ -508,12 +508,7 @@ operator.
 
 
 <div class="panel panel-success">
-<div class="panel-heading">
-<h3 class="panel-title">
-Onthouden
-
-</h3>
-</div>
+<h3 class="panel-heading panel-title"> Onthouden </h3>
 <div class="panel-body">
 * Wiskunde schrijven:
     - Schrijf zinnen met een hoofdletter en een punt.
@@ -535,8 +530,7 @@ Onthouden
     - Voorkom een onjuiste spatie na een punt.
     - Gebruik `\DeclareMathOperator` voor nieuwe operatoren.
 
-</div>
-</div>
+</div> </div>
 
 ------------------------------------------------------------------------
 

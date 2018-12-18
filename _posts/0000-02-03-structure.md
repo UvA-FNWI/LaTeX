@@ -79,12 +79,7 @@ be typeset with `\and`:
 </code></pre>
 
 <div class="panel panel-primary">
-<div class="panel-heading">
-<h3 class="panel-title">
-Exercise 1
-
-</h3>
-</div>
+<h3 class="panel-heading panel-title"> Exercise 1 </h3>
 <div class="panel-body">
 1.  Writing as little code as possible, create a Dutch document with
     title "Een bewijs van de Riemannhypothese" with yourself as
@@ -92,15 +87,9 @@ Exercise 1
 2.  Make sure LaTeX typesets the date in Dutch and not in English.
 3.  Ask one of the teachers to check your document.
 
-</div>
-</div>
+</div> </div>
 <div class="panel panel-danger">
-<div class="panel-heading">
-<h3 class="panel-title">
-Important
-
-</h3>
-</div>
+<h3 class="panel-heading panel-title"> Important </h3>
 <div class="panel-body">
 We see that LaTeX determines the layout itself. This is an important
 concept in LaTeX! We determine the layout of the text by structuring it.
@@ -110,8 +99,7 @@ By seperating layout and content
 -   We obtain a consistent layout.
 -   We (or a publisher) are able to change the layout easily.
 
-</div>
-</div>
+</div> </div>
 
 Structuring text
 ----------------
@@ -153,12 +141,7 @@ Inside an environment one can write LaTeX code. An environment defines a
 group automatically.
 
 <div class="panel panel-primary">
-<div class="panel-heading">
-<h3 class="panel-title">
-Exercise 2
-
-</h3>
-</div>
+<h3 class="panel-heading panel-title"> Exercise 2 </h3>
 <div class="panel-body">
 In this assignment we will define our own command.
 
@@ -190,15 +173,9 @@ In this assignment we will define our own command.
 	We use this argument with `#1`. Try to make a command with two
 	arguments.
 
-</div>
-</div>
+</div> </div>
 <div class="panel panel-success">
-<div class="panel-heading">
-<h3 class="panel-title">
-Remember
-
-</h3>
-</div>
+<h3 class="panel-heading panel-title"> Remember </h3>
 <div class="panel-body">
 -   What is the global structure of a LaTeX file?
 -   What do `\documentclass`, `\usepackage`, `\title`, `\author`,
@@ -208,5 +185,4 @@ Remember
 -   What are groups, commands and environments?
 -   How do you make your own command?
 
-</div>
-</div>
+</div> </div>

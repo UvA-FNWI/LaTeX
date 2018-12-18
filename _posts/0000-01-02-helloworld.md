@@ -54,12 +54,7 @@ In the first exercise we will assume that you use TeXworks. To install
 this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}).
 
 <div class="panel panel-primary">
-<div class="panel-heading">
-<h3 class="panel-title">
-Exercise 1
-
-</h3>
-</div>
+<h3 class="panel-heading panel-title">Exercise 1</h3>
 <div class="panel-body">
 1.  Open 'TeXworks' on your computer.
 2.  Paste the following code in an empty document and save it as
@@ -80,44 +75,36 @@ turns your code into a PDF document which you will see in a new window.
     right-click and choose 'Jump to PDF'. In the same way it is possible
     to switch from the pdf to the code.
 
-</div>
-</div>
+</div></div>
+
 <div class="panel panel-primary">
-<div class="panel-heading">
-<h3 class="panel-title">
-Exercise 2</h3>
-</div>
+<h3 class="panel-heading panel-title">Exercise 2</h3>
 <div class="panel-body">
 1.  On your computer create a folder `LaTeX` (a subfolder of the computeralgebra/latex-folder)
 2.  Place the example file created above in this folder.
 3.  Do the same with all the LaTeX-files you will use in this course.
 
-</div>
-</div><div class="panel panel-primary">
-<div class="panel-heading">
-<h3 class="panel-title">
-Exercise 3</h3>
-</div>
+</div></div>
+
+<div class="panel panel-primary">
+<h3 class="panel-heading panel-title">Exercise 3</h3>
 <div class="panel-body">
 1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex).
 2.  Open this file in TeXworks.
 3.  Typeset the document.
 4.  Compare the input with the output.
 
-</div>
-</div><div class="panel panel-primary">
-<div class="panel-heading">
-<h3 class="panel-title">
-Exercise 4</h3>
-</div>
+</div></div>
+
+<div class="panel panel-primary">
+<h3 class="panel-heading panel-title">Exercise 4</h3>
 <div class="panel-body">
 1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/sample2e.tex).
 2.  Open this file in TeXworks.
 3.  Typeset the document.
 4.  Compare the input with the output.
 
-</div>
-</div>
+</div></div>
 From now on we start using TeXworks. In the final exam TeXworks will be used.
 
 Resources
@@ -131,22 +118,16 @@ provide useful information:
 :   An up-to-date collection of articles about LaTeX. The standard resource for this course.
 
 [Detexify](http://detexify.kirelabs.org/classify.html)
-:   A tool to find the LaTeX command for some symbol.
+:   A tool to find the LaTeX command that produces some symbol.
 
 [TeX - LaTeX Stack Exchange](http://tex.stackexchange.com)
 :   A question and answer site with many active users. For the students who want to know more.
 
 <div class="panel panel-success">
-<div class="panel-heading">
-<h3 class="panel-title">
-Remember
-
-</h3>
-</div>
+<h3 class="panel-heading panel-title"> Remember </h3>
 <div class="panel-body">
 - How to open TeXworks (or ShareLaTeX)?
 - How to compile a LaTeX file?
 - Don't be afraid to explore the web!
 
-</div>
-</div>
+</div> </div>
