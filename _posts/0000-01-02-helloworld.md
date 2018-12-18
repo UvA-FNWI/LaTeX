@@ -44,11 +44,11 @@ TeXworks
 :   A simple editor which is included in the LaTeX distributions MikTeX
     and TeX Live.
 
-ShareLaTeX
+Overleaf
 :   An online editor where you can collaborate with others. It is
-    convenient to use this on computers where LaTeX isn't installed. 
-    Nowadays lots of students use ShareLaTeX, but to learn LaTeX we start using TeXworks. 
-    Afterwards students are free to use ShareLaTeX. 
+    convenient to use this on computers where LaTeX isn't installed.
+    Nowadays lots of students use Overleaf, but to learn LaTeX we start using TeXworks.
+    Afterwards students are free to use Overleaf.
 
 In the first exercise we will assume that you use TeXworks. To install
 this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}).
@@ -90,7 +90,7 @@ Exercise 2</h3>
 <div class="panel-body">
 1.  On your computer create a folder `LaTeX` (a subfolder of the computeralgebra/latex-folder)
 2.  Place the example file created above in this folder.
-3.  Do the same with all the LaTeX-files you will use in this course. 
+3.  Do the same with all the LaTeX-files you will use in this course.
 
 </div>
 </div><div class="panel panel-primary">
@@ -101,8 +101,8 @@ Exercise 3</h3>
 <div class="panel-body">
 1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex).
 2.  Open this file in TeXworks.
-3.  Typeset the document. 
-4.  Compare the input with the output. 
+3.  Typeset the document.
+4.  Compare the input with the output.
 
 </div>
 </div><div class="panel panel-primary">
@@ -113,12 +113,12 @@ Exercise 4</h3>
 <div class="panel-body">
 1.  Download this [introductory LaTeX document](ftp://www.ctan.org/tex-archive/macros/latex/base/sample2e.tex).
 2.  Open this file in TeXworks.
-3.  Typeset the document. 
-4.  Compare the input with the output. 
+3.  Typeset the document.
+4.  Compare the input with the output.
 
 </div>
 </div>
-From now on we start using TeXworks. In the final exam TeXworks will be used. 
+From now on we start using TeXworks. In the final exam TeXworks will be used.
 
 Resources
 ---------
@@ -128,10 +128,13 @@ if you can't figure something out yourself. The following websites
 provide useful information:
 
 [LaTeX Wikibooks](https://en.wikibooks.org/wiki/LaTeX)
-:   An up-to-date collection of articles about LaTeX. The standard resource for this course. 
+:   An up-to-date collection of articles about LaTeX. The standard resource for this course.
+
+[Detexify](http://detexify.kirelabs.org/classify.html)
+:   A tool to find the LaTeX command for some symbol.
 
 [TeX - LaTeX Stack Exchange](http://tex.stackexchange.com)
-:   A question and answer site with many active users. For the students who want to know more. 
+:   A question and answer site with many active users. For the students who want to know more.
 
 <div class="panel panel-success">
 <div class="panel-heading">
