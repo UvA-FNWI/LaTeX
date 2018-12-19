@@ -100,11 +100,11 @@ From now on we start using TeXworks. In the final exam TeXworks will be used.
 Resources
 ---------
 
-This website is only learning LaTeX throug exercises, it is <u>not</u> a reference
+This website is only learning LaTeX through exercises, it is <u>not</u> a reference
 for LaTeX. Please consult:
 
 [LaTeX Wikibooks](https://en.wikibooks.org/wiki/LaTeX)
-:   An up-to-date collection of articles about LaTeX. In this course, it is the standard reference for LaTeX.
+:   An up-to-date collection of articles about LaTeX. In this course, it is the standard LaTeX reference.
 
 [Detexify](http://detexify.kirelabs.org/classify.html)
 :   A tool to find the LaTeX command that produces some symbol.
