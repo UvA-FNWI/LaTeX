@@ -1,5 +1,4 @@
 markdown: kramdown
-pygments: false
 highligher: rouge
 
 permalink: /:categories/:title/
