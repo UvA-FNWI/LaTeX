@@ -120,13 +120,7 @@ indicates that the code belongs together.
 
 ### Commands
 
-Examples of commands are `\documentclass`, `\usepackage` and `\author`.
-A **command** comes in one of these two types:
-
--   First a `\` and then a name consisting only of letters. After the
-    name a space, a number or a special character follows.
--   First a `\` and then a number or a special character.
-
+Examples of **commands** are `\documentclass`, `\usepackage` and `\author`.
 The name of a command is case sensitive. Some commands require one or
 more arguments, which are written between `{` and `}` after the command.
 An argument can be optional, which is indicated by `[` and `]` after the

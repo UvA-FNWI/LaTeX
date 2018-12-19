@@ -5,25 +5,11 @@ category: week2
 description: Nederlandse stijlregels voor wiskunde en LaTeX.
 ---
 
-<div class="hide">
-
-\[
-    \newcommand{\field}[1]{\mathbb{\#1}}
-    \newcommand{\Z}{\field Z}
-    \newcommand{\N}{\field N}
-    \newcommand{\R}{\field R}
-    \newcommand{\ideal}[1]{\mathfrak{\#1}}
-    \newcommand{\ggd}{\mathrm{ggd}}
-    \DeclareMathOperator{\Tr}{Tr}
-    \DeclareMathOperator{\ord}{ord}
-\]
-
-</div>
 In deze les behandelen we vuistregels bij het schrijven van wiskunde. De
 eerste paragraaf gaat over het opschrijven van wiskunde in het algemeen.
 De vuistregels hiervoor zijn onafhankelijk van LaTeX. De tweede
 paragraaf gaat over goed LaTeXen.
-Ziehier een <a href="schrijfgids2013.pdf">pdf-versie van de schrijfgids</a>.
+Ziehier een [pdf-versie van de schrijfgids](schrijfgids2013.pdf).
 
 A. Wiskunde opschrijven
 -----------------------
@@ -43,14 +29,14 @@ voor:
 
 <div class="example">
 Er geldt \$a=1\$. We zien dat \$f(1) = \pi\$.
-
 </div>
+
 Voor symbolen geldt hetzelfde:
 
 <div class="example">
 Het getal \$n\$ is belangrijk. De functie \$f\$ is reëel.
-
 </div>
+
 Een zin eindigt altijd met een punt, ook als de zin op een formule
 eindigt:
 
@@ -60,8 +46,8 @@ Neem een geheel getal $n \not= 0$ en definieer
 \[
 (\Z/n\Z)^* = \{a \in \Z/n\Z : \gcd(a, n) = 1\}.
 \]
-
 </div>
+
 Als een zin na een formule doorgaat, schrijf dan een passend leesteken,
 bijvoorbeeld een komma:
 
@@ -103,14 +89,14 @@ Bijvoorbeeld:
 
 <div class="example">
 één functie, twee variabelen, drie ondergroepen.
-
 </div>
+
 Uitzondering: getallen als wiskundige objecten schrijf je met cijfers:
 
 <div class="example">
 Er zijn zeven partities van 5.
-
 </div>
+
 #### Schrijf samenstellingen aaneen.
 
 In het Nederlands schrijven we -- anders dan in het Engels --
@@ -120,8 +106,8 @@ leesbaarheid verbetert:
 <div class="example">
 differentiaalvergelijking, \$x\$-waarde, kubusopstapeling,
 computersimulatie.
-
 </div>
+
 ### A.4. Schrijf in- en uitleidingen
 
 Help de lezer door elk hoofstuk te beginnen met een *inleiding*. In een
@@ -132,16 +118,16 @@ naar de vorige hoofdstukken:
 <div class="example">
 In het vorige hoofdstuk zagen we dat \$a\$ gelijk is aan \$b\$. Nu
 bekijken we of \$a\$ gelijk is aan \$c\$.
-
 </div>
+
 Aan het eind van een hoofdstuk doe je hetzelfde met een *uitleiding*: je
 vertelt wat je gedaan hebt en waar dat toe geleid heeft. Je kunt ook een
 bruggetje leggen naar wat volgt:
 
 <div class="example">
 In de volgende hoofdstukken gaan we dit resultaat toepassen.
-
 </div>
+
 Ook tussen definities en stellingen kun je de lezer helpen met in- en
 uitleidingen. Leg uit wat je gedaan hebt, en wat je nu wilt weten.
 
@@ -162,8 +148,8 @@ voorbeeld is de variabele \$N\$ overbodig:
 <div class="example">
 **Stelling A.1.** Elk natuurlijk getal \$N\$ heeft een unieke
 factorisatie in priemgetallen.
-
 </div>
+
 ### A.5. Vind een balans tussen woorden en symbolen
 
 Wiskundestudenten zijn vaak geneigd alles in formules uit te drukken en
@@ -172,11 +158,12 @@ gewonemensentaal te vermijden. Vergelijk:
 <div class="example">
 De grootste gemene deler van \$a\$ en \$b\$, geschreven \$\ggd(a, b)\$,
 is het grootste gehele getal dat zowel \$a\$ als \$b\$ deelt.
-
 </div>
+
 <div class="example" markdown="0">
 We definiëren: $\ggd(a,b) = {\max{ \{d \in \N_{>0} : d | a \wedge d | b \}} }$.
 </div>
+
 De tweede definitie is weliswaar korter, maar is het beter leesbaar dan
 de eerste? Vermijd fomules als ze niet nodig zijn. "A good attitude to
 the preparation of written mathematical exposition is to pretend that it
@@ -241,16 +228,16 @@ definities in romeins font en het begrip dat gedefinieerd wordt cursief:
 <div class="example">
 **Definitie A.2.** Een *even* getal is een getal dat geheel deelbaar is
 door 2.
-
 </div>
+
 Stellingen, proposities, lemma's, etc. worden traditioneel cursief
 gezet:
 
 <div class="example">
 **Stelling A.3.** *Het getal \$n^5 - n\$ is deelbaar door 10 voor alle
 \$n\in\N\$.*
-
 </div>
+
 Belangrijk is dat je niet handmatig de opmaak instelt, maar het
 `amsthm`-package gebruikt. We zullen in de volgende les zien hoe dat
 moet. Gebruik `\emph` om in definities het gedefinieerde begrip cursief
@@ -372,8 +359,8 @@ We beschouwen het symmetrische polynoom
 (X_1 - X_2)^2.
 \]
 Dit is ten duidelijkste een symmetrisch polynoom.
-
 </div>
+
 ```latex
 We beschouwen het symmetrische polynoom
 \[
@@ -392,8 +379,8 @@ We beschouwen het symmetrische polynoom
 \]
 
         Dit is ten duidelijkste een symmetrisch polynoom.
-
 </div>
+
 ```latex
 We beschouwen het symmetrische polynoom
 \[
