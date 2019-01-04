@@ -13,7 +13,7 @@ LaTeX is installed by installing a **distribution**. A distribution is a collect
 
 #### MacOS
 
-[MacTeX], [TeXworks]. This is the Mac version of TeX Live and TeXworks, which has to be installed separately on Mac.
+[MacTeX] and [TeXworks]. This is the Mac version of TeX Live and TeXworks, which has to be installed separately on Mac.
 
   [TeX Live]: http://www.tug.org/texlive/
   [MacTeX]: http://www.tug.org/mactex/
