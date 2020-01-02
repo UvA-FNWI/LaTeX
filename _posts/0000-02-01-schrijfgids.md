@@ -111,7 +111,7 @@ computersimulatie.
 ### A.4. Schrijf in- en uitleidingen
 
 Help de lezer door elk hoofstuk te beginnen met een *inleiding*. In een
-inleiding vertel je de kern van het verhaal in gewone-mensentaal: wat
+inleiding vertel je de kern van het verhaal in gewonemensentaal: wat
 wil je bereiken, waarom en hoe. Begin bijvoorbeeld met een *bruggetje*
 naar de vorige hoofdstukken:
 
@@ -134,7 +134,7 @@ uitleidingen. Leg uit wat je gedaan hebt, en wat je nu wilt weten.
 Deze in- en uitleidingen schrijf je meestal niet meteen, maar in tweede
 instantie. Dat helpt je ook met nadenken over je tekst.
 
-### A.4. Wees zorgvuldig met naamgeving
+### A.5. Wees zorgvuldig met naamgeving
 
 Kies geschikte symbolen voor je variabelen. Het is bijvoorbeeld
 gebruikelijk om gehele getallen met \$n\$ of \$m\$ aan te duiden en
@@ -150,7 +150,7 @@ voorbeeld is de variabele \$N\$ overbodig:
 factorisatie in priemgetallen.
 </div>
 
-### A.5. Vind een balans tussen woorden en symbolen
+### A.6. Vind een balans tussen woorden en symbolen
 
 Wiskundestudenten zijn vaak geneigd alles in formules uit te drukken en
 gewonemensentaal te vermijden. Vergelijk:
@@ -170,12 +170,12 @@ the preparation of written mathematical exposition is to pretend that it
 is spoken. Pretend that you are explaining the subject to a friend on a
 long walk in the woods, with no paper available." [Halmos]
 
-### A.6. Nummer formules wanneer nodig
+### A.7. Nummer formules wanneer nodig
 
-Geef een expressie in een display een nummer dan *en slechts dan als* je
+Geef een uitdrukking in een display een nummer dan *en slechts dan als* je
 het nummer gebruikt in een verwijzing.
 
-### A.7. Geef figuren en tabellen een onderschrift
+### A.8. Geef figuren en tabellen een onderschrift
 
 Iemand die je verslag of scriptie leest, zal dit in eerste instantie
 nooit van voor naar achteren doen, maar eerder bladerend. Figuren en
@@ -183,26 +183,26 @@ tabellen worden dan het meest bekeken. Zorg daarom voor een onderschrift
 dat zich ook zelfstandig laat lezen. Zo nodig verplaats je een deel van
 de uitleg van de tekst naar het onderschrift.
 
-### A.8. Gebruik displays als dat nodig is
+### A.9. Gebruik displays als dat nodig is
 
-Een wiskundige expressie in de tekstregel zoals \$\zeta(s) =
-\sum_{n=1}^\infty n^{-s}\$ valt minder op dan dezelfde expressie op
+Een wiskundige uitdrukking in de tekstregel zoals \$\zeta(s) =
+\sum_{n=1}^\infty n^{-s}\$ valt minder op dan dezelfde uitdrukking op
 een eigen regel:
 
 \\[
 \zeta(s) = \sum_{n=1}^\infty n^{-s}.
 \\]
 
-We noemen een tekstvak met een expressie op een eigen regel een
-*display*. Een expressie in de tekstregel noemen we een *inline*
-expressie. Er zijn een aantal redenen om een expressie in een display te
+We noemen een tekstvak met een uitdrukking op een eigen regel een
+*display*. Een uitdrukking in de tekstregel noemen we een *inline*
+uitdrukking. Er zijn een aantal redenen om een uitdrukking in een display te
 zetten:
 
-1.  de expressie is belangrijk
-2.  er wordt naar de expressie verwezen
-3.  de expressie is lastig te lezen in een tekstregel, bijvoorbeeld een
+1.  de uitdrukking is belangrijk
+2.  er wordt naar de uitdrukking verwezen
+3.  de uitdrukking is lastig te lezen in een tekstregel, bijvoorbeeld een
     ingewikkelde integraal
-4.  de expressie is te groot voor een tekstregel, bijvoorbeeld
+4.  de uitdrukking is te groot voor een tekstregel, bijvoorbeeld
     een matrix.
 
 Als je alle formules inline zet, krijg je een 'dichte' tekst die
@@ -213,20 +213,20 @@ alle lettergrepen. Zorg dus voor een goede balans tussen inline formules
 en formules in display: gebruik alleen displays als die nodig zijn (zie
 bovenstaande opsomming).
 
-Een expressie die te groot is voor een tekstregel kun je soms anders
+Een uitdrukking die te groot is voor een tekstregel kun je soms anders
 schrijven, zodat geen display nodig is. Je kunt bijvoorbeeld de
-expressie \$\frac{f+2}{f+1}\$ vervangen door \$(f+2)/(f+1)\$.
+uitdrukking \$\frac{f+2}{f+1}\$ vervangen door \$(f+2)/(f+1)\$.
 
-### A.9. Geef definities en stellingen de juiste opmaak.
+### A.10. Geef definities en stellingen de juiste opmaak.
 
 Belangrijke definities en stellingen zet je in een eigen alinea die
 begint met een kopje **Definitie 1.** of iets dergelijks. Geef deze
 definities en stellingen een nummer en gebruik dezelfde 'teller' door de
 hele tekst. Zet voor en na definities en stellingen een witregel. Zet
-definities in romeins font en het begrip dat gedefinieerd wordt cursief:
+definities in Romeins lettertype en het begrip dat gedefinieerd wordt cursief:
 
 <div class="example">
-**Definitie A.2.** Een *even* getal is een getal dat geheel deelbaar is
+**Definitie A.2.** Een *even* getal is een geheel getal dat deelbaar is
 door 2.
 </div>
 
