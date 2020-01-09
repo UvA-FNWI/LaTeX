@@ -89,7 +89,7 @@ turns your code into a PDF document which you will see in a new window.
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title">Exercise 3</h3>
 <div class="panel-body">
-1.  Download this [introductory LaTeX document](www.ctan.org/tex-archive/macros/latex/base/small2e.tex).
+1.  Download this [introductory LaTeX document](ctan.org/tex-archive/macros/latex/base/small2e.tex).
 2.  Open this file in TeXworks.
 3.  Typeset the document.
 4.  Compare the input with the output.
