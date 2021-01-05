@@ -115,7 +115,7 @@ for LaTeX. Please consult:
 <div class="panel panel-success">
 <h3 class="panel-heading panel-title"> Remember </h3>
 <div class="panel-body">
-- How to open TeXworks (or ShareLaTeX)?
+- How to open TeXworks (or Overleaf)?
 - How to compile a LaTeX file?
 - Don't be afraid to explore the web!
 
