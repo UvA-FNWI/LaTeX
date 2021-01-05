@@ -100,7 +100,7 @@ From now on we start using TeXworks. In the final exam TeXworks will be used.
 Resources
 ---------
 
-This website is only learning LaTeX through exercises, it is <u>not</u> a reference
+This website is only indended to teach LaTeX through exercises, it is <u>not</u> a reference
 for LaTeX. Please consult:
 
 [LaTeX Wikibooks](https://en.wikibooks.org/wiki/LaTeX)
