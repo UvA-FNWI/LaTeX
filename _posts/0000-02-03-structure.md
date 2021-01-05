@@ -99,7 +99,7 @@ be typeset with `\and`:
 <div class="panel-body">
 We see that LaTeX determines the layout itself. This is an important
 concept in LaTeX! We determine the layout of the text by structuring it.
-By seperating layout and content
+By separating layout and content
 
 -   We can focus on the content.
 -   We obtain a consistent layout.
@@ -187,7 +187,7 @@ In this assignment we will define our own command.
 -   What do `\documentclass`, `\usepackage`, `\title`, `\author`,
     `\and`, `\date` and `\maketitle` do?
 -   What does the `babel`-package do?
--   Why do we seperate layout and content?
+-   Why do we separate layout and content?
 -   What are groups, commands and environments?
 -   How do you make your own command?
 
