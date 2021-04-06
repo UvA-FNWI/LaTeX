@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: The Bibiolography
-category: Extras
+category: week4
 description: Making a bibliography and BibTex.
 ---
 
