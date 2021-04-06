@@ -1,0 +1,18 @@
+---
+layout: lesson
+title: The Bibiolography
+category: Extra 
+description: Making a bibliography and BibTex.
+---
+
+Previously we examined the global structure of a LaTeX file we will have 
+learned how to add even more structure to our texts by
+means of chapters, paragraphs, a table of contents, etc. In this section
+we discuss in more detail how to make a nice bibliography.
+
+General principles of the bibliography
+-------------------------------------
+
+
+How BibTex works
+----------------
