@@ -12,10 +12,8 @@ weeks:
   week2: Week 2
   week3: Week 3
   week4: Week 4
-
-extra:
-extra1: The Bibliography
-extra2: BibTex
+  extra1: The Bibliography
+  extra2: BibTex
 
 kramdown:
   parse_block_html: true
