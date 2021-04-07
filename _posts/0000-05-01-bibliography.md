@@ -81,18 +81,17 @@ regarding your reference list
     physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Mathematicians
     use and cite articles from arXiv very often but bear in mind, articles on arXiv are <b>not</b> peer-reviewed and sometimes they contain errors. If you use an article from
     arXiv be very careful with this. Articles from arXiv should also appear in your reference list using the unique code arXiv attributes to each article. Below you can find
-    two examples on how to properly refer to such articles:
-  </li></ol>
-  
-  <div class="example" markdown="0">
-  C. Radin (2020). <i>Conway and aperiodic tillings </i>. arXiv:2008.09085.
-</div>  
-<div class="example" markdown="0">
-C. Radin (2020). <i>Conway and aperiodic tillings </i>. https://arxiv.org/abs/2008.09085. 
-</div> 
+    two examples on how to properly refer to such articles: 
+    <div class="example" markdown="0">
+      C. Radin (2020). <i>Conway and aperiodic tillings </i>. arXiv:2008.09085.
+    </div>  
+    <div class="example" markdown="0">
+      C. Radin (2020). <i>Conway and aperiodic tillings </i>. https://arxiv.org/abs/2008.09085. 
+    </div></li>
+</ol>
 
 
-<b>Typesetting URL resources</b>
+**Typesetting URL resources
 
 Trying to typeset URL references manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull
 lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in
