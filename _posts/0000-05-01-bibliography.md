@@ -70,13 +70,14 @@ C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environme
             </div> </li>
           <li>Volume, issue, year, and page numbers. In contrast to popular magazines, which begin each issue with page number 1, scholarly journals are grouped into volumes, consisting of two or more issues each, and are paginated consecutively within each volume. Thus, an article is (usually) uniquely identified by specifying the volume number (e.g., volume 99) and the page range (e.g., pages 403-422). The particular issue within a given volume need not be specified, and usually (though not always) is left out. A journal may issue one or more volumes per year. The AMS convention is that the year of publication is included in parenthesis after the names of the authors  and the volume and pages are presented after the name of the journal. A typical volume/page number listing is: 99, pp. 403-422.</li>
            <li>Book references. In addition to author and title, book references require the following items: publisher, location, and year of publication. These are normally set in ordinary font, in the order given here.</li></ol>
-  <li> Many scientists use arXiv to communicatie their research. arXiv is a free distribution service and an open-access archive for scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Mathematicians use and cite articles from arXiv very often but bear in mind, articles on arXiv are <b>not</b> peer-reviewed and sometimes they contain errors. If you use an article from arXiv be very careful with this. Articles from arXiv should also appear in your reference list using the unique code arXiv attributes to each article. Below you can find two examples on how to properly refer to such articles:
+  <li> Many scientists use arXiv to communicatie their research. arXiv is a free distribution service and an open-access archive for scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Mathematicians use and cite articles from arXiv very often but bear in mind, articles on arXiv are <b>not</b> peer-reviewed and sometimes they contain errors. If you use an article from arXiv be very careful with this. Articles from arXiv should also appear in your reference list using the unique code arXiv attributes to each article. Below you can find two examples on how to properly refer to such articles:</li></ol>
+  
 <div class="example" markdown="0">
   C. Radin (2020). <i>Conway and aperiodic tillings </i>. arXiv:2008.09085.
 </div>  
 <div class="example" markdown="0">
 C. Radin (2020). <i>Conway and aperiodic tillings </i>. https://arxiv.org/abs/2008.09085. 
-</div> </li></ol>
+</div> 
 
 Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull
 lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in
@@ -101,9 +102,9 @@ typeset correctly.
 Citing in a proper way
 ----------------------
 
-In the previous section we discussed how to cite a resource in your main text. When you need to refer to the literature in a text it is important to give a reference to a suitable and well chosen resource and also to make it clear to the reader why you are refering to this specific resource. It is not enough to just give a citation at the end of a sentence, it must be clear to the reader <b>why</b> this specific resource is given and <b>where</b> to look in the resource if needed. As said before there should be no "gratuitious" references in your report/article/book. After your work is finished have a final look at all the citations and the text around it and make sure that someone who reads your text has a clear answer to the following two answers
+In the previous section we discussed how to cite a resource in your text. When you need to refer to the literature in a text it is important to give a reference to a suitable and well chosen resource. It is also important to make clear to the reader why you are refering to a certain resource. It is not enough to just give a citation at the end of a sentence, it must be clear to the reader <b>why</b> this specific resource is given and <b>where</b> to look in it if needed. As said before, there should be no "gratuitious" references in your report/article/book. After you are finished with writing have a final look at all the citations, make sure that someone who reads your text has a clear answer to the following two questions
 <ul>
-  <li> Why is this reference given at this points? </li>
+  <li> Why is this specific reference given at this point? </li>
   <li> Where should I look in this reference if I want to know more about this point? </li>
   </ul>
 
