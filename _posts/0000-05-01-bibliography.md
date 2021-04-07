@@ -42,7 +42,7 @@ for example [4, Thm 3.1] (or [4, Theorem 3.1]) or [Ma97, Thm 3.1]. In LaTeX you 
 below
 
 <div class="example" markdown="0">
-\textbf{Theorem}[Theorem 2.3, 1]
+<b>Theorem</b>[Theorem 2.3, 1]
 For every $p \in (0,1)$, the sequence of probability distributions $(\tilde{\mathbb{P}}_{n,p})_{n\in\mathbb{N}}$ 
 satisfies the large deviation principle on $(\tilde{W},\delta_{\square})$ with rate function $I_p$, i.e.,
 \begin{equation}
