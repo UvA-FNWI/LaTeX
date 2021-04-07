@@ -13,10 +13,67 @@ on how to make a reference list is presented in [Week 3](http://uva-fnwi.github.
 In this module we present some more details regarding the Bibliography. Moreover we show
 the first steps of how to make and use a BibTex file.
 
-#### Reference style for mathematics
+#### Reference and citation style for mathematics
+
+<b> Citations </b>
+There are many different ways of citing resources from your research. The citation style 
+sometimes depends on the academic discipline involved. For example:
+
+<ul><li>[APA](https://pitt.libguides.com/citationhelp/apa7) (American Psychological Association) is used by Education, Psychology, and Sciences</li>
+  <li>[MLA](https://pitt.libguides.com/citationhelp/mla8thedition) (Modern Language Association) style is used by the Humanities</li>
+  <li>[Chicago/Turabian](https://pitt.libguides.com/citationhelp/chicago) style is generally used by Business, History, and the Fine Arts</li></ul>
+
+For mathematics papers there is no standard citation style, but a good one to learn is the one used by the American Mathematical Society.
+The AMS style of in-text citation can simply be a number or an alpha-numeric code. The format depends on the citation style you choose, two examples
+that are often used are
+<ul>
+  <li>[4] - AMS "plain" style </li>
+  <li> [Ma97] - AMS "alpha" style of using first two letters of author's name and last two digits of year of publication. </li>
+</ul>
+
+The most common style is a number within brackets, e.g., [1], [2]. The next most common style is a short alpha-numeric form, e.g., [Serre71] or (even
+shorter) [S71]. When multiple authors are involved, the citations become lengthy, e.g., [dlVP-SD04] for de la Valleé-Poussin and Swinnerton-Dyer
+from 2004. See Chapter 10 from the [AMS Style Guide](https://www.ams.org/publications/authors/AMS-StyleGuide-online.pdf) for more information regarding
+references.
+
+In many occassions a specific result is used from a resource. In this case it is nice for the reader if your citation to this resourse is concrete,
+for example [4, Thm 3.1] (or [4, Theorem 3.1]) or [Ma97, Thm 3.1]. In LaTeX you can do this as follows: ` \cite[Theorem 3.1]{Ma97}`. 
+
+<b> References </b>
+
+The format for your list of sources depends on the citation style you chose, but each entry on the list usually includes the
+<ul>
+  <li> author's name; </li>
+  <li> title of the book or article; </li>
+  <li> name of the publisher or journal; </li>
+  <li> date of publication; </li>
+  <li> pages on which the source material appears.</li>
+</ul>
+
+Below you can find some stylistic conventions, some thanks to [Prof. Hildebrand](https://faculty.math.illinois.edu/~hildebr/tex/tips-bibliographies.html), 
+regarding your reference list
+
+<ol>
+  <li> All items listed in the bibliography should be cited in the body of the paper. There should be no "gratuitious" references.</li>
+  <li> Bibliography items should be ordered alphabetically, by author. Multiple references by the same author (or the same set of authors) should be ordered chronologically.</li>
+  <li> Be consistent. Whatever format and style you choose, make sure that the same style/format is used for all bibliography entries. Inconsistencies in the bibliography are distracting and create a bad impression on the reader/referee of the paper. For example, first names of authors may be abbreviated or spelled out (most people prefer the former), but whatever choice is made, it should be applied consistently to all references.</li>
+  <li> Formatting of bibliography entries. When formatting bibliographies manually with "\bibitem", the following standard conventions should be followed.
+<ol><li> Author(s), title, and journal name. The two most common ways to format these three items are: (i) italics for the title of the paper, and ordinary (Roman) font for the author(s) and the name of the journal; (ii) italics for the name of the journal, and ordinary font for author(s) and title. The examples below illustrate both styles
+
+<div class="example" markdown="0">
+C. O'Cinneide and P. Purdue (1986). \textit{The M/M/}$\infty$\textit{ queue in a random environment}. Journal of Applied Probability <b> 23</b>, pp.\ 175-184.
+</div>  
+
+<div class="example" markdown="0">
+C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environment. <i>Journal of Applied Probability</i> <b> 23</b>, pp.\ 175-184.
+</div> 
+
+Volume, issue, year, and page numbers. In contrast to popular magazines, which begin each issue with page number 1, scholarly journals are grouped into volumes, consisting of two or more issues each, and are paginated consecutively within each volume.. Thus, an article is (usually) uniquely identified by specifying the volume number (e.g., volume 99) and the page range (e.g., pages 403-422). The particular issue within a given volume need not be specified, and usually (though not always) is left out. Typically, a journal "volume" is of a size that is suitable for binding as a single volume. A journal may issue one or more volumes per year. The year of publication (though redundant) is usually indicated in parenthesis after the volume number, which is set in boldface. A typical volume/year/page number listing is: 99 (1992), 403-422.
+Book references. In addition to author and title, book references require the following items: publisher, location, and year of publication. These are normally set in ordinary font, in the order given here.
 
 
 #### Citing in a proper way
+
 
 
 
