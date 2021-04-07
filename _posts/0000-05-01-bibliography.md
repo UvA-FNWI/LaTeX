@@ -79,7 +79,10 @@ C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environme
 C. Radin (2020). <i>Conway and aperiodic tillings </i>. https://arxiv.org/abs/2008.09085. 
 </div> 
 
-Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull
+
+<b>Typesetting URL resources</b>
+
+Trying to typeset URL references manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull
 lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in
 order to get typeset correctly. For example, the tilde symbol is interpreted by TeX as a "hard" blank space. In order for it to be printed as a tilde symbol, one can
 escape it by a backslash (`\~`), or the math "twiddle" symbol $\sim$ in its place, but neither option is completely satisfactory. Fortunately, there is a package,
