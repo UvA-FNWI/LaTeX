@@ -38,7 +38,34 @@ from 2004. See Chapter 10 from the [AMS Style Guide](https://www.ams.org/publica
 the AMS layout style.
 
 In many occassions a specific result is used from a resource. In this case it is nice for the reader if your citation to this resourse is concrete,
-for example [4, Thm 3.1] (or [4, Theorem 3.1]) or [Ma97, Thm 3.1]. In LaTeX you can do this as follows: `\cite[Theorem 3.1]{Ma97}`. 
+for example [4, Thm 3.1] (or [4, Theorem 3.1]) or [Ma97, Thm 3.1]. In LaTeX you can do this as follows: `\cite[Theorem 3.1]{Ma97}`. An example is given
+below
+
+```latex 
+\begin{theorem}[\cite[Theorem 2.3]{CV11}]
+For every $p \in (0,1)$, the sequence of probability distributions $(\tilde{\mathbb{P}}_{n,p})_{n\in\mathbb{N}}$ 
+satisfies the large deviation principle on $(\tilde{W},\delta_{\square})$ with rate function $I_p$, i.e.,
+\begin{equation}
+\begin{aligned}
+\limsup_{n\to\infty} \frac{1}{n^2}\, \log\tilde{\mathbb{P}}_{n,p}(\tilde{C}) 
+&\leq -\inf_{\tilde{h}\in\tilde{W}}I_p(\tilde{h}) \qquad \forall\,\tilde{C}\subset \tilde{W} \mbox{ closed},\\
+\liminf_{n\to\infty}\ \frac{1}{n^2}\, \log\tilde{\mathbb{P}}_{n,p}(\tilde{O})
+&\geq -\inf_{\tilde{h}\in\tilde{O}}I_p(\tilde{h}) \qquad \,\,\,\forall\,\tilde{O}\subset \tilde{W} \mbox{ open}.
+\end{aligned}
+\end{equation}
+\end{theorem}
+```
+<div class="example" markdown="0">
+\begin{equation}
+\begin{aligned}
+\limsup_{n\to\infty} \frac{1}{n^2}\, \log\tilde{\mathbb{P}}_{n,p}(\tilde{C}) 
+&\leq -\inf_{\tilde{h}\in\tilde{W}}I_p(\tilde{h}) \qquad \forall\,\tilde{C}\subset \tilde{W} \mbox{ closed},\\
+\liminf_{n\to\infty}\ \frac{1}{n^2}\, \log\tilde{\mathbb{P}}_{n,p}(\tilde{O})
+&\geq -\inf_{\tilde{h}\in\tilde{O}}I_p(\tilde{h}) \qquad \,\,\,\forall\,\tilde{O}\subset \tilde{W} \mbox{ open}.
+\end{aligned}
+\end{equation}
+\end{theorem}
+</div>
 
 **References**
 
