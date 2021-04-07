@@ -20,9 +20,9 @@ There are many different ways of citing resources from your research. The citati
 sometimes depends on the academic discipline involved. For example:
 
 <ul>
-  <li><a href="https://pitt.libguides.com/citationhelp/apa7">APA</a> (American Psychological Association) is used by Education, Psychology, and Sciences</li>
+  <li><a href = "https://pitt.libguides.com/citationhelp/apa7">APA</a> (American Psychological Association) is used by Education, Psychology, and Sciences</li>
   <li><a href = "https://pitt.libguides.com/citationhelp/mla8thedition">MLA</a> (Modern Language Association) style is used by the Humanities</li>
-  <li><a href = "https://pitt.libguides.com/citationhelp/chicago>Chicago/Turabian</a> style is generally used by Business, History, and the Fine Arts</li></ul>
+  <li><a href = "https://pitt.libguides.com/citationhelp/chicago">Chicago/Turabian</a> style is generally used by Business, History, and the Fine Arts</li></ul>
 
 For mathematics papers there is no standard citation style, but a good one to learn is the one used by the American Mathematical Society.
 The AMS style of in-text citation can simply be a number or an alpha-numeric code. The format depends on the citation style you choose, two examples
@@ -59,37 +59,30 @@ regarding your reference list
   <li> Bibliography items should be ordered alphabetically, by author. Multiple references by the same author (or the same set of authors) should be ordered chronologically.</li>
   <li> Be consistent. Whatever format and style you choose, make sure that the same style/format is used for all bibliography entries. Inconsistencies in the bibliography are distracting and create a bad impression on the reader/referee of the paper. For example, first names of authors may be abbreviated or spelled out (most people prefer the former), but whatever choice is made, it should be applied consistently to all references.</li>
   <li> Formatting of bibliography entries. When formatting bibliographies manually with "\bibitem", the following standard conventions should be followed.
-<ol><li> Author(s), title, and journal name. The two most common ways to format these three items are: (i) italics for the title of the paper, and ordinary (Roman) font for the author(s) and the name of the journal; (ii) italics for the name of the journal, and ordinary font for author(s) and title. The examples below illustrate both styles
-
-
+      <ol>
+          <li> Author(s), title, and journal name. The two most common ways to format these three items are: (i) italics for the title of the paper, and ordinary (Roman) font for the author(s) and the name of the journal; (ii) italics for the name of the journal, and ordinary font for author(s) and title. The examples below illustrate both styles
 <div class="example" markdown="0">
   C. O'Cinneide and P. Purdue (1986). <i>The M/M/</i>$\infty$<i>queue in a random environment</i>. Journal of Applied Probability <b> 23</b>, pp.\ 175-184.
 </div>  
-
-
 <div class="example" markdown="0">
 C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environment. <i>Journal of Applied Probability</i> <b> 23</b>, pp.\ 175-184.
-</div> 
-
-<li>Volume, issue, year, and page numbers. In contrast to popular magazines, which begin each issue with page number 1, scholarly journals are grouped into volumes, consisting of two or more issues each, and are paginated consecutively within each volume. Thus, an article is (usually) uniquely identified by specifying the volume number (e.g., volume 99) and the page range (e.g., pages 403-422). The particular issue within a given volume need not be specified, and usually (though not always) is left out. Typically, a journal "volume" is of a size that is suitable for binding as a single volume. A journal may issue one or more volumes per year. The year of publication (though redundant) is usually indicated in parenthesis after the volume number, which is set in boldface. A typical volume/year/page number listing is: 99 (1992), 403-422.</li>
-<li>Book references. In addition to author and title, book references require the following items: publisher, location, and year of publication. These are normally set in ordinary font, in the order given here.</li></ol>
-
-<li> Many scientists use arXiv to communicatie their research. arXiv is a free distribution service and an open-access archive for scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Mathematicians use and cite articles from arXiv very often but bear in mind, articles on arXiv are <b>not</b> peer-reviewed and sometimes they contain errors. If you use an article from arXiv be very careful with this. Articles from arXiv should also appear in your reference list using the unique code arXiv attributes to each article. Below you can find two examples on how to properly refer to such articles:
-  
+            </div> </li>
+          <li>Volume, issue, year, and page numbers. In contrast to popular magazines, which begin each issue with page number 1, scholarly journals are grouped into volumes, consisting of two or more issues each, and are paginated consecutively within each volume. Thus, an article is (usually) uniquely identified by specifying the volume number (e.g., volume 99) and the page range (e.g., pages 403-422). The particular issue within a given volume need not be specified, and usually (though not always) is left out. Typically, a journal "volume" is of a size that is suitable for binding as a single volume. A journal may issue one or more volumes per year. The year of publication (though redundant) is usually indicated in parenthesis after the volume number, which is set in boldface. A typical volume/year/page number listing is: 99 (1992), 403-422.</li>
+           <li>Book references. In addition to author and title, book references require the following items: publisher, location, and year of publication. These are normally set in ordinary font, in the order given here.</li></ol>
+  <li> Many scientists use arXiv to communicatie their research. arXiv is a free distribution service and an open-access archive for scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Mathematicians use and cite articles from arXiv very often but bear in mind, articles on arXiv are <b>not</b> peer-reviewed and sometimes they contain errors. If you use an article from arXiv be very careful with this. Articles from arXiv should also appear in your reference list using the unique code arXiv attributes to each article. Below you can find two examples on how to properly refer to such articles:
 <div class="example" markdown="0">
   C. Radin (2020). <i>Conway and aperiodic tillings </i>. arXiv:2008.09085.
 </div>  
-
 <div class="example" markdown="0">
 C. Radin (2020). <i>Conway and aperiodic tillings </i>. https://arxiv.org/abs/2008.09085. 
-</div> 
-</li>
+</div> </li>
+  <li> Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in order to get typeset correctly. For example, the tilde symbol is interpreted by TeX as a "hard" blank space. In order for it to be printed as a tilde symbol, one can escape it by a backslash (`\~`), or the math "twiddle" symbol `$\sim$` in its place, but neither option is completely satisfactory. Fortunately, there is a package, `url`, that provides a painless way to typeset URL's. To use this package available, simply add
 
-<li> Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in order to get typeset correctly. For example, the tilde symbol is interpreted by TeX as a "hard" blank space. In order for it to be printed as a tilde symbol, one can escape it by a backslash (\~), or the math "twiddle" symbol $\sim$ in its place, but neither option is completely satisfactory. Fortunately, there is a package, "url", that provides a painless way to typeset URL's. To use this package available, simply add
- ```latex
+```latex
 \usepackage{url}
 ```
-near the beginning of the document (after "\documentclass{...}"), and enclose any web and email addresses in the document in "\url{...}":
+near the beginning of the document (after `\documentclass{...}`), and enclose any web and email addresses in the document in `\url{...}`:
+
 ```latex
   \url{http://www.math.drofnats.edu/~gauss}
   \url{gauss@math.drofnats.edu}
