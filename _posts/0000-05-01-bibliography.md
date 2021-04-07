@@ -77,7 +77,7 @@ C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environme
 <div class="example" markdown="0">
 C. Radin (2020). <i>Conway and aperiodic tillings </i>. https://arxiv.org/abs/2008.09085. 
 </div> </li>
-  <li> Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in order to get typeset correctly. For example, the tilde symbol is interpreted by TeX as a "hard" blank space. In order for it to be printed as a tilde symbol, one can escape it by a backslash (\~), or the math "twiddle" symbol $\sim$ in its place, but neither option is completely satisfactory. Fortunately, there is a package, url, that provides a painless way to typeset URL's. To use this package available, simply add
+  <li> Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in order to get typeset correctly. For example, the tilde symbol is interpreted by TeX as a "hard" blank space. In order for it to be printed as a tilde symbol, one can escape it by a backslash (` \~`), or the math "twiddle" symbol ` $\sim$` in its place, but neither option is completely satisfactory. Fortunately, there is a package, ` url`, that provides a painless way to typeset URL's. To use this package available, simply add
 
 ```latex
 \usepackage{url}
@@ -89,7 +89,7 @@ near the beginning of the document (after `\documentclass{...}`), and enclose an
   \url{gauss@math.drofnats.edu}
 ```
 
-The `\url{...}` command then does all the work: It sets the enclosed expression in the appropriate typewriter style font, it takes care of any necessary linebreaking, and it chooses break points intelligently (e.g., between components of an address), and it ensures that special symbols such as the tilde symbol or the "at" symbol get typeset correctly.
+The `\url{...}` command then does all the work: It sets the enclosed expression in the appropriate typewriter style font, it takes care of any necessary linebreaking, and it chooses break points intelligently (e.g., between components of an address), and it ensures that special symbols such as the tilde symbol or the "at" symbol get typeset correctly. </li></ol>
 
 
 Citing in a proper way
