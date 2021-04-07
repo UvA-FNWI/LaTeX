@@ -56,6 +56,9 @@ satisfies the large deviation principle on $(\tilde{W},\delta_{\square})$ with r
 \end{theorem}
 ```
 <div class="example" markdown="0">
+\begin{theorem}[\cite[Theorem 2.3]{CV11}]
+For every $p \in (0,1)$, the sequence of probability distributions $(\tilde{\mathbb{P}}_{n,p})_{n\in\mathbb{N}}$ 
+satisfies the large deviation principle on $(\tilde{W},\delta_{\square})$ with rate function $I_p$, i.e.,
 \begin{equation}
 \begin{aligned}
 \limsup_{n\to\infty} \frac{1}{n^2}\, \log\tilde{\mathbb{P}}_{n,p}(\tilde{C}) 
@@ -66,6 +69,7 @@ satisfies the large deviation principle on $(\tilde{W},\delta_{\square})$ with r
 \end{equation}
 \end{theorem}
 </div>
+
 
 **References**
 
