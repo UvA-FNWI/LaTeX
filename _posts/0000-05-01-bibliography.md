@@ -1,8 +1,8 @@
 ---
 layout: lesson
-title: Making a proper bibliography
+title: Bibliography and citations in LaTeX
 category: extra1
-description: Making a bibliography and BibTex.
+description: Making a bibliography.
 ---
 
 Previously we examined the global structure of a LaTeX file and
