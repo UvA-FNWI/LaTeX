@@ -13,8 +13,8 @@ on how to make a reference list are presented in [Week 3](http://uva-fnwi.github
 In this module we present some more details regarding citations and the list of references.
 
 
-#### Reference and citation style for mathematics
-
+Reference and citation style for mathematics
+--------------------------------------------
 
 <b> Citations </b>
 There are many different ways of citing resources from your research. The citation style 
@@ -92,7 +92,8 @@ near the beginning of the document (after `\documentclass{...}`), and enclose an
 The `\url{...}` command then does all the work: It sets the enclosed expression in the appropriate typewriter style font, it takes care of any necessary linebreaking, and it chooses break points intelligently (e.g., between components of an address), and it ensures that special symbols such as the tilde symbol or the "at" symbol get typeset correctly.
 
 
-#### Citing in a proper way
+Citing in a proper way
+----------------------
 
 In the previous section we discussed how to cite a resource in your main text. When you need to refer to the literature in a text it is important to give a reference to a suitable and well chosen resource and also to make it clear to the reader why you are refering to this specific resource. It is not enough to just give a citation at the end of a sentence, it must be clear to the reader <b>why</b> this specific resource is given and <b>where</b> to look in the resource if needed. As said before there should be no "gratuitious" references in your report/article/book. After your work is finished have a final look at all the citations and the text around it and make sure that someone who reads your text has a clear answer to the following two answers
 <ul>
