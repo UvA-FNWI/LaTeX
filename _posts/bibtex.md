@@ -1,0 +1,67 @@
+---
+layout: lesson
+title: BibTex
+category: extra1
+description: Working with Bibtex.
+---
+
+In this module we present the basic steps to start with BibTex. BibTex is a very powerful 
+tool in LaTeX that helps you keep your references all together and ordered. 
+
+Step 1 - Creating a bib file
+------------
+
+The first step is to create a bib file with all your references. Such a file is created using a LaTeX distribution 
+like TeXworks. Creat an empty file and include your references one by one, you don't need to install any packages,
+the only thing is that each reference has to be included in a specific way. In the example below you can see how
+to create a bib entry of the type article and of the type book. 
+
+```latex
+
+@article{greenwade93,
+    author  = "George D. Greenwade",
+    title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
+    year    = "1993",
+    journal = "TUGBoat",
+    volume  = "14",
+    number  = "3",
+    pages   = "342--351"
+}
+```
+
+@book{goossens93,
+    author    = "Michel Goossens and Frank Mittelbach and Alexander Samarin",
+    title     = "The LaTeX Companion",
+    year      = "1993",
+    publisher = "Addison-Wesley",
+    address   = "Reading, Massachusetts"
+}
+
+**Remark:** In both cases above is `goossens93` the citation key which you can use to cite this reference.
+
+When you are done with all the references you need to save the file as a BibTex dataset (.bib). 
+
+Step 2 - Compiling the bib file in LaTex
+--------------------
+
+In your main tex file you need to add the following two commands in order to call the bib file.
+
+```latex
+\bibliographystyle{plain}
+\bibliography{NameOfbibFile} 
+```
+
+The first one determines the style of the bibliography and the second one calls the bib file. Make sure 
+that 
+1. the bib file is in the same folder as the main tex file;
+2. the name of the bib file tex will try to call, i.e. NameOfbibFile, is the same as the name you have given to the bib file.
+
+In your tex file you can use the `\cite{}` command to cite a reference from the bib file. To compile the tex file with 
+the bibliography you need to 
+1. first compile the tex file to pdf (Typeset to pdfLaTex);
+2. compile the bib file from your main tex file (Typeset BibTex);
+3. compile the tex file to pdf twice to get the references and the citations. 
+
+
+
+
