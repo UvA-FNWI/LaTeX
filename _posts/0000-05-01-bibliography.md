@@ -8,12 +8,13 @@ description: Making a bibliography.
 Previously we examined the global structure of a LaTeX file and
 we have learned how to add more structure to our texts by means 
 of chapters, paragraphs, a table of contents, etc. The basic steps
-on how to make a reference list is presented in [Week 3](http://uva-fnwi.github.io/LaTeX/week3/structure2/).
+on how to make a reference list are presented in [Week 3](http://uva-fnwi.github.io/LaTeX/week3/structure2/).
 
-In this module we present some more details regarding the Bibliography. Moreover we show
-the first steps of how to make and use a BibTex file.
+In this module we present some more details regarding citations and the list of references.
+
 
 #### Reference and citation style for mathematics
+
 
 <b> Citations </b>
 There are many different ways of citing resources from your research. The citation style 
@@ -28,17 +29,17 @@ For mathematics papers there is no standard citation style, but a good one to le
 The AMS style of in-text citation can simply be a number or an alpha-numeric code. The format depends on the citation style you choose, two examples
 that are often used are
 <ul>
-  <li>[4] - AMS "plain" style </li>
+  <li>[4] - AMS "plain" style </li>;
   <li> [Ma97] - AMS "alpha" style of using first two letters of author's name and last two digits of year of publication. </li>
 </ul>
 
 The most common style is a number within brackets, e.g., [1], [2]. The next most common style is a short alpha-numeric form, e.g., [Serre71] or (even
 shorter) [S71]. When multiple authors are involved, the citations become lengthy, e.g., [dlVP-SD04] for de la Valleé-Poussin and Swinnerton-Dyer
 from 2004. See Chapter 10 from the [AMS Style Guide](https://www.ams.org/publications/authors/AMS-StyleGuide-online.pdf) for more information regarding
-references.
+the AMS layout style.
 
 In many occassions a specific result is used from a resource. In this case it is nice for the reader if your citation to this resourse is concrete,
-for example [4, Thm 3.1] (or [4, Theorem 3.1]) or [Ma97, Thm 3.1]. In LaTeX you can do this as follows: ` \cite[Theorem 3.1]{Ma97}`. 
+for example [4, Thm 3.1] (or [4, Theorem 3.1]) or [Ma97, Thm 3.1]. In LaTeX you can do this as follows: `\cite[Theorem 3.1]{Ma97}`. 
 
 <b> References </b>
 
@@ -62,12 +63,12 @@ regarding your reference list
       <ol>
           <li> Author(s), title, and journal name. The two most common ways to format these three items are: (i) italics for the title of the paper, and ordinary (Roman) font for the author(s) and the name of the journal; (ii) italics for the name of the journal, and ordinary font for author(s) and title. The examples below illustrate both styles
 <div class="example" markdown="0">
-  C. O'Cinneide and P. Purdue (1986). <i>The M/M/</i>$\infty$<i>queue in a random environment</i>. Journal of Applied Probability <b> 23</b>, pp.\ 175-184.
+  C. O'Cinneide and P. Purdue (1986). <i>The M/M/</i>$\infty$<i>queue in a random environment</i>. Journal of Applied Probability <b> 23</b>, pp. 175-184.
 </div>  
 <div class="example" markdown="0">
-C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environment. <i>Journal of Applied Probability</i> <b> 23</b>, pp.\ 175-184.
+C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environment. <i>Journal of Applied Probability</i> <b> 23</b>, pp. 175-184.
             </div> </li>
-          <li>Volume, issue, year, and page numbers. In contrast to popular magazines, which begin each issue with page number 1, scholarly journals are grouped into volumes, consisting of two or more issues each, and are paginated consecutively within each volume. Thus, an article is (usually) uniquely identified by specifying the volume number (e.g., volume 99) and the page range (e.g., pages 403-422). The particular issue within a given volume need not be specified, and usually (though not always) is left out. Typically, a journal "volume" is of a size that is suitable for binding as a single volume. A journal may issue one or more volumes per year. The year of publication (though redundant) is usually indicated in parenthesis after the volume number, which is set in boldface. A typical volume/year/page number listing is: 99 (1992), 403-422.</li>
+          <li>Volume, issue, year, and page numbers. In contrast to popular magazines, which begin each issue with page number 1, scholarly journals are grouped into volumes, consisting of two or more issues each, and are paginated consecutively within each volume. Thus, an article is (usually) uniquely identified by specifying the volume number (e.g., volume 99) and the page range (e.g., pages 403-422). The particular issue within a given volume need not be specified, and usually (though not always) is left out. A journal may issue one or more volumes per year. The AMS convention is that the year of publication is included in parenthesis after the names of the authors  and the volume and pages are presented after the name of the journal. A typical volume/page number listing is: 99, pp. 403-422.</li>
            <li>Book references. In addition to author and title, book references require the following items: publisher, location, and year of publication. These are normally set in ordinary font, in the order given here.</li></ol>
   <li> Many scientists use arXiv to communicatie their research. arXiv is a free distribution service and an open-access archive for scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Mathematicians use and cite articles from arXiv very often but bear in mind, articles on arXiv are <b>not</b> peer-reviewed and sometimes they contain errors. If you use an article from arXiv be very careful with this. Articles from arXiv should also appear in your reference list using the unique code arXiv attributes to each article. Below you can find two examples on how to properly refer to such articles:
 <div class="example" markdown="0">
@@ -76,7 +77,7 @@ C. O'Cinneide and P. Purdue (1986). The M/M/$\infty$ queue in a random environme
 <div class="example" markdown="0">
 C. Radin (2020). <i>Conway and aperiodic tillings </i>. https://arxiv.org/abs/2008.09085. 
 </div> </li>
-  <li> Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in order to get typeset correctly. For example, the tilde symbol is interpreted by TeX as a "hard" blank space. In order for it to be printed as a tilde symbol, one can escape it by a backslash (`\~`), or the math "twiddle" symbol `$\sim$` in its place, but neither option is completely satisfactory. Fortunately, there is a package, `url`, that provides a painless way to typeset URL's. To use this package available, simply add
+  <li> Trying to typeset <b>URL references</b> manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in order to get typeset correctly. For example, the tilde symbol is interpreted by TeX as a "hard" blank space. In order for it to be printed as a tilde symbol, one can escape it by a backslash (\~), or the math "twiddle" symbol $\sim$ in its place, but neither option is completely satisfactory. Fortunately, there is a package, url, that provides a painless way to typeset URL's. To use this package available, simply add
 
 ```latex
 \usepackage{url}
@@ -89,6 +90,7 @@ near the beginning of the document (after `\documentclass{...}`), and enclose an
 ```
 
 The `\url{...}` command then does all the work: It sets the enclosed expression in the appropriate typewriter style font, it takes care of any necessary linebreaking, and it chooses break points intelligently (e.g., between components of an address), and it ensures that special symbols such as the tilde symbol or the "at" symbol get typeset correctly.
+
 
 #### Citing in a proper way
 
