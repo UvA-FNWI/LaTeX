@@ -27,10 +27,7 @@ sometimes depends on the academic discipline involved. For example:
 
 For mathematics papers there is no standard citation style, but a good one to learn is the one used by the American Mathematical Society.
 The AMS style of in-text citation can simply be a number or an alpha-numeric code. The format depends on the citation style you choose, two examples
-that are often used are
-
-1. [4] - AMS "plain" style;
-2. [Ma97] - AMS "alpha" style of using first two letters of author's name and last two digits of year of publication.
+that are often used are the following.
 
 The most common style is a number within brackets, e.g., [1], [2]. The next most common style is a short alpha-numeric form, e.g., [Serre71] or (even
 shorter) [S71]. When multiple authors are involved, the citations become lengthy, e.g., [dlVP-SD04] for de la Valleé-Poussin and Swinnerton-Dyer
