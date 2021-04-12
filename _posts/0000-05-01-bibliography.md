@@ -77,7 +77,11 @@ regarding your reference list
      1. C. Radin (2020). *Conway and aperiodic tillings*. arXiv:2008.09085.
      2. C. Radin (2020). *Conway and aperiodic tillings*. https://arxiv.org/abs/2008.09085.
 
-**Typesetting URL resources**
+**Typesetting online resources**
+
+Nowadays most new scientific articles can be found online and it is important to be able to find them there quickly as well. One means for this is the Digital Object Identifier, or DOI. A DOI is a unique and permanent code that is linked to a specific source, for example 10.1016 / j.jcss.2007.06.005. Place this code after http://dx.doi.org/ and a link will appear leading to the article, such as http://dx.doi.org/10.1016/j.jcss.2007.06.005. This code is assigned and updated when necessary by a publisher - so it is not just possible to link a DOI to your own work.
+
+If a source has a DOI, always mention it in the reference list. If it does not have a DOI but is online, please provide a URL. The disadvantage of a URL is that the location of an article can change and thus the URL no longer leads to the source, while the link of the DOI is updated. If a source has been consulted online that can be adjusted later, it must state the date on which it was consulted or, if stated, the date on which the last adjustment took place. In general, this does not apply to scientific articles, but to sources such as a blog or Wikipedia.
 
 Trying to typeset URL references manually can be a source of endless frustration since URL's tend to be lengthy "words" that are likely to cause overfull
 lines, and also since URL's often contain special symbols (e.g., the "at" symbol "@", the tilde symbol "~", or an "underline", "_") which require special coding in
