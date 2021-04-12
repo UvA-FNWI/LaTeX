@@ -35,7 +35,7 @@ An application where neural networks are widely used is pattern recognition with
   <li> [2] M. A. Nielsen (2015). <i>Neural networks and deep learning</i>.</li>
   </ul></div>
  
-What is the problem with these two references? First of all, the second reference seems very general given the context in which it is given. It is given as a reference to " " "writing recognition", while it concerns a much broader topic. The reader may wonder, Is there a chapter in it concerning hand writing recognition? Or does the autor give a complete overview of the literature on this topic? Hence this citation should be made more concrete. The first reference seems more relevant but still, it is not clear why it is given. A suggestion to improve the text could be the following
+What is the problem with these two references? First of all, the second reference seems very general given the context in which it is given. It is given as a reference to "writing recognition", while it concerns a much broader topic. The reader may wonder, Is there a chapter in it concerning hand writing recognition? Or does the autor give a complete overview of the literature on this topic? Hence this citation should be made more concrete. The first reference seems more relevant but still, it is not clear why it is given. A suggestion to improve the text could be the following
 
 <div class="example" markdown="0">
 An application where neural networks are widely used is pattern recognition, with hand writing recognition being a typical example. For a clear exhibition on how neural networks can be applied in this context we refer to [1]. We refer the interested reader to [2] for an overview of some modern techniques for deep learning and their application in pattern recognition.
