@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Bibliography and citations in LaTeX
+title: Proper citations in the text
 category: extra1
 description: Proper citations in the text.
 ---
