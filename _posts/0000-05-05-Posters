@@ -2,7 +2,7 @@
 layout: lesson
 title: Posters
 category: extra1
-description: Creating posters in LaTeX.
+description: Creating a poster in LaTeX.
 ---
 
 There are many different ways to get the general structure of a poster into LaTeX. In this lesson we will discuss the three most prevalent methods, which are:
