@@ -81,7 +81,7 @@ turns your code into a PDF document which you will see in a new window.
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title">Exercise 2</h3>
 <div class="panel-body">
-1.  On your computer create a folder `LaTeX` (a subfolder of the Programmeren en Experimenteren-folder)
+1.  On your computer create a folder `LaTeX` (a subfolder of the Programmeren en Experimenteren-folder).
 2.  Place the example file created above in this folder.
 3.  Do the same with all the LaTeX-files you will use in this course.
 </div></div>
@@ -89,11 +89,10 @@ turns your code into a PDF document which you will see in a new window.
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title">Exercise 3</h3>
 <div class="panel-body">
-
-	1. Download this (https://ctan.org/tex-archive/macros/latex/base/small2e.tex) introductory LaTeX document.
-	2. Open this file in TeXworks.
-	3. Typeset the document.
-	4. Compare the input with the output.
+1. Download this (https://ctan.org/tex-archive/macros/latex/base/small2e.tex) introductory LaTeX document.
+2. Open this file in TeXworks.
+3. Typeset the document.
+4. Compare the input with the output.
 </div></div>
 
 From now on we start using TeXworks. In the final exam TeXworks will be used.
