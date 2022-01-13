@@ -89,11 +89,11 @@ turns your code into a PDF document which you will see in a new window.
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title">Exercise 3</h3>
 <div class="panel-body">
-	<ol>
-		<li>  Download this <a href="https://ctan.org/tex-archive/macros/latex/base/small2e.tex">introductory LaTeX document</a>.</li> 
-		<li>  Open this file in TeXworks. </li>
-		<li>  Typeset the document.</li>
-		<li>  Compare the input with the output. </li></ol>
+
+	1. Download this (https://ctan.org/tex-archive/macros/latex/base/small2e.tex) introductory LaTeX document.
+	2. Open this file in TeXworks.
+	3. Typeset the document.
+	4. Compare the input with the output.
 </div></div>
 
 From now on we start using TeXworks. In the final exam TeXworks will be used.
