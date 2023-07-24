@@ -71,8 +71,7 @@ this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installingla
 press the green button afterwards. We call this *typesetting*. LaTeX
 turns your code into a PDF document which you will see in a new window.
 
--   Useful: Select 'Format -> Syntax Coloring -> LaTeX' to colour
-    your code.
+-   Useful: Select 'Format -> Line Numbers' to make it easier to find and refer to specific lines of code.
 -   Useful: To jump from the code to the output in TeXworks you can
     right-click and choose 'Jump to PDF'. In the same way it is possible
     to switch from the pdf to the code.
@@ -95,7 +94,7 @@ turns your code into a PDF document which you will see in a new window.
 4. Compare the input with the output.
 </div></div>
 
-From now on we start using TeXworks. In the final exam TeXworks will be used.
+From now on we start using TeXworks. Any homework exercises you are asked to hand in have to be functional in TeXworks. Be aware that files that work correctly in overleaf do not always work correctly in TeXworks, due to overleaf automatically ignoring some errors. Always make sure to check your work if you have been using Overleaf.
 
 Resources
 ---------
