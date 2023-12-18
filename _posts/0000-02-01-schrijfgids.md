@@ -123,252 +123,170 @@ Only name objects when you really need to. In the next example, the variable \$N
 **Theorem A.1.** Every natural number \$N\$ has a unique prime factorisation.
 </div>
 
-### A.6. Vind een balans tussen woorden en symbolen
+### A.6. Find a balance between words and symbols
 
-Wiskundestudenten zijn vaak geneigd alles in formules uit te drukken en
-gewonemensentaal te vermijden. Vergelijk:
+Students of mathematics often write everything in formulas, and do not use regular language much. Compare the following two fragments:
 
 <div class="example">
-De grootste gemene deler van \$a\$ en \$b\$, geschreven \$\ggd(a, b)\$,
-is het grootste gehele getal dat zowel \$a\$ als \$b\$ deelt.
+The greatest common divisor of \$a\$ en \$b\$, written \$\ggd(a, b)\$,
+is the largest natural number dividing both \$a\$ and \$b\$.
 </div>
 
 <div class="example" markdown="0">
-We definiëren: $\ggd(a,b) = {\max{ \{d \in \N_{>0} : d | a \wedge d | b \}} }$.
+We define: $\ggd(a,b) = {\max{ \{d \in \N_{>0} : d | a \wedge d | b \}} }$.
 </div>
 
-De tweede definitie is weliswaar korter, maar is het beter leesbaar dan
-de eerste? Vermijd fomules als ze niet nodig zijn. "A good attitude to
-the preparation of written mathematical exposition is to pretend that it
+The second definition may be shorter, but is it easier to read than the first? Avoid formulas when they are not needed. "A good attitude tothe preparation of written mathematical exposition is to pretend that it
 is spoken. Pretend that you are explaining the subject to a friend on a
 long walk in the woods, with no paper available." [Halmos]
 
-### A.7. Nummer formules wanneer nodig
+### A.7. Number equations when needed
 
-Geef een uitdrukking in een display een nummer dan *en slechts dan als* je
-het nummer gebruikt in een verwijzing.
+Give an equation in a display a number if *and only if* you refer to the number somewhere. 
 
-### A.8. Geef figuren en tabellen een onderschrift
+### A.8. Give every figure and table a caption
 
-Iemand die je verslag of scriptie leest, zal dit in eerste instantie
-nooit van voor naar achteren doen, maar eerder bladerend. Figuren en
-tabellen worden dan het meest bekeken. Zorg daarom voor een onderschrift
-dat zich ook zelfstandig laat lezen. Zo nodig verplaats je een deel van
-de uitleg van de tekst naar het onderschrift.
+Someone who reads your article or thesis will usually not read it front to back, but skipping through it. Figures and tables are most often the first thing that gets read. Make sure your figures and tables have captions that make sense independent of the rest of the text. You can even move a bit of the explanation in the text to the caption. 
 
-### A.9. Gebruik displays als dat nodig is
+### A.9. Use displays when it is needed
 
-Een wiskundige uitdrukking in de tekstregel zoals \$\zeta(s) =
-\sum_{n=1}^\infty n^{-s}\$ valt minder op dan dezelfde uitdrukking op
-een eigen regel:
-
+A mathematical expression in line with the text like \$zeta(s) = \sum_{n=1}^{\infty} n^{-s}\$ is less noticable than the same expression in a display:
 \\[
 \zeta(s) = \sum_{n=1}^\infty n^{-s}.
 \\]
 
-We noemen een tekstvak met een uitdrukking op een eigen regel een
-*display*. Een uitdrukking in de tekstregel noemen we een *inline*
-uitdrukking. Er zijn een aantal redenen om een uitdrukking in een display te
-zetten:
+An equation on its own line is called a *display*, and an equation within the line of text is called * inline*. There are several reasons to use display for an equation:
 
-1.  de uitdrukking is belangrijk
-2.  er wordt naar de uitdrukking verwezen
-3.  de uitdrukking is lastig te lezen in een tekstregel, bijvoorbeeld een
-    ingewikkelde integraal
-4.  de uitdrukking is te groot voor een tekstregel, bijvoorbeeld
-    een matrix.
+1. The equation is important
+2. The equation is referenced
+3. The equation is hard to read inline, for example a complicated integral
+4. The equation is too big for a line of text, for example a matrix.
 
-Als je alle formules inline zet, krijg je een 'dichte' tekst die
-moeilijk leesbaar is, tenzij je bijna helemaal geen formules hebt.
-Formules in display zorgen voor een beetje 'lucht' in je tekst. Maar pas
-op: teveel formules in display zetten, is als praten met de klemtoon op
-alle lettergrepen. Zorg dus voor een goede balans tussen inline formules
-en formules in display: gebruik alleen displays als die nodig zijn (zie
-bovenstaande opsomming).
+If you always use inline expression, you get a very dense text which is difficult to read, unless there are hardly any formulas at all. Display formulas create some air in your text. Do be careful: too many display formulas is like stressing every syllable when you speak. Make sure the balance between inline equations and display expression is good: only use displays when needed. 
 
-Een uitdrukking die te groot is voor een tekstregel kun je soms anders
-schrijven, zodat geen display nodig is. Je kunt bijvoorbeeld de
-uitdrukking \$\frac{f+2}{f+1}\$ vervangen door \$(f+2)/(f+1)\$.
+An expression which is too big for a line of text can sometimes be rewritten to fit. For example \$\frac{f+2}{f+1}\$ can be replaced by \$(f+2)/(f+1)\$.
 
-### A.10. Geef definities en stellingen de juiste opmaak.
+### A.10. Use the right layout for definitions and theorems
 
-Belangrijke definities en stellingen zet je in een eigen alinea die
-begint met een kopje **Definitie 1.** of iets dergelijks. Geef deze
-definities en stellingen een nummer en gebruik dezelfde 'teller' door de
-hele tekst. Zet voor en na definities en stellingen een witregel. Zet
-definities in Romeins lettertype en het begrip dat gedefinieerd wordt cursief:
+Important definitions and theorems should be put in their own paragraph which starts with a heading **Definition 1** or something similar. Give your definitions and theorems numbers and make sure your counting method is consistent throughout the text. Usually, people leave empty lines before and after the definition or theorem. In definitions it is common to italicise the concept that is being defined:
 
 <div class="example">
-**Definitie A.2.** Een *even* getal is een geheel getal dat deelbaar is
-door 2.
+**Definition A.2.** An *even* number is an integer which is divisible by 2.
 </div>
 
-Stellingen, proposities, lemma's, etc. worden traditioneel cursief
-gezet:
+Theorems, propositions, lemmas, etc. are traditionally given in italics:
 
 <div class="example">
-**Stelling A.3.** *Het getal \$n^5 - n\$ is deelbaar door 10 voor alle
+**Theorem A.3.** *The number \$n^5 - n\$ is divisible by 10 for all
 \$n\in\N\$.*
 </div>
 
-Belangrijk is dat je niet handmatig de opmaak instelt, maar het
-`amsthm`-package gebruikt. We zullen in de volgende les zien hoe dat
-moet. Gebruik `\emph` om in definities het gedefinieerde begrip cursief
-te zetten.
+Use `\emph` t oitalicise the concept in definitions. 
+
+It is far easier not to do this layout yourself but to use the package `amsthm`. In <a href="https://uva-fnwi.github.io/LaTeX/week3/structure2/">esson 14 (week 3) </a> we will learn how to do this. 
 
 B. LaTeX
 --------
 
-In deze paragraaf bespreken we een aantal goede vuistregels bij het
-gebruiken van LaTeX. Veel van deze vuistregels hebben we al eerder
-gezien.
+In this paragraph we will discuss some good rules of thumb for using LaTeX. Many of these rules we have already seen in previous lessons. 
 
-### B.1. Gebruik en maak structuurcommando's
+### B.1. Use and make structure commands
 
-De kracht van LaTeX is de mogelijkheid om een tekst structuur te geven
-zonder de opmaak vast te leggen. Een tekst krijgt structuur met
-commando's als
+The power of LaTeX is the possibilty to give a text structure without fixing the exact layout. A text is structured using commands like
 
--   `\chapter{}`
--   `\section{}`
--   de `itemize`-omgeving
--   `\emph{}`.
+- `\chapter{}`
+- `\section{}`
+- the `itemize` environment
+- `\emph`
 
-Opmaakcommando's zijn bijvoorbeeld
+Examples of layout commands are
 
--   `\Large`
--   `\vspace{}`
--   `\textbf{}`
--   `\textsl{}`.
+- `\Large`
+- `\vspace{}`
+- `\textbf{}`
+- `\textsl{}`
 
-Gebruik in de tekst alleen structuurcommando's. Schrijf dus:
-
+Only use structure commands in your text. For example, write
 ```latex
-Een \emph{even} getal is een getal dat geheel deelbaar is door 2.
+An \emph{even} number is a number which is divisible by 2.
+```
+and not
+```latex
+An \textit{even} number is a number which is divisible by 2.
 ```
 
-niet:
+The layout of these structural elements can be changed or defined in the preamble. You can make your own structural commands using `\newcommand` there, if you need to.
 
+### B.2. Keep your tex code neat
+
+Writing neat code prevents mistakes and makes it easer to find something again later. A good rule of thumb is to write code like you want the output to look. Here follow a few examples. 
+
+Put commands for a display on separate lines:
 ```latex
-Een \textit{even} getal is een getal dat geheel deelbaar is door 2.
-```
-
-De opmaak van de elementen van de structuur regel je in de preamble.
-Maak structuurcommando's bij met `\newcommand` als dat nodig is.
-
-### B.2. Houd je texcode netjes
-
-Het schrijven van nette code voorkomt fouten en maakt het gemakkelijker
-om later iets terug te vinden. Een vuistregel is de code te schrijven
-zoals de uitvoer eruit ziet. We geven een aantal voorbeelden.
-
-Zet de commando's voor een display op aparte regels:
-
-```latex
-We vinden
+We find
 \[
 x = 10.
 \]
 ```
 
-Zet `\begin` en `\end`-commando's van omgevingen op aparte regels:
+Use `\begin` and `\end` commands of environments on seperate lines:
 
 ```latex
 \begin{equation}
-\label{eq:pyth}
 a^2 + b^2 = c^2
 \end{equation}
 ```
 
-In een `align`-omgeving, tabel of matrix zet je de ampersands onder
-elkaar:
-
+Use empty lines between elements of your text. 
 ```latex
-\begin{align*}
-x &= 1 + 1 + 8 \\
-  &= 2 + 8 \\
-  &= 10
-\end{align*}
-```
+\section{Introduction}
+This is an introduction. In an introduction you give a short overview of what this text is about.
 
-Gebruik lege regels tussen tekstelementen:
+\section{Theorem}
+Here we give a theorem
 
-```latex
-\section{Inleiding}
-Dit is een inleiding. In een inleiding vertel je kort waar de tekst over
-gaat.
-
-\section{Stelling}
-Hier geven we een stelling.
-
-\begin{stelling}
-Er zijn oneindig veel priemgetallen.
-\end{stelling}
+\begin{theorem}
+There are an infinite number of primes.
+\end{theorem}
 
 \begin{proof}
-Stel er zijn eindig veel priemgetallen.
+Assume there are $n$ primes.
 \end{proof}
 
-\section{Conclusie}
-Hier staat een conclusie.
+\section{Conclusion}
+Here we give a conclusion.
 ```
 
-Het gedeelte van de code voor `\begin{document}` heet de *preamble*.
-Nieuwe commando's definieer je in de preamble. Ingewikkelde commando's
-licht je toe met commentaar.
+### B.3. Do not type unecessary empty lines
 
-### B.3. Typ geen lege regel als dat niet moet
+An empty line in your code is a command; it marks the beginning of a new paragraph. Consider this when using rule B.2.
 
-Een lege regel in je code is een commando; het markeert het begin van
-een nieuwe paragraaf. Houd hier rekening mee bij het toepassen van B.2.
-
-Een veelgemaakte fout is het schrijven van een witregel na een display
-terwijl de alinea doorloopt. Het resultaat is een onterechte inspringing
-(onder).
-
-<div class="example" markdown="0" >
-We beschouwen het symmetrische polynoom
-\[
-(X_1 - X_2)^2.
-\]
-Dit is ten duidelijkste een symmetrisch polynoom.
-</div>
+A common mistake is using an empty line after a display while the paragraph continues. This gives unecessary indents or empty lines. An example of an incorrect use of white space is the following
 
 ```latex
-We beschouwen het symmetrische polynoom
-\[
-(X_1 - X_2)^2.
-\]
-Dit is ten duidelijkste een symmetrisch polynoom.
-```
+Consider the symmetric polynomial
 
+\[
+
+(X_1 - X_2)^2.
+
+\]
+
+This is clearly symmetrical.
+```
 <div class="example" markdown="0">
-We beschouwen het symmetrische polynoom
-
+Consider the symmetric polynomial
 \[
-
 (X_1 - X_2)^2.
-
 \]
 
-        Dit is ten duidelijkste een symmetrisch polynoom.
+   This is clearly symmetrical.
 </div>
 
-```latex
-We beschouwen het symmetrische polynoom
-\[
-(X_1 - X_2)^2.
-\]
+### B.4. Use babel
 
-Dit is ten duidelijkste een symmetrisch polynoom.
-```
-
-### B.4. Gebruik Babel
-
-LaTeX behandelt een tekst standaard als Engelse tekst. Dat zie je aan de
-inhoudsopgave, data, figuren, tabellen, en aan de afbreking van woorden.
-Als je een Nederlandse tekst schrijft, gebruik dan
-`\usepackage[dutch]{babel}` in de preamble.
+LaTeX sees any text as an English text by default. This is noticeable from the table of content, captions of figures and tables, and the way words are split and divided over multiple lines. 
+If you are writing in Dutch, make sure to use `\usepackage[dutch]{babel}` in the preamble.
 
 ### B.5. Breek juist af
 
