@@ -51,13 +51,14 @@ Overleaf
     Afterwards students are free to use Overleaf.
 
 In the first exercise we will assume that you use TeXworks. To install
-this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installinglatex %}).
+this, see <a href="https://uva-fnwi.github.io/LaTeX/week1/installinglatex/">Installing LaTeX</a>
 
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title">Exercise 1</h3>
 <div class="panel-body">
-1.  Open 'TeXworks' on your computer.
-2.  Paste the following code in an empty document and save it as
+	<ol>
+<li>  Open 'TeXworks' on your computer.
+<li>  Paste the following code in an empty document and save it as
     'helloworld.tex'. The extension of a TeX file always is '.tex'.
 
     ```latex
@@ -66,8 +67,7 @@ this, see [Installing LaTeX]({{site.baseurl}}{% post_url 0000-01-01-installingla
     Hello world!
     \end{document}
     ```
-
-3. Select 'pdfLaTeX' in the menu to the right of the green button and
+<li>Select 'pdfLaTeX' in the menu to the right of the green button and
 press the green button afterwards. We call this *typesetting*. LaTeX
 turns your code into a PDF document which you will see in a new window.
 
