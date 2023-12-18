@@ -5,54 +5,44 @@ category: week2
 description: Nederlandse stijlregels voor wiskunde en LaTeX.
 ---
 
-In deze les behandelen we vuistregels bij het schrijven van wiskunde. De
-eerste paragraaf gaat over het opschrijven van wiskunde in het algemeen.
-De vuistregels hiervoor zijn onafhankelijk van LaTeX. De tweede
-paragraaf gaat over goed LaTeXen.
-Hier vind je een [pdf-versie van de schrijfgids](schrijfgids2013.pdf).
+In this lesson we cover some rules of thumb for writing down mathematics. The first paragraph is about writing down maths in general. The rules of thumb for this are independent of LaTeX. In the second paragraph you will learn about how to LaTeX mathematical articles or other projects.
+Here is a [pdf-version of the writing guide](schrijfgids2013.pdf) in Dutch.
 
-A. Wiskunde opschrijven
------------------------
+A. Writing down mathematics
+---------------------------
 
-Nieuwe wiskunde bedenken is knap, maar het goed opschrijven is net zo
-waardevol. Door aandacht te besteden aan de volgende punten help je de
-lezer van je tekst enorm.
+Thinking up new things in maths is impressive, but it is just as important to write it down well. By paying attention to the following points you will help your text's reader immensely.
 
-### A.1. Schrijf zinnen met een hoofdletter en een punt
+### A.1. Write sentences starting with capital letter and ending in a period
 
-Een wiskundetekst is niet anders dan elke andere Nederlandstalige tekst.
-Een tekst bestaat uit zinnen. Elke zin begint met een hoofdletter en
-eindigt met een punt.
+Writing a mathematical text is not any different than writing any other text in your target language. A text is made up of sentences. Every sentence starts with a capital letter and ends in a period. 
 
-Je dient een zin niet te beginnen met een formule. Je zet er woorden
-voor:
+You should never start a sentence with a formula. Add some words in first:
 
 <div class="example">
-Er geldt \$a=1\$. We zien dat \$f(1) = \pi\$.
+We have \$a=1\$. We see that \$f(1) = \pi\$.
 </div>
 
-Voor symbolen geldt hetzelfde:
-
-<div class="example">
-Het getal \$n\$ is belangrijk. De functie \$f\$ is reëel.
-</div>
-
-Een zin eindigt altijd met een punt, ook als de zin op een formule
-eindigt:
+The same goes for symbols:
 
 <div class="example" markdown="0">
-Neem een geheel getal $n \not= 0$ en definieer
+The number \$n\$ is important. The function \$f\$ is real. 
+</div>
+
+A sentence always ends in a period, also when the sentence ends in a formula:
+
+<div class="example" markdown="0">
+Define an integer $n \not= 0$ en definieer
 
 \[
 (\Z/n\Z)^* = \{a \in \Z/n\Z : \gcd(a, n) = 1\}.
 \]
 </div>
 
-Als een zin na een formule doorgaat, schrijf dan een passend leesteken,
-bijvoorbeeld een komma:
+If a sentence continues after the equation, use appropriate punctiation, for example a comma:
 
 <div class="example" markdown="0">
-Het teken definieert voor $n \geq 2$ een surjectief homomorfisme
+For $n\geq 2$, the sign defines a surjective homomorphism
 
 \[
 
@@ -60,94 +50,77 @@ Het teken definieert voor $n \geq 2$ een surjectief homomorfisme
 
 \]
 
-met andere woorden, $\varepsilon(\sigma \tau) =
-\varepsilon(\sigma)\varepsilon(\tau)$ voor alle $\sigma,\tau
+white is to say, $\varepsilon(\sigma \tau) =
+\varepsilon(\sigma)\varepsilon(\tau)$ for all $\sigma,\tau
 \in S_n$.
 
 </div>
-### A.2. Verdeel de tekst in alinea's en paragrafen
 
-Zinnen die inhoudelijk samenhangen vormen een alinea. Het begin van een
-alinea heeft een *inspringing* zodat de lezer ziet dat er een nieuwe
-alinea begint. De eerste alinea na een kopje heeft geen inspringing,
-omdat daar duidelijk is dat een nieuwe alinea begint.
+### A.2. Divide the text into paragraphs and sections
 
-Alinea's die inhoudelijk samenhangen vormen samen een paragraaf.
-Paragrafen kun je van elkaar scheiden met kopjes.
+Sentences which have similar or connecting content should form a paragraph. The beginning of a paragraph has an *indent* by default, which clearly marks the beginning of a new paragraph. Remember that you can use `\usepackage{parskip}` to change this to an empty line. 
 
-### A.3. Schrijf goed Nederlands
+Paragraphs which have similar or connecting content should form a section. Sections can be clearly marked using section headers. 
 
-#### Schrijf schrijftaal.
+### A.3. Use correct grammar
 
-In eerste instantie zal er misschien spreektaal uit je toetsenbord
-komen, maar pas dat aan in een volgende redactieslag. Bijvoorbeeld, je
-zegt 'in de \$\mathbb{R}^2\$', maar je schrijft 'in \$\mathbb{R}^2\$'.
+#### Do not use colloquial language
 
-#### Schrijf telwoorden uit tot en met twintig.
+You might initially write informally and use some phrases that only exist in spoken language, make sure you fix this in the next edit. For example, in stead of writing `in the \$\mathbb{R}\$`, write `in \$\mathbb{R}\$`.
 
-Bijvoorbeeld:
+#### Use words for numbers up to and including twenty.
+In Dutch this is standard practice. 
+
+For instance:
 
 <div class="example">
-één functie, twee variabelen, drie ondergroepen.
+one function, two variables, three subgroups.
 </div>
 
-Uitzondering: getallen als wiskundige objecten schrijf je met cijfers:
+Exception: numbers used as mathematical objects are writting using numbers:
 
 <div class="example">
-Er zijn zeven partities van 5.
+There are seven partitions of 5.
 </div>
 
-#### Schrijf samenstellingen aaneen.
-
-In het Nederlands schrijven we -- anders dan in het Engels --
-samenstellingen aan elkaar, met een verbindingsstreepje als dat de
-leesbaarheid verbetert:
+#### Make sure to remember Dutch vs English conventions for compound words
+In Dutch -- as opposed to in English-- we write compound words joined together, sometimes with a hyphen to connect them if this improves legibility. 
 
 <div class="example">
-differentiaalvergelijking, \$x\$-waarde, kubusopstapeling,
-computersimulatie.
+In Dutch:
+differentiaalvergelijking, \$x\$-waarde, computersimulatie.
+
+vs In English:
+differential equation, \$x\$ value, computer simulation.
 </div>
 
-### A.4. Schrijf in- en uitleidingen
+Make sure to fit your writing style to the language you are writing in.
 
-Help de lezer door elk hoofstuk te beginnen met een *inleiding*. In een
-inleiding vertel je de kern van het verhaal in gewonemensentaal: wat
-wil je bereiken, waarom en hoe. Begin bijvoorbeeld met een *bruggetje*
-naar de vorige hoofdstukken:
+### A.4. Write introductions and connecting ends
+Help your reader by starting every chapter (or section) with an *introduction*, in which you highlight the main takeaway in clear and easy language. For instance, what is the goal of the section, why, and how will you achieve it? You can try and start with a *bridge* to the previous chapters:
 
 <div class="example">
-In het vorige hoofdstuk zagen we dat \$a\$ gelijk is aan \$b\$. Nu
-bekijken we of \$a\$ gelijk is aan \$c\$.
+In the previous chapter we saw that \$a\$ is equal to \$b\$. Now we will investigate whether \$a\$ is equal to \$c\$.
 </div>
 
-Aan het eind van een hoofdstuk doe je hetzelfde met een *uitleiding*: je
-vertelt wat je gedaan hebt en waar dat toe geleid heeft. Je kunt ook een
-bruggetje leggen naar wat volgt:
+At the end of a chapter you do the same thing with your *closing words*: you state what you have done and where that led. You can also make a bridge to what follows:
 
 <div class="example">
-In de volgende hoofdstukken gaan we dit resultaat toepassen.
+In the following chapters we will apply this result.
 </div>
 
-Ook tussen definities en stellingen kun je de lezer helpen met in- en
-uitleidingen. Leg uit wat je gedaan hebt, en wat je nu wilt weten.
+In between definitions and theorems you can also help the reader with introductions and closing words. Explain what you have already done and what you would like to know now. 
 
-Deze in- en uitleidingen schrijf je meestal niet meteen, maar in tweede
-instantie. Dat helpt je ook met nadenken over je tekst.
+These connecting words are usually added in the second edit of the text. That is when you have a clearer idea of how every part is connected. Writing these also helps you think about your text so far. 
 
-### A.5. Wees zorgvuldig met naamgeving
+### A.5. Be careful when naming things
 
-Kies geschikte symbolen voor je variabelen. Het is bijvoorbeeld
-gebruikelijk om gehele getallen met \$n\$ of \$m\$ aan te duiden en
-functies met \$f\$ of \$g\$. Het is vooral belangrijk dat de naamgeving
-consistent is. Pas ook op met symbolen die op elkaar lijken, zoals \$1\$
-en \$l\$ (in dit geval kun je \$l\$ door \$\ell\$ (`\ell`) vervangen).
+Chose helpful symbols for your variables. For example, it is standard to use \$n\$ or \$m\$ for integers, and \$f\$ or \$g\$ for functions. It is key that your naming is consistent. Be extra careful with symbols that look similar such as \$1\$ and \$l\$ (you can always use \$\ell\$ (`\ell`) in stead of the letter l. 
 
-Geef objecten alleen een naam als dat nodig is. In het volgende
-voorbeeld is de variabele \$N\$ overbodig:
+Only name objects when you really need to. In the next example, the variable \$N\$ is unnecessary:
 
 <div class="example">
-**Stelling A.1.** Elk natuurlijk getal \$N\$ heeft een unieke
-factorisatie in priemgetallen.
+**Theorem A.1.** Every natural number \$N\$ has a unique prime factorisation.
 </div>
 
 ### A.6. Vind een balans tussen woorden en symbolen
