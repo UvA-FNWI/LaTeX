@@ -63,7 +63,7 @@ The number in the braces at the top gives the number of columns the text will be
 
 In <code>a0poster</code> you can typeset an abstract, bibliography, and sections (with or without numbers) as you usually would in a <code>.tex</code> file with the documentclass <code>article</code>. 
 
-Figures such as images, tables, or tikzpictures can be inserted into the poster. However, you cannot make use of the <code>figure</code> environment. Instead, we need to place any figures into a <code>center</code> environment like so:
+Figures such as images, tables, or tikzpictures can be inserted into the poster. However, you cannot just make use of the <code>figure</code> environment. Instead, we need to place any figures into a <code>center</code> environment like so:
 ```latex
 \begin{center}
   \includegraphics[options]{filename.extension}
@@ -78,6 +78,7 @@ Figures such as images, tables, or tikzpictures can be inserted into the poster.
 \end{center}
 ```
 Note that we use the command <code>\captionof{}{}</code> here. This command can only work if the package <code>caption</code> has been loaded in the preamble. The first argument for <code>\captionof</code> is the type of content you are writing a caption for, in this case a figure, but this could also be table for instance. 
+If you use the package `float`, you can still use the `figure` environment, though you do need to add `[H]` directly after `\begin{figure}` (so `\begin{figure}[H]`), this tells LaTeX that you want this image exactly where you have typeset it in the text, so it will not find the place where the figure fits best. 
 
 If you would like to play with the colour of your text you can do so by including <code>\usepackage[svgnames]{xcolor}</code> into your preamble. This will give you access to many colours that have already been named. You can then use the following commands to make parts of your text another colour. 
 ```latex
