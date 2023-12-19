@@ -83,6 +83,7 @@ be typeset with `\and`:
 ```latex
 \author{Jane Doe \and John Doe}
 ```
+Note that it is also correct to define the title, author, date, etc. using commands such as `\title{}` in the preamble. It is then only necessary to include the command `\maketitle` in the topmatter. 
 
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title"> Exercise 1 </h3>
@@ -91,7 +92,6 @@ be typeset with `\and`:
     title "Een bewijs van de Riemannhypothese" with yourself as
     the author.
 2.  Make sure LaTeX typesets the date in Dutch and not in English.
-3.  Ask one of the teachers to check your document.
 
 </div> </div>
 <div class="panel panel-danger">
