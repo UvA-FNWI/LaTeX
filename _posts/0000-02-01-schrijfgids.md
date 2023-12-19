@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Nederlandse schrijfgids (Dutch writing guide)
+title: Writing guide (aimed at writing in Dutch)
 category: week2
 description: Nederlandse stijlregels voor wiskunde en LaTeX.
 ---
