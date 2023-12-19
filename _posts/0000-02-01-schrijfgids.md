@@ -261,7 +261,7 @@ Here we give a conclusion.
 
 An empty line in your code is a command; it marks the beginning of a new paragraph. Consider this when using rule B.2.
 
-A common mistake is using an empty line after a display while the paragraph continues. This gives unecessary indents or empty lines. An example of an incorrect use of white space is the following
+A common mistake is using an empty line after a display while the paragraph continues. This gives unecessary indents or empty lines. An example of an incorrect use of whitespace is the following
 
 ```latex
 Consider the symmetric polynomial
@@ -288,106 +288,74 @@ Consider the symmetric polynomial
 LaTeX sees any text as an English text by default. This is noticeable from the table of content, captions of figures and tables, and the way words are split and divided over multiple lines. 
 If you are writing in Dutch, make sure to use `\usepackage[dutch]{babel}` in the preamble.
 
-### B.5. Breek juist af
+### B.5. Split sentences over multiple lines correctly
 
-De tilde `~` geeft een *non breaking space*. Gebruik de tilde in plaats
-van een spatie, als op die spatie niet mag worden afgebroken. Voorkom
-bijvoorbeeld dat een symbool op het begin van een regel wordt gezet:
-
+A tilde `~` in LaTeX denotes a *non breaking space*. It can be used in place of a space if you do not want the sentence to be cut at that space. For example, this can be used to prevent a symbol from appearing at the beginning of a line: 
 ```latex
-het getal~$n$, de functie~$f$, de Hilbertruimte~$H$.
+the number~$n$, the function~$f$, the Hilbert space~$H$.
 ```
 
-Gebruik de tilde ook om rijtjes korte symbolen netjes af te breken:
-
+You can also use the tilde to neatly display lists of short symbols:
 ```latex
-de variabelen $x$,~$y$ en~$z$.
+the variables $x$,~$y$ and~$z$.
 ```
 
-Om een woord eenmalig op een voorkeursplek af te breken, gebruik je
-`\-`, bijvoorbeeld:
-
+To give a preference for where an instance of a given word gets split up, you can use `\-`, for instance:
 ```latex
-voorkeurs\-behandeling
+preferen\-tial
+```
+If you do this LaTeX will only try and break the word where the `\-` appears and not the other places. If you do want it to consider the other places you can write:
+```latex
+pref\-er\-en\-tial
 ```
 
-LaTeX zal dan alleen op de plek van de `\-` proberen af te breken en op
-de andere plekken niet. Als je dat wel wilt, moet je tikken:
+Within an inline formula you can use braces to denote parts in which you do not want a break. In the expxression `${a^2+b^2}=c^2$` there will not be a break around the `+`. 
 
-```latex
-voor\-keurs\-be\-han\-de\-ling
-```
+If you really do not want any breaks in the middle of an equation, you can put it in an `\hbox{}`. LaTeX will first see this, before the sentence. Note: within an `\hbox{}` mathematical formulas do need to be given between single dollar signs. 
 
-In een formule die tussen enkele dollartekens staat, kun je met
-accolades een afbreekvoorkeur aangeven: `${a^2+b^2}=c^2$`. De accolades
-zorgen ervoor dat er niet rond de `+` wordt afgebroken.
+If all these methods still do not give you your desired result, it might be necessary to rewrite your text. Consider changing the word order in your sentence. This may seem like giving up, but in fact it is usually the most practical solution. Do not immediately do this, but wait until you are finishing up the full text. It might happen that the problem solves itself because you've added or removed text which moved the problematic word away from the end of the line. 
 
-Als je echt niet middenin een formule wilt afbreken, zet die dan in een
-`\hbox{}`. LaTeX zet eerst die `\hbox{}`, daarna pas de zin. Let op: in
-een `\hbox{}` moet een wiskundeformule weer opnieuw tussen enkele
-dollartekens.
+### B.6. Avoid double space after period
 
-Als het dan nog steeds niet lukt, ga dan je tekst herschrijven. Keer
-bijvoorbeeld de volgorde van een zin om. Dit lijkt misschien op opgeven,
-maar is vaak de meest praktische oplossing. Doe dit niet meteen, maar
-later -- als je je tekst aan het afronden bent. Het kan immers voorkomen
-dat het probleem zichzelf oplost doordat teksten gaandeweg het
-schrijfproces nog verschuiven.
+A period immediately followed by a space is read as the end of a sentence in LaTeX. After each sentence LaTeX automatically adds double space to separate individual sentences more clearly. Usually this is helpful, however when you are using abbreviations or titles you do not want this. To avoid the extra space you can use either the non breaking space `~` or the command for a regular space `\ `. For example: `Dr.~G.F.~Helmink` or `Dr.\ G.F.\ Helmink`.
 
-### B.6. Voorkom een onjuiste grote spatie na een punt
+### B.7. Use `\DeclareMathOperator` for new operators
 
-Een punt met een spatie erna wordt door LaTeX opgevat als het einde van
-een zin. De spatie na de punt krijgt een grotere horizontale ruimte dan
-een gewone spatie.
-
-De grotere spatie na een punt is meestal goed, behalve bijvoorbeeld in
-titulatuur en afkortingen. Om grote spaties te voorkomen, schrijf je
-`Dr.~G.F.~Helminck` of `Dr.\ G.F.\ Helminck`. De `~` is een non breaking
-space, de `\␣` geeft een gewone spatie, maar het voorkomt wel dat LaTeX
-het patroon punt-spatie ziet.
-
-### B.7. Gebruik `\DeclareMathOperator` voor nieuwe operatoren.
-
-Voor het zetten van operatoren als \$\operatorname{Tr}\$ of \$\operatorname{ord}\$ maak je zelf
-een operator met
-
+LaTeX has many built in operators such as `\sin`, `\max`, and `\lim`. To use other operators like for example Tr for the trace of a matrix, you can define your own operator in the preamble.
 ```latex
 \DeclareMathOperator{\Tr}{Tr}
-\DeclareMathOperator{\ord}{ord}
 ```
-
-Zo scheid je opmaak van inhoud en krijg je de juiste witruimte rondom de
-operator.
+This way you separate layout from content and you create the right amount of whitespace around the operator. 
 
 
 <div class="panel panel-success">
-<h3 class="panel-heading panel-title"> Onthouden </h3>
+<h3 class="panel-heading panel-title"> Remember </h3>
 <div class="panel-body">
-* Wiskunde schrijven:
-    - Schrijf zinnen met een hoofdletter en een punt.
-    - Verdeel de tekst in alinea's en paragrafen.
-    - Schrijf goed Nederlands.
-    - Schrijf in- en uitleidingen.
-    - Wees zorgvuldig met naamgeving.
-    - Vind een balans tussen woorden en symbolen.
-    - Nummer formules alleen als dat nodig is.
-    - Geef figuren en tabellen een onderschrift.
-    - Gebruik displays als dat nodig is.
-    - Geef definities en stellingen de juiste opmaak.
+* Writing mathematics:
+    - Write in full sentences, starting with a capital letter and ending in a period.
+    - Divide the text into paragraphs and sections.
+    - Write in grammatically correct sentences.
+    - Make use of introductions and closing words.
+    - Be careful when naming things.
+    - Find the right balance between words and symbols.
+    - Give equations a number only when this is necessary.
+    - Write a caption for your figures and tables.
+    - Use displays when needeed.
+    - Use the correct layout for theorems and definitions.
 * LaTeX:
-    - Gebruik en maak structuurcommando's
-    - Houd je code netjes.
-    - Typ geen lege regel als dat niet moet.
-    - Gebruik Babel.
-    - Breek juist af.
-    - Voorkom een onjuiste spatie na een punt.
-    - Gebruik `\DeclareMathOperator` voor nieuwe operatoren.
+    - Use (and define) structural commands
+    - Keep your code neat.
+    - Do not type empty lines or extra spacing when this is not needed.
+    - Use Babel.
+    - Make sure words are split over lines correctly.
+    - Avoid unwanted double whitespace after a period.
+    - Use `\DeclareMathOperator` for new operators.
 
 </div> </div>
 
 ------------------------------------------------------------------------
 
-### Referenties
+### References
 
 1.  Dimitri Bertsekas. [*Ten simple rules for
     mathematical writing.*](http://web.mit.edu/dimitrib/www/Ten_Rules.pdf) 2002.
