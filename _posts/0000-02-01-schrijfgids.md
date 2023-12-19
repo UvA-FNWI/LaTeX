@@ -50,7 +50,7 @@ For $n\geq 2$, the sign defines a surjective homomorphism
 
 \]
 
-white is to say, $\varepsilon(\sigma \tau) =
+which is to say, $\varepsilon(\sigma \tau) =
 \varepsilon(\sigma)\varepsilon(\tau)$ for all $\sigma,\tau
 \in S_n$.
 
@@ -142,11 +142,11 @@ long walk in the woods, with no paper available." [Halmos]
 
 ### A.7. Number equations when needed
 
-Give an equation in a display a number if *and only if* you refer to the number somewhere. 
+Give an equation in a display a number if *and only if* you refer to the number somewhere. We will learn how to do references in LaTeX in <a href="https://uva-fnwi.github.io/LaTeX/week2/maths2/">lesson 11</a>.
 
 ### A.8. Give every figure and table a caption
 
-Someone who reads your article or thesis will usually not read it front to back, but skipping through it. Figures and tables are most often the first thing that gets read. Make sure your figures and tables have captions that make sense independent of the rest of the text. You can even move a bit of the explanation in the text to the caption. 
+Someone who reads your article or thesis will usually not read it front to back, but skipping through it. Figures and tables are most often the first thing that gets read. Make sure your figures and tables have captions that make sense independent of the rest of the text. You can even move a bit of the explanation in the text to the caption. Exactly how to insert figures into your document we will learn in <a href="https://uva-fnwi.github.io/LaTeX/week3/structure2/">lesson 13</a>.
 
 ### A.9. Use displays when it is needed
 
