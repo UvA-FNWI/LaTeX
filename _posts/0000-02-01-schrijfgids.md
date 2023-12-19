@@ -286,7 +286,7 @@ Consider the symmetric polynomial
 ### B.4. Use babel
 
 LaTeX sees any text as an English text by default. This is noticeable from the table of content, captions of figures and tables, and the way words are split and divided over multiple lines. 
-If you are writing in Dutch, make sure to use `\usepackage[dutch]{babel}` in the preamble.
+If you are writing in Dutch, make sure to use `\usepackage[dutch]{babel}` in the preamble. Notice that when you are using the Dutch version of Babel, this also uses Dutch words in environments like theorem and proof. 
 
 ### B.5. Split sentences over multiple lines correctly
 
