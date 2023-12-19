@@ -26,7 +26,7 @@ We have \$a=1\$. We see that \$f(1) = \pi\$.
 The same goes for symbols:
 
 <div class="example" markdown="0">
-The number \$n\$ is important. The function \$f\$ is real. 
+The number $n$ is important. The function $f$ is real. 
 </div>
 
 A sentence always ends in a period, also when the sentence ends in a formula:
