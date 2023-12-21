@@ -56,21 +56,18 @@ this, see <a href="https://uva-fnwi.github.io/LaTeX/week1/installinglatex/">Inst
 <div class="panel panel-primary">
 <h3 class="panel-heading panel-title">Exercise 1</h3>
 <div class="panel-body">
-	<ol>
-<li>  Open 'TeXworks' on your computer.
-<li>  Paste the following code in an empty document and save it as
+-  Open 'TeXworks' on your computer.
+-   Paste the following code in an empty document and save it as
     'helloworld.tex'. The extension of a TeX file always is '.tex'.
-
     ```latex
-	\documentclass[a4paper]{article}
+    \documentclass[a4paper]{article}
     \begin{document}
     Hello world!
     \end{document}
     ```
-<li>Select 'pdfLaTeX' in the menu to the right of the green button and
+-   Select 'pdfLaTeX' in the menu to the right of the green button and
 press the green button afterwards. We call this *typesetting*. LaTeX
 turns your code into a PDF document which you will see in a new window.
-
 -   Useful: Select 'Format -> Line Numbers' to make it easier to find and refer to specific lines of code.
 -   Useful: To jump from the code to the output in TeXworks you can
     right-click and choose 'Jump to PDF'. In the same way it is possible
