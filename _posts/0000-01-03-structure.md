@@ -147,7 +147,7 @@ group automatically.
 <div class="panel-body">
 In this assignment we will define our own command.
 
-1.  Create a new LaTeX file using the mathtools package and put the
+1.  Create a new LaTeX file using the amssymb package and put the
     following in the preamble:
 
 	```latex
