@@ -213,7 +213,7 @@ The way in which you create columns in <code>tikzposter</code> is to use the col
 ```
 Within these columns (or without if you would like your text to strech across the entire poster) you can insert pieces of text, figures, tikzpictures, tables, bibliography, etc.
 
-In <code>tikzposter</code> any content that you want to include on the poster much be inserted in a block. This is how to do that: 
+In <code>tikzposter</code> any content that you want to include on the poster must be inserted in a block. This is how to do that: 
 ```latex
 \block{title}{content}
 ``` 
@@ -246,4 +246,4 @@ Here follows some regular text, \color{MyPink} from now on the text has changed 
 ``` 
 Note that <code>tikzposter</code> does not support the use of the <code>svgnames</code> option. That is why we need to predefine our own colours (<code>tikzposter</code> does come with several colours and their names included, though this is not an extensive range).
 
-As you may have spotted, the colours we predefined ourselves are given in RGB form. It is very easy to find the RGB form of any colour, simply by Googling the phrase <i>colour picker</i>, and using Google's colour tool.
+As you may have spotted, the colours we predefined ourselves are given in RGB form. It is very easy to find the RGB form of any colour, simply by entering the phrase <i>colour picker</i> into a search engine, and using the tool it supplies.
