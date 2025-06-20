@@ -100,7 +100,7 @@ Next up you get to choose your beamertheme and colour. You do this by using thes
 \usetheme{...}
 \usecolortheme{...}
 ```
-You can choose which theme and colour you would like from the very handy [Beamer Theme Matrix]{https://hartwork.org/beamer-theme-matrix/}. You can then fill in the names of the theme an colour you choose on the dots. You can also use the UvA beamer theme, which can be downloaded [here]{http://bliggy.net/UvATemplates.html}.
+You can choose which theme and colour you would like from the very handy [Beamer Theme Matrix]{https://hartwork.org/beamer-theme-matrix/}. You can then fill in the names of the theme an colour you choose on the dots. You can also use the UvA beamer theme, which can be downloaded [here]{http://bliggy.net/UvATemplates.html} (unfortunately this link is no longer active, an alternative has not yet been found).
 
 The next and <b>most important</b> step, is to load the package that will turn your beamer file into a poster.
 ```latex
